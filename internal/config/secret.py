@@ -29,9 +29,8 @@ class SecretManager:
 
     PORT : str = os.environ.get("PORT", "8000")
     ENV : Environment = Environment.from_string(os.environ.get("ENV", "local"))
-    GOOGLE_PLACES_API_KEY = os.getenv("GOOGLE_PLACES_API_KEY")
+    GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
     PG_URI : str =  os.environ.get("PG_URI")
     ALLOWED_ORIGINS = json.loads(os.environ.get("ALLOWED_ORIGINS", '["*"]'))
     OPENAI_KEY  :  str | None  = os.environ.get("OPENAI_KEY")
-    CSE_API_KEY = os.environ.get("CSE_API_KEY", "")
-    CSE_ID = os.environ.get("CSE_ID", "")
+    GOOGLE_CSE_ID = os.environ.get("GOOGLE_CSE_ID", "")

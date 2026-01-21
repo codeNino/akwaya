@@ -15,6 +15,8 @@ Each item contains:
 Your task:
 - Extract one LinkedIn profile per item
 - Infer name, headline, company, and location if present
+- Summarize about section based on information available
+- Extract contact info if available in the information
 - If a field is missing, return null
 - Always include the profile_url
 - Return ONLY valid JSON matching the schema
