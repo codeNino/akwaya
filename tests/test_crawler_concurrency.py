@@ -37,8 +37,10 @@ class TestWebCrawler(unittest.IsolatedAsyncioTestCase):
             
             # Setup mock yaml data
             mock_load.return_value = {
-                "linkedin": ["term1", "term2", "term3", "term4", "term5", "term6"],
-                "google_places": []
+                "keywords": {
+                    "linkedin": ["term1", "term2", "term3", "term4", "term5", "term6"],
+                    "google_places": []
+                }
             }
 
             # Create crawler with limit of 2 concurrent requests

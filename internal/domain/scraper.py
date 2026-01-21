@@ -35,30 +35,36 @@ class WebCawler:
             return await func(keyword, batch_size)
 
     async def scrape_linkedin(self, batch_size: int, keywords: List[str]):
-        logger.info("Scraping LinkedIn for keywords: %s", keywords)
+        try:
+            logger.info("Scraping LinkedIn for keywords: %s", keywords)
 
-        # Schedule all keyword searches concurrently
-        tasks = [self._safe_scrape(k, batch_size, search_linkedin) for k in keywords]
-        linkedin_results = await asyncio.gather(*tasks)
+            # Schedule all keyword searches concurrently
+            tasks = [self._safe_scrape(k, batch_size, search_linkedin) for k in keywords]
+            linkedin_results = await asyncio.gather(*tasks)
 
-        logger.info("Scraped LinkedIn for keywords: %s", keywords)
-        return linkedin_results
+            logger.info("Scraped LinkedIn for keywords: %s", keywords)
+            return linkedin_results
+        except Exception as e:
+            logger.error("Failed to scrape LinkedIn for keywords: %s", keywords)
+            return []
 
 
     async def scrape_google_places(self, batch_size: int, keywords: List[str]):
-        logger.info("Scraping Google Places for keywords: %s", keywords)
+        try:
+            logger.info("Scraping Google Places for keywords: %s", keywords)
 
-        tasks = [self._safe_scrape(k, batch_size, search_google_places) for k in keywords]
-        google_places_results = await asyncio.gather(*tasks)
+            tasks = [self._safe_scrape(k, batch_size, search_google_places) for k in keywords]
+            google_places_results = await asyncio.gather(*tasks)
 
-        logger.info("Scraped Google Places for keywords: %s", keywords)
-        return google_places_results
+            logger.info("Scraped Google Places for keywords: %s", keywords)
+            return google_places_results
+        except Exception as e:
+            logger.error("Failed to scrape Google Places for keywords: %s", keywords)
+            return []
 
     @staticmethod
     def flatten_to_json(nested_list: List[List[Dict]], json_file_path: str):
-        logger.info("Original List Length: %s", len(nested_list))
         flat_list = [item for sublist in nested_list for item in sublist]
-        logger.info("Flattened List Length: %s", len(flat_list))
 
         # Write to JSON file
         with open(json_file_path, "w", encoding="utf-8") as f:
