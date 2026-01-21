@@ -3,8 +3,6 @@ import time
 import asyncio
 from typing import List
 
-from internal.utils.cse_dummy import google_cse_items
-
 from internal.config.secret import SecretManager
 from internal.utils.dto import ProspectDict
 from internal.utils.parser import extract_important_google_places_info, extract_linkedin_profiles
