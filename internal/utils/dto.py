@@ -16,6 +16,7 @@ class ProspectDict(TypedDict):
     prospect_id: str
     source_platform: Literal["google_maps", "linkedin"] 
     name: str
+    about: str
     contact_info: ContactInfoDict
     location: str
     business_context: Optional[str]
@@ -23,7 +24,6 @@ class ProspectDict(TypedDict):
     source_url: str
     discovery_confidence_score: float  # 0.0 – 1.0
     timestamp: str  # ISO8601
-    raw_data: Dict[str, Any]
 
 
 class ContactInfo(BaseModel):
@@ -38,6 +38,7 @@ class Prospect(BaseModel):
     name: str
     about: Optional[str] = None
 
+    about: str
     contact_info: ContactInfo
 
     location: str

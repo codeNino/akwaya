@@ -1,0 +1,16 @@
+{
+  "snapshot_id": "52ad3bbd-ec30-42fc-9487-6dd95a6f9166",
+  "prospect_id": "d14efb25-2d9a-470d-9c71-a62e5c5813e5",
+  "platform": "google_maps",
+  "raw_data": {
+    "rating": 4.5,
+    "temp_prospect_id": "temp_002",
+    "source_platform": "google_maps",
+    "source_url": "https://maps.google.com/place/acme-trading",
+    "discovery_confidence": 0.85,
+    "timestamp": "2025-01-20T11:00:00Z"
+  },
+  "snapshot_at": "2025-01-20T11:00:00+00:00",
+  "is_latest": true,
+  "created_at": null
+}

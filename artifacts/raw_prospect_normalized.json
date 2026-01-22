@@ -1,0 +1,50 @@
+[
+    {
+        "prospect_id": "temp_001",
+        "source_platform": "linkedin",
+        "name": "Acme Trading Academy",
+        "about": "Forex education platform that teaches you how to trade forex",
+        "contact_info": {
+            "email": "info@acmetrading.com",
+            "phone": null,
+            "website": "https://acmetrading.com"
+        },
+        "location": "New York, NY",
+        "business_context": "Forex education platform",
+        "source_url": "https://linkedin.com/company/acme-trading",
+        "discovery_confidence_score": 0.92,
+        "timestamp": "2025-01-20T10:00:00Z"
+    },
+    {
+        "prospect_id": "temp_002",
+        "source_platform": "google_maps",
+        "name": "Acme Trading Academy LLC",
+        "about": "Forex education platform that teaches you how to trade forex",
+        "contact_info": {
+            "email": null,
+            "phone": "+1-555-0123",
+            "website": "acmetrading.com"
+        },
+        "location": "New York, NY",
+        "business_context": null,
+        "source_url": "https://maps.google.com/place/acme-trading",
+        "discovery_confidence_score": 0.85,
+        "timestamp": "2025-01-20T11:00:00Z"
+    },
+    {
+        "prospect_id": "temp_003",
+        "source_platform": "linkedin",
+        "name": "John Doe - Independent Trader",
+        "about": "Independent trader that trades cryptocurrency",
+        "contact_info": {
+            "email": "john@example.com",
+            "phone": null,
+            "website": null
+        },
+        "location": "London, UK",
+        "business_context": "Cryptocurrency trader",
+        "source_url": "https://linkedin.com/in/johndoe",
+        "discovery_confidence_score": 0.78,
+        "timestamp": "2025-01-20T12:00:00Z"
+    }
+]
