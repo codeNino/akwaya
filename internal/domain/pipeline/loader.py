@@ -22,7 +22,7 @@ if str(project_root) not in sys.path:
 from internal.utils.logger import AppLogger
 from internal.config.paths_config import (
     DEDUPLICATION_RESULTS_PATH,
-    RAW_NORMALIZED_PROSPECT_PATH,
+    RAW_PROSPECTIVE_INDIVIDUALS_PATH,
     DB_MODELS_TEMP_DIR,
 )
 from internal.utils.database import DatabaseManager, get_session, init_db
@@ -129,7 +129,7 @@ def save_deduplication_results_as_json(
         output_dir = DB_MODELS_TEMP_DIR
 
     if raw_prospects_path is None:
-        raw_prospects_path = str(RAW_NORMALIZED_PROSPECT_PATH)
+        raw_prospects_path = str(RAW_PROSPECTIVE_INDIVIDUALS_PATH)
 
     # Create output directory
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -322,7 +322,7 @@ def load_deduplication_results(
         Dict with loading statistics
     """
     if raw_prospects_path is None:
-        raw_prospects_path = str(RAW_NORMALIZED_PROSPECT_PATH)
+        raw_prospects_path = str(RAW_PROSPECTIVE_INDIVIDUALS_PATH)
 
     # Initialize database tables
     logger.info("Initializing database tables...")

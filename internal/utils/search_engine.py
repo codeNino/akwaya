@@ -1,7 +1,9 @@
 import requests
 import time
 import asyncio
-from typing import List, Dict
+from typing import List
+import json
+import http.client
 
 from internal.config.secret import SecretManager
 from internal.utils.dto import ProspectDict
@@ -10,40 +12,50 @@ from internal.utils.logger import AppLogger
 
 logger = AppLogger("SearchEngine")()
 
-GOOGLE_CSE_ENDPOINT = "https://www.googleapis.com/customsearch/v1"
-
-def _search_with_google_cse_sync(query: str, num_results: int) -> List[Dict]:
-    params = {
-        "key": SecretManager.CSE_API_KEY,
-        "cx": SecretManager.CSE_ID,
+def _search_with_serper_sync(query: str, page: int):
+    conn = http.client.HTTPSConnection("google.serper.dev")
+    payload = json.dumps({
         "q": query,
-        "num": min(num_results, 10)
+        "page": page
+    })
+    headers = {
+        'X-API-KEY': SecretManager.SERPER_API_KEY,
+        'Content-Type': 'application/json'
     }
+    conn.request("POST", "/search", payload, headers)
+    res = conn.getresponse()
+    data = res.read().decode("utf-8")
+    data = json.loads(data)
 
-    response = requests.get(GOOGLE_CSE_ENDPOINT, params=params)
-    response.raise_for_status()
-    data = response.json()
+    return data.get("organic", [])
 
-    results = []
-    for item in data.get("items", []):
-        results.append({
-            "title": item.get("title"),
-            "link": item.get("link"),
-            "snippet": item.get("snippet"),
-            "displayLink": item.get("displayLink")
-        })
-
-    return results
-
-async def search_with_google_cse(
-    query: str,
-    num_results: int = 10
-) -> List[Dict]:
-    """
-    Searches Google Custom Search Engine with a text query and returns up to num_results results.
-    """
+async def get_data_from_linkedIn_serper_search(query: str, total_results: int = 50):
     loop = asyncio.get_running_loop()
-    return await loop.run_in_executor(None, _search_with_google_cse_sync, query, num_results)
+    results_fetched = []
+    page = 1
+
+    while len(results_fetched) < total_results:
+
+        data = await loop.run_in_executor(
+            None,
+            _search_with_serper_sync,
+            query,
+            page,
+        )
+
+        if len(data) > 0:
+            for item in data:
+                results_fetched.append({
+                    "title": item.get("title"),
+                    "link": item.get("link"),
+                    "about" : item.get("snippet")
+                })
+        else:
+            break
+
+        page += 1
+
+    return results_fetched
 
 
 async def search_linkedin(query: str, batch_size: int = 10) -> List[ProspectDict]:
@@ -52,7 +64,7 @@ async def search_linkedin(query: str, batch_size: int = 10) -> List[ProspectDict
     """
     prefix = "site:linkedin.com/in/  "
     # This call is now async (offloaded to thread)
-    cse_results = await search_with_google_cse(prefix + query, batch_size)
+    cse_results = await get_data_from_linkedIn_serper_search(prefix + query, batch_size)
     
     # extract_linkedin_profiles uses synchronous LLM invoke, so we offload it too
     loop = asyncio.get_running_loop()
@@ -64,7 +76,7 @@ def _search_google_places_sync(text_query: str, batch_size: int) -> List[Prospec
     
     headers = {
         "Content-Type": "application/json",
-        "X-Goog-Api-Key": SecretManager.GOOGLE_PLACES_API_KEY,
+        "X-Goog-Api-Key": SecretManager.GOOGLE_API_KEY,
         "X-Goog-FieldMask": (
         "places.displayName.text,"
         "places.primaryType,"

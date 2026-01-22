@@ -1,4 +1,4 @@
-from typing import List, Dict
+from typing import List, Dict, TypedDict, Optional
 import asyncio
 import json
 
@@ -7,6 +7,9 @@ from internal.utils.loader import load_yaml, AppLogger
 
 logger = AppLogger("WebCawler")()
 
+class IngestionResults(TypedDict, total=False):
+    whitelabels: Optional[List]
+    individuals: Optional[List]
 
 class WebCawler:
 
@@ -14,51 +17,84 @@ class WebCawler:
         # Semaphore limits concurrent requests to avoid rate limiting
         self.semaphore = asyncio.Semaphore(max_concurrent_requests)
 
-    async def scrape_from_sources(self, keywords_path: str):
+    async def search_for_prospects(self, keywords_path: str):
+        tasks: list[asyncio.Task] = []
+        task_keys: list[str] = []
+
         config_file = load_yaml(keywords_path)  
-        batch_size = config_file.get("batch-size", 10)
-        keywords = config_file.get("keywords", None)
-        if not keywords:
-            raise ValueError("Keywords not found in the config file")
+        ingestion_params = config_file.get("raw_prospect_ingestion")
+        if not ingestion_params:
+            raise ValueError("Ingestion params not found in the config file")
+        
+        whitelabels_params = ingestion_params.get("whitelabels")
+        if whitelabels_params:
+            batch_size = whitelabels_params.get("batch-size", 10)
+            keywords = whitelabels_params.get("keywords", None)
+            if not keywords:
+                raise ValueError("Whitelabel Keywords not found in the config file")
+            google_places_task = self.scrape_google_places(batch_size, keywords)
+            tasks.append(google_places_task)
+            task_keys.append("whitelabels")
+        
+        individuals_params = ingestion_params.get("individuals")
+        if individuals_params:
+            batch_size = individuals_params.get("batch-size", 10)
+            keywords = individuals_params.get("keywords", None)
+            if not keywords:
+                raise ValueError("Individuals Keywords not found in the config file")
+            linkedin_task = self.scrape_linkedin(batch_size, keywords)
+            tasks.append(linkedin_task)
+            task_keys.append("individuals")
+        
+        results: IngestionResults = {}
 
-        linkedin_task = self.scrape_linkedin(batch_size, keywords.get("linkedin", []))
-        google_places_task = self.scrape_google_places(batch_size, keywords.get("google_places", []))
+        if not tasks:
+            return results
 
-        linkedin_results, google_places_results = await asyncio.gather(
-            linkedin_task, google_places_task
-        )
+        task_results = await asyncio.gather(*tasks, return_exceptions=False)
 
-        return linkedin_results, google_places_results
+        for key, value in zip(task_keys, task_results):
+            results[key] = value
+
+        return results
 
     async def _safe_scrape(self, keyword: str, batch_size: int, func):
         async with self.semaphore:
             return await func(keyword, batch_size)
 
     async def scrape_linkedin(self, batch_size: int, keywords: List[str]):
-        logger.info("Scraping LinkedIn for keywords: %s", keywords)
+        try:
+            logger.info("Scraping LinkedIn for keywords: %s", keywords)
 
-        # Schedule all keyword searches concurrently
-        tasks = [self._safe_scrape(k, batch_size, search_linkedin) for k in keywords]
-        linkedin_results = await asyncio.gather(*tasks)
+            # Schedule all keyword searches concurrently
+            tasks = [self._safe_scrape(k, batch_size, search_linkedin) for k in keywords]
+            linkedin_results = await asyncio.gather(*tasks)
 
-        logger.info("Scraped LinkedIn for keywords: %s", keywords)
-        return linkedin_results
+            logger.info("Scraped LinkedIn for keywords: %s", keywords)
+            return linkedin_results
+        except Exception as e:
+            logger.error("Failed to scrape LinkedIn for keywords ::: %s", e)
+            return []
 
 
     async def scrape_google_places(self, batch_size: int, keywords: List[str]):
-        logger.info("Scraping Google Places for keywords: %s", keywords)
+        try:
+            logger.info("Scraping Google Places for keywords: %s", keywords)
 
-        tasks = [self._safe_scrape(k, batch_size, search_google_places) for k in keywords]
-        google_places_results = await asyncio.gather(*tasks)
+            tasks = [self._safe_scrape(k, batch_size, search_google_places) for k in keywords]
+            google_places_results = await asyncio.gather(*tasks)
 
-        logger.info("Scraped Google Places for keywords: %s", keywords)
-        return google_places_results
+            logger.info("Scraped Google Places for keywords: %s", keywords)
+            return google_places_results
+        except Exception as e:
+            logger.error("Failed to scrape Google Places for keywords ::: %s", e)
+            return []
 
     @staticmethod
-    def flatten_to_json(nested_list: List[List[Dict]], json_file_path: str):
-        logger.info("Original List Length: %s", len(nested_list))
+    def flatten_to_json(nested_list: List[List], json_file_path: str):
+        if len(nested_list) == 0:
+            return None
         flat_list = [item for sublist in nested_list for item in sublist]
-        logger.info("Flattened List Length: %s", len(flat_list))
 
         # Write to JSON file
         with open(json_file_path, "w", encoding="utf-8") as f:

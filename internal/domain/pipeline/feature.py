@@ -23,7 +23,7 @@ if str(project_root) not in sys.path:
 
 from internal.utils.dto import ProspectDict
 from internal.utils.logger import AppLogger
-from internal.config.paths_config import ARTIFACTS_DIR, RAW_NORMALIZED_PROSPECT_PATH
+from internal.config.paths_config import ARTIFACTS_DIR, RAW_PROSPECTIVE_INDIVIDUALS_PATH
 from internal.domain.pipeline.engine import DeduplicationEngine
 
 logger = AppLogger("domain.pipeline.feature")()
@@ -36,14 +36,14 @@ def entrypoint() -> Dict:
     Returns:
         Dict containing deduplication results with summary, prospects, and flags
     """
-    logger.info("Loading raw prospects from %s", RAW_NORMALIZED_PROSPECT_PATH)
+    logger.info("Loading raw prospects from %s", RAW_PROSPECTIVE_INDIVIDUALS_PATH)
     
     # Load raw prospects
     try:
-        with open(RAW_NORMALIZED_PROSPECT_PATH, 'r', encoding='utf-8') as f:
+        with open(RAW_PROSPECTIVE_INDIVIDUALS_PATH, 'r', encoding='utf-8') as f:
             raw_prospects: List[ProspectDict] = json.load(f)
     except FileNotFoundError:
-        logger.error("Raw prospects file not found: %s", RAW_NORMALIZED_PROSPECT_PATH)
+        logger.error("Raw prospects file not found: %s", RAW_PROSPECTIVE_INDIVIDUALS_PATH)
         raise
     except json.JSONDecodeError as e:
         logger.error("Invalid JSON in raw prospects file: %s", e)

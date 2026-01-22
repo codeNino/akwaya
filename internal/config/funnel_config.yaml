@@ -1,0 +1,18 @@
+raw_prospect_ingestion:
+  whitelabels:
+    batch-size: 50
+    keywords:
+      - "Forex Trader"
+      - "FX Trader"
+      - "Proprietary Trader"
+      - "Trading Mentor"
+      - "Algorithmic Trader"
+
+  individuals:
+    batch-size: 50
+    keywords:
+      - "Forex Trader"
+      - "FX Trader"
+      - "Proprietary Trader"
+      - "Trading Mentor"
+      - "Algorithmic Trader"

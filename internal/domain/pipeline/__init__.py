@@ -13,7 +13,7 @@ from internal.domain.pipeline.matcher import ProspectMatcher
 from internal.domain.pipeline.engine import DeduplicationEngine
 from internal.domain.pipeline.feature import entrypoint
 from internal.domain.pipeline.loader import load_deduplication_results
-from internal.domain.pipeline.query import get_enrichment_queue
+# from internal.domain.pipeline.query import get_enrichment_queue
 
 __all__ = [
     'MergedContactInfo',
@@ -22,7 +22,6 @@ __all__ = [
     'ProspectMatcher',
     'DeduplicationEngine',
     'load_deduplication_results',
-    'get_enrichment_queue',
     'entrypoint',
 ]
 
