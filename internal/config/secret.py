@@ -2,6 +2,17 @@ from dotenv import load_dotenv
 from enum import Enum
 import os
 import json
+from typing import List
+
+def validate_environment(vars_list: List):
+
+    # Check if all required environment variables are set
+    missing_vars = [var for var in vars_list if var not in os.environ]
+
+    if missing_vars:
+        exit(
+            f"Error: The following required environment variables are missing: {', '.join(missing_vars)}"  # noqa: E501
+        )
 
 
 load_dotenv()

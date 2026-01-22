@@ -8,11 +8,11 @@ raw_prospect_ingestion:
       - "Trading Mentor"
       - "Algorithmic Trader"
 
-  # individuals:
-  #   batch-size: 50
-  #   keywords:
-  #     - "Forex Trader"
-  #     - "FX Trader"
-  #     - "Proprietary Trader"
-  #     - "Trading Mentor"
-  #     - "Algorithmic Trader"
+  individuals:
+    batch-size: 50
+    keywords:
+      - "Forex Trader"
+      - "FX Trader"
+      - "Proprietary Trader"
+      - "Trading Mentor"
+      - "Algorithmic Trader"
