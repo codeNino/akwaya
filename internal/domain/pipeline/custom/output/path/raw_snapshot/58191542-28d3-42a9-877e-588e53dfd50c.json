@@ -1,0 +1,15 @@
+{
+  "snapshot_id": "58191542-28d3-42a9-877e-588e53dfd50c",
+  "prospect_id": "temp_003",
+  "platform": "linkedin",
+  "contact_info": {
+    "email": "john@example.com",
+    "phone": null,
+    "website": null
+  },
+  "location": "London, UK",
+  "business_context": "Cryptocurrency trader",
+  "source_url": "https://linkedin.com/in/johndoe",
+  "snapshot_at": "2025-01-20 12:00:00",
+  "is_latest": true
+}
