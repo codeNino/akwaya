@@ -14,6 +14,8 @@ APP_BASE_DIR = get_project_root()
 
 ARTIFACTS_DIR = APP_BASE_DIR / "artifacts"
 
-RAW_NORMALIZED_PROSPECT_PATH = APP_BASE_DIR / "artifacts/raw_prospect_normalized.json"
+RAW_PROSPECTIVE_WHITELABELS_PATH = APP_BASE_DIR / "artifacts/raw_prospective_whitelabels.json"
 
-SEARCH_CONFIG_PATH = APP_BASE_DIR / "internal/config/search_config.yaml"
+RAW_PROSPECTIVE_INDIVIDUALS_PATH = APP_BASE_DIR / "artifacts/raw_prospective_individuals.json"
+
+FUNNEL_CONFIG_PATH = APP_BASE_DIR / "internal/config/funnel_config.yaml"

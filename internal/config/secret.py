@@ -33,4 +33,4 @@ class SecretManager:
     PG_URI : str =  os.environ.get("PG_URI")
     ALLOWED_ORIGINS = json.loads(os.environ.get("ALLOWED_ORIGINS", '["*"]'))
     OPENAI_KEY  :  str | None  = os.environ.get("OPENAI_KEY")
-    GOOGLE_CSE_ID = os.environ.get("GOOGLE_CSE_ID", "")
+    SERPER_API_KEY = os.environ.get("SERPER_API_KEY", "")

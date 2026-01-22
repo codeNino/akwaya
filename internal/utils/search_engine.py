@@ -2,6 +2,8 @@ import requests
 import time
 import asyncio
 from typing import List
+import json
+import http.client
 
 from internal.config.secret import SecretManager
 from internal.utils.dto import ProspectDict
@@ -10,55 +12,50 @@ from internal.utils.logger import AppLogger
 
 logger = AppLogger("SearchEngine")()
 
+def _search_with_serper_sync(query: str, page: int):
+    conn = http.client.HTTPSConnection("google.serper.dev")
+    payload = json.dumps({
+        "q": query,
+        "page": page
+    })
+    headers = {
+        'X-API-KEY': SecretManager.SERPER_API_KEY,
+        'Content-Type': 'application/json'
+    }
+    conn.request("POST", "/search", payload, headers)
+    res = conn.getresponse()
+    data = res.read().decode("utf-8")
+    data = json.loads(data)
 
-def _search_with_google_cse_sync(query, num, start):
-    resp = requests.get(
-        "https://www.googleapis.com/customsearch/v1",
-        params={
-            "key": SecretManager.GOOGLE_API_KEY,
-            "cx": SecretManager.GOOGLE_CSE_ID,
-            "q": query,
-            "num": num,
-            "start": start,
-        },
-        timeout=10,
-    )
+    return data.get("organic", [])
 
-    resp.raise_for_status()
-
-    data = resp.json()
-
-    return data.get("items", [])
-
-async def get_data_from_linkedIn_google_cse(query: str, total_results: int = 50):
+async def get_data_from_linkedIn_serper_search(query: str, total_results: int = 50):
     loop = asyncio.get_running_loop()
-    results = []
-    start = 1
+    results_fetched = []
+    page = 1
 
-    while start <= total_results and start <= 91:
-        num = min(10, total_results - len(results))
+    while len(results_fetched) < total_results:
 
         data = await loop.run_in_executor(
             None,
-            _search_with_google_cse_sync,
+            _search_with_serper_sync,
             query,
-            num,
-            start,
+            page,
         )
 
         if len(data) > 0:
             for item in data:
-                results.append({
-                    "title": item.get("pagemap").get("metatags")[0].get("twitter:title"),
+                results_fetched.append({
+                    "title": item.get("title"),
                     "link": item.get("link"),
-                    "about" : item.get("pagemap").get("metatags")[0].get("twitter:description")
+                    "about" : item.get("snippet")
                 })
         else:
             break
 
-        start += num
+        page += 1
 
-    return results
+    return results_fetched
 
 
 async def search_linkedin(query: str, batch_size: int = 10) -> List[ProspectDict]:
@@ -67,7 +64,7 @@ async def search_linkedin(query: str, batch_size: int = 10) -> List[ProspectDict
     """
     prefix = "site:linkedin.com/in/  "
     # This call is now async (offloaded to thread)
-    cse_results = await get_data_from_linkedIn_google_cse(prefix + query, batch_size)
+    cse_results = await get_data_from_linkedIn_serper_search(prefix + query, batch_size)
     
     # extract_linkedin_profiles uses synchronous LLM invoke, so we offload it too
     loop = asyncio.get_running_loop()
