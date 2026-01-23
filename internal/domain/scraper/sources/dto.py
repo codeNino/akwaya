@@ -1,10 +1,29 @@
-from typing import TypedDict, Optional, Literal, List, Any, Dict
-from pydantic import BaseModel, Field, field_validator, ValidationInfo
+from typing import TypedDict, Optional, Literal, List
+from pydantic import BaseModel, Field, field_validator
 from datetime import datetime
 import uuid
 
 from .scoring import calculate_discovery_confidence
 
+class LinkedInProfileInput(TypedDict):
+    url: str
+    prospect_id: str
+
+class LinkedInProfileSummary(TypedDict):
+    recent_posts: List[str]
+    recent_job_title: Optional[str]
+    recent_company: Optional[str]
+    profile_url: str
+    location: Optional[str]
+
+
+class EnrichedLinkedInProfileOutput(TypedDict):
+    prospect_id: str
+    profile: LinkedInProfileSummary
+
+class IngestionResults(TypedDict, total=False):
+    whitelabels: Optional[List]
+    individuals: Optional[List]
 
 class ContactInfoDict(TypedDict, total=False):
     email: Optional[str]

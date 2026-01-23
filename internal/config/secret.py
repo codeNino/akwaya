@@ -53,3 +53,4 @@ class SecretManager:
     DB_NAME = os.environ.get("DB_NAME", "")
     PG_URI = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
     SERPER_API_KEY = os.environ.get("SERPER_API_KEY", "")
+    SCRAPFLY_KEY = os.environ.get("SCRAPFLY_KEY", "")

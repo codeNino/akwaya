@@ -7,7 +7,7 @@ from typing import List, Dict, Set, Any, Optional
 from datetime import datetime
 
 from pydantic import BaseModel, Field
-from internal.utils.dto import ProspectDict
+from internal.domain.scraper.sources.dto import ProspectDict
 
 
 class MergedContactInfo(BaseModel):

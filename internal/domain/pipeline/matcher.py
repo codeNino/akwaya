@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 from difflib import SequenceMatcher
 import re
 
-from internal.utils.dto import ProspectDict
+from internal.domain.scraper.sources.dto import ProspectDict
 
 
 class ProspectMatcher:

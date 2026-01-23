@@ -9,7 +9,7 @@ import sys
 import os
 sys.path.append(os.path.abspath("/Users/MAC/Documents/Projects/Active/mbl/sandbox/akwaya"))
 
-from internal.domain.scraper import WebCawler
+from internal.domain.scraper.crawler import WebCawler
 
 class TestWebCrawler(unittest.IsolatedAsyncioTestCase):
 
