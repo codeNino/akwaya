@@ -21,7 +21,7 @@ else:
 if str(project_root) not in sys.path:
     sys.path.insert(0, str(project_root))
 
-from internal.utils.dto import ProspectDict
+from internal.domain.scraper.sources.dto import ProspectDict
 from internal.utils.logger import AppLogger
 from internal.config.paths_config import ARTIFACTS_DIR, RAW_PROSPECTIVE_INDIVIDUALS_PATH
 from internal.domain.pipeline.engine import DeduplicationEngine

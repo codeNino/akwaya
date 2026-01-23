@@ -1,73 +1,9 @@
 [
     {
-        "prospect_id": "temp_e13b03d3-07b9-43e0-bac4-753ae5f23d20",
-        "source_platform": "linkedin",
-        "name": "Forex Trader",
-        "about": "Forex Trader. Foreign Exchange Trader. Self-employed.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "Bowmanville, Ontario, Canada",
-        "business_context": "Foreign Exchange Trader, Self-employed",
-        "source_url": "https://ca.linkedin.com/in/forex-trader-a4598b1b7",
-        "discovery_confidence_score": 0.3,
-        "timestamp": "2026-01-22T11:04:08.395757"
-    },
-    {
-        "prospect_id": "temp_7f20bd4c-b36d-49b4-8f15-b8f790f705fa",
-        "source_platform": "linkedin",
-        "name": "Marvin Philipp",
-        "about": "Experienced Foreign Exchange Trader with a demonstrated history of working in the financial services industry. Skilled in Negotiation, Spread Trading.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Foreign Exchange Trader at Goldman",
-        "source_url": "https://ca.linkedin.com/in/marvin-philipp-41673631",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:08.395797"
-    },
-    {
-        "prospect_id": "temp_817c9d1b-2870-4381-84d1-f50f933aca9d",
-        "source_platform": "linkedin",
-        "name": "Ravinder Singh",
-        "about": "Forex Trader at Preserve Forex since Dec 2017. Trained Forex Trader dealing only in Majors. Fixed Operations Director.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "Toronto, Canada Area",
-        "business_context": "Forex Expert at Preserve Forex",
-        "source_url": "https://ca.linkedin.com/in/singh1959",
-        "discovery_confidence_score": 0.3,
-        "timestamp": "2026-01-22T11:04:08.395819"
-    },
-    {
-        "prospect_id": "temp_6b98d2b8-f675-43b7-b092-7e0435609448",
-        "source_platform": "linkedin",
-        "name": "Victoria Jones",
-        "about": "Experienced Sales Manager specializing in sale & marketing of Consumer Goods, including distribution strategy and contacts with key players.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Forex Trader",
-        "source_url": "https://ca.linkedin.com/in/victoria-jones-3a7b86b6",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:08.395835"
-    },
-    {
-        "prospect_id": "temp_1c8c5b8b-b3b9-46ea-822f-420a4f870791",
+        "prospect_id": "temp_7a6e22e0-e913-4426-93f5-c4b7a4082601",
         "source_platform": "linkedin",
         "name": "Josh Leimbach",
-        "about": "Day trading the foreign currency market. Uses technical analysis to buy or sell. Focused on compounding profit for retirement rather than income.",
+        "about": "Forex trader since March 2006 with extensive experience starting from beginner level to professional trading.",
         "contact_info": {
             "email": null,
             "phone": null,
@@ -77,45 +13,13 @@
         "business_context": "Forex Trader at Freedom by Forex",
         "source_url": "https://www.linkedin.com/in/joshleimbach",
         "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:08.395853"
+        "timestamp": "2026-01-22T14:50:28.959695"
     },
     {
-        "prospect_id": "temp_8ab2aa52-e93a-44ab-bad5-4d6e16e8deeb",
-        "source_platform": "linkedin",
-        "name": "Navjot Singh",
-        "about": "Professional Market Analyst and Technical Trader specializing in U.S. Indices and U.S. currency pairs.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Forex Trader",
-        "source_url": "https://ca.linkedin.com/in/navjot-singh-2551a324a",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:08.395872"
-    },
-    {
-        "prospect_id": "temp_5b424c3b-081c-4b10-8e00-e13567a1f7b8",
-        "source_platform": "linkedin",
-        "name": "Qing Dong",
-        "about": "Toronto-based finance professional with experience in equities and forex trading, and macroeconomics. CFA Level 1 graduate and Level 2 candidate.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "Toronto, Canada",
-        "business_context": "Equities and Forex Trader",
-        "source_url": "https://ca.linkedin.com/in/qing-dong-6b8335a5",
-        "discovery_confidence_score": 0.3,
-        "timestamp": "2026-01-22T11:04:08.395888"
-    },
-    {
-        "prospect_id": "temp_06630709-1c81-4afb-be34-d909133d58f6",
+        "prospect_id": "temp_ad384b02-c294-4f69-9769-5c59798c980d",
         "source_platform": "linkedin",
         "name": "Calum James Leslie",
-        "about": "Official funded trader with FTMO, aiming to take trading to the next level and achieve higher profits.",
+        "about": "Official funded trader with FTMO, aiming to elevate trading to the next level and achieve higher profits.",
         "contact_info": {
             "email": null,
             "phone": null,
@@ -125,413 +29,29 @@
         "business_context": "Forex Trader",
         "source_url": "https://uk.linkedin.com/in/calum-james-leslie-77b876101",
         "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:08.395906"
+        "timestamp": "2026-01-22T14:50:28.959717"
     },
     {
-        "prospect_id": "temp_f360eeb1-5663-4766-be4c-a4b47899faaa",
+        "prospect_id": "temp_09f3f1c7-684d-4d1e-9abc-d2919286bc94",
         "source_platform": "linkedin",
-        "name": "Olivia WP",
-        "about": "Forex Trader with 8+ years experience navigating market complexities, offering pathways to significant earnings without traditional financial methods.",
+        "name": "Michael Aiden",
+        "about": "Forex and cryptocurrency trader at Acetechtrade with over 12 years of forex market experience and 20 years in financial services.",
         "contact_info": {
             "email": null,
             "phone": null,
             "website": null
         },
         "location": "",
-        "business_context": "Forex Trader @ Bitcoin | Trade Finance",
-        "source_url": "https://ca.linkedin.com/in/olivia-wp-3065b292",
+        "business_context": "Forex Trader, Account Manager at Acetechtrade",
+        "source_url": "https://www.linkedin.com/in/michael-aiden-a164121b5",
         "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:08.395926"
+        "timestamp": "2026-01-22T14:50:28.959727"
     },
     {
-        "prospect_id": "temp_4523eb4a-2800-4c58-9ba7-d9985ee11a59",
-        "source_platform": "linkedin",
-        "name": "Cory Mitchell, CMT",
-        "about": "Proprietary trader and Chartered Market Technician specializing in short- to medium-term technical strategies.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Stock & Forex Trader",
-        "source_url": "https://ca.linkedin.com/in/corymitchellcmt",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:08.395942"
-    },
-    {
-        "prospect_id": "temp_1a32ee05-c572-49f5-ad8a-04b2e225d045",
-        "source_platform": "linkedin",
-        "name": "Adam Duncan",
-        "about": "Adam Duncan is an FX Trader with experience in FX and precious metals, corporate/commercial lending, and leveraged finance (LBO/MBO transactions).",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "FX Trader",
-        "source_url": "https://ca.linkedin.com/in/adam-duncan-44b40411",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:13.294330"
-    },
-    {
-        "prospect_id": "temp_e653b179-e5af-4c96-a0c7-c46d1f4340e7",
-        "source_platform": "linkedin",
-        "name": "Jody Samuels",
-        "about": "Jody Samuels is one of North America's leading coaches for successful traders and a sought after speaker at the World Money Shows and NY and Las Vegas events.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Founder & CEO, The FX Trader's EDGE",
-        "source_url": "https://ca.linkedin.com/in/jodysamuels",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:13.294442"
-    },
-    {
-        "prospect_id": "temp_c3a479b7-254c-421d-9d92-10f4ac870f08",
-        "source_platform": "linkedin",
-        "name": "Matthew Lu",
-        "about": "Matthew Lu is an FX Trader at RBC Investor Services with education from University of Toronto - Rotman School of Management, located in Toronto.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "Toronto",
-        "business_context": "FX Trader at RBC IS",
-        "source_url": "https://ca.linkedin.com/in/matthewlu09",
-        "discovery_confidence_score": 0.3,
-        "timestamp": "2026-01-22T11:04:13.294565"
-    },
-    {
-        "prospect_id": "temp_9014f0c2-fe54-469f-9494-9eb5ca1b7fd8",
-        "source_platform": "linkedin",
-        "name": "Bassem Chouhaiber",
-        "about": "Bassem Chouhaiber is an FX Trader with global experience in the finance industry through major banking and broker institutions, experienced in leading and managing international cross-functional teams.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "FX Trader",
-        "source_url": "https://ca.linkedin.com/in/bassem-chouhaiber-4973034b",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:13.294589"
-    },
-    {
-        "prospect_id": "temp_c9af3806-661b-44a4-89fc-f3e05457e7cb",
-        "source_platform": "linkedin",
-        "name": "Stephen Wong",
-        "about": "Stephen Wong has in-depth expertise in foreign exchange, money market, credit derivatives & correlation trading markets. Skilled in financial modeling, Bloomberg, Excel.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "FX Trader at 1832 Asset Management",
-        "source_url": "https://ca.linkedin.com/in/stephen-wong-52390411",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:13.294610"
-    },
-    {
-        "prospect_id": "temp_0ab26bec-d9e1-49b3-992c-9c38a243e098",
-        "source_platform": "linkedin",
-        "name": "Simon Taylor, CFA",
-        "about": "Simon Taylor is an Associate Director and FX Trader at RBC Investor Services based in Toronto, Ontario, Canada, with relevant licenses and certifications.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "Toronto, Ontario, Canada",
-        "business_context": "FX Trader - Associate Director at RBC Investor Services",
-        "source_url": "https://ca.linkedin.com/in/simonjamestaylor",
-        "discovery_confidence_score": 0.3,
-        "timestamp": "2026-01-22T11:04:13.294630"
-    },
-    {
-        "prospect_id": "temp_77b39be7-10ed-45f1-935b-2495359a5121",
-        "source_platform": "linkedin",
-        "name": "Amir Kheradmand",
-        "about": "Amir Kheradmand is an FX Trader at RBC Capital Markets with education from University of Toronto, located in New York.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "New York",
-        "business_context": "FX Trader at RBC",
-        "source_url": "https://ca.linkedin.com/in/amir-kheradmand-436568169",
-        "discovery_confidence_score": 0.3,
-        "timestamp": "2026-01-22T11:04:13.294647"
-    },
-    {
-        "prospect_id": "temp_9b8af4f6-04c3-4fd2-923e-e903f3145410",
-        "source_platform": "linkedin",
-        "name": "Mark Engelking, CFA",
-        "about": "Mark Engelking is an FX Trader at ATB Financial with education from University of Alberta, located in Calgary.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "Calgary",
-        "business_context": "FX Trader at ATB Financial",
-        "source_url": "https://ca.linkedin.com/in/mark-engelking-cfa-33166237",
-        "discovery_confidence_score": 0.3,
-        "timestamp": "2026-01-22T11:04:13.294667"
-    },
-    {
-        "prospect_id": "temp_583dfb47-e366-4ae9-9acb-9b54958c2f26",
-        "source_platform": "linkedin",
-        "name": "Mike Li",
-        "about": "Mike Li has over a decade of experience in foreign exchange trading, sales trading, broking and account management, bringing a unique blend of technical expertise.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "FX & Rates Trader/Broker",
-        "source_url": "https://ca.linkedin.com/in/mike-li-60297550",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:13.294685"
-    },
-    {
-        "prospect_id": "temp_ff622551-79f1-4e52-9e7e-00c74aa3b25c",
-        "source_platform": "linkedin",
-        "name": "Nabil Abedi",
-        "about": "Nabil Abedi is a specialist in commercial foreign exchange based in the heart of Toronto's financial district, offering bespoke FX execution products designed to help clients.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "Toronto",
-        "business_context": "FX Trader at Monex Canada",
-        "source_url": "https://ca.linkedin.com/in/nabil-abedi",
-        "discovery_confidence_score": 0.3,
-        "timestamp": "2026-01-22T11:04:13.294702"
-    },
-    {
-        "prospect_id": "temp_5bc08e92-ed3c-484c-9d76-42b960dcc16c",
-        "source_platform": "linkedin",
-        "name": "Mark Forrester",
-        "about": "Experienced proprietary trader with extensive commodities trading experience in Chicago, Singapore, and Gibraltar since 2000. Was the understudy of Dr. George Lane, originator of Stochastics.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Top Proprietary Trader seeking Employment",
-        "source_url": "https://www.linkedin.com/in/mark-forrester-83017810",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:12.130340"
-    },
-    {
-        "prospect_id": "temp_ee78d4fe-372f-47e4-99e3-ad134c912772",
-        "source_platform": "linkedin",
-        "name": "Marc Genovese",
-        "about": "Created and managed a proprietary trading book focusing on short-duration fixed income derivatives and money market securities with directional trading strategies.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Proprietary Trader - Futures, Options",
-        "source_url": "https://www.linkedin.com/in/marc-j-genovese-58mg",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:12.130387"
-    },
-    {
-        "prospect_id": "temp_f8a3724e-e147-4147-b8d7-6084a40f54c5",
-        "source_platform": "linkedin",
-        "name": "Trent McCann",
-        "about": "Strategic, methodical and results driven trader with 25 years of profitable trading experience across multiple industries including energy and equities.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Proprietary Trader",
-        "source_url": "https://www.linkedin.com/in/trent-mccann-a58b32120",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:12.130409"
-    },
-    {
-        "prospect_id": "temp_a14404cc-bdb3-48a2-b14b-9307ac3b1b01",
-        "source_platform": "linkedin",
-        "name": "John Devito",
-        "about": "Proprietary Trader and experienced Financial Advisor with a demonstrated history of working in the financial services industry.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Proprietary Trader (Self-employed)",
-        "source_url": "https://www.linkedin.com/in/john-devito-a6b3814b",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:12.130428"
-    },
-    {
-        "prospect_id": "temp_3f1b19ef-d99e-4bad-8007-5417d41f4d88",
-        "source_platform": "linkedin",
-        "name": "Jim Finnegan",
-        "about": "Independent Proprietary Trader interested in markets and quantitative finance, with experience in physical and financial energy markets, hedging, risk management, and data analytics.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Independent Proprietary Trader",
-        "source_url": "https://www.linkedin.com/in/james-m-finnegan",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:12.130448"
-    },
-    {
-        "prospect_id": "temp_4912325a-0e11-4613-abab-3e9cfd1e3e67",
-        "source_platform": "linkedin",
-        "name": "Daniel Lubin",
-        "about": "Proprietary Trader skilled with computer systems and software such as Microsoft Applications and Database Applications. Multilingual in English and French.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Proprietary Trader",
-        "source_url": "https://www.linkedin.com/in/lubindaniel",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:12.130469"
-    },
-    {
-        "prospect_id": "temp_d2777984-c642-4aa8-aee1-065337363435",
-        "source_platform": "linkedin",
-        "name": "Andrew Gordon",
-        "about": "Senior Trader and Proprietary Trader with 16 years of experience trading various instruments. Enjoys building systems and mentoring staff.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Senior Trader",
-        "source_url": "https://www.linkedin.com/in/andrew-gordon-8a322530",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:12.130488"
-    },
-    {
-        "prospect_id": "temp_d79e57cc-0807-4a5a-bc7a-9aeb9ed16a35",
-        "source_platform": "linkedin",
-        "name": "Jason M.",
-        "about": "Proprietary Trader utilizing a combination of fundamental and technical analysis, trading off support, breakout patterns, catalysts, and momentum.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Proprietary Trader",
-        "source_url": "https://www.linkedin.com/in/jason-m-12a77aaa",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:12.130509"
-    },
-    {
-        "prospect_id": "temp_666d0d2a-d205-4d8d-bb97-38ca946aace7",
-        "source_platform": "linkedin",
-        "name": "Michael Stapleton",
-        "about": "Experienced Proprietary Trader with a demonstrated history in the capital markets industry. Skilled in securities and investment advisory.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Proprietary Trader at Avatar Securities",
-        "source_url": "https://www.linkedin.com/in/michael-stapleton-058829b",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:12.130530"
-    },
-    {
-        "prospect_id": "temp_b9e2ab3b-069e-47cb-b755-54db7b13bc52",
-        "source_platform": "linkedin",
-        "name": "Amar Sil",
-        "about": "Proprietary Trader trading equities and ETFs for over 11 years with personal capital. Achieved 255.92% performance over last 67 months with no leverage.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Proprietary Trader",
-        "source_url": "https://www.linkedin.com/in/amarsil",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:12.130554"
-    },
-    {
-        "prospect_id": "temp_b2f84d43-71f5-43d9-bbba-b2abea3708e0",
-        "source_platform": "linkedin",
-        "name": "Guy Levy",
-        "about": "Professional Trader & Trading Psychology Specialist with over 14 years dedicated to mastering trading.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Trading Psychology Mentor",
-        "source_url": "https://www.linkedin.com/in/marketscoach",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:09.508826"
-    },
-    {
-        "prospect_id": "temp_c9b2181e-0d10-4f4a-8841-2725e02cf85f",
-        "source_platform": "linkedin",
-        "name": "Damaris Avila",
-        "about": "Experienced options trader offering individualized mentorship to advance the growth of new or struggling traders.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Options Trading Mentor",
-        "source_url": "https://www.linkedin.com/in/damaristrades",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:09.508858"
-    },
-    {
-        "prospect_id": "temp_35bdeebc-7425-40fc-b484-54c4ba81b7a0",
-        "source_platform": "linkedin",
-        "name": "Dan Keegan",
-        "about": "Founder and chief options mentor at optionthinker.com leveraging 40+ years of options trading experience to help investors of all levels.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": "optionthinker.com"
-        },
-        "location": "",
-        "business_context": "Options Trading Mentor @ optionthinker.com",
-        "source_url": "https://www.linkedin.com/in/dkeegan",
-        "discovery_confidence_score": 0.35,
-        "timestamp": "2026-01-22T11:04:09.508879"
-    },
-    {
-        "prospect_id": "temp_b7c0f735-cf66-40b9-b866-d7b564994a45",
+        "prospect_id": "temp_46e54910-c6b3-4454-9efe-85b75a51a365",
         "source_platform": "linkedin",
         "name": "Richard Krivo",
-        "about": "Author of articles on FX trading, webinar host on trading topics, and live FX trading seminar conductor at Currency Trading Expos.",
+        "about": "Forex trader and mentor who has written articles, conducted webinars, and live trading seminars at Currency Trading Expos.",
         "contact_info": {
             "email": null,
             "phone": null,
@@ -541,93 +61,589 @@
         "business_context": "FOREX Trader and Mentor",
         "source_url": "https://www.linkedin.com/in/richard-krivo-2abb9189",
         "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:09.508897"
+        "timestamp": "2026-01-22T14:50:28.959734"
     },
     {
-        "prospect_id": "temp_d83106fd-1132-43a3-a4ce-c36010fdbee2",
+        "prospect_id": "temp_e24c516f-a509-465d-a422-11d93d09cada",
+        "source_platform": "linkedin",
+        "name": "Trader Waleed",
+        "about": "Seasoned forex and cryptocurrency trader with a proven track record of successful trades and account management.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Expert Forex & Crypto Analyst",
+        "source_url": "https://pk.linkedin.com/in/traderwaleed",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:28.959741"
+    },
+    {
+        "prospect_id": "temp_3d48b178-7a8f-416e-bafd-f3748e326820",
+        "source_platform": "linkedin",
+        "name": "Dwayne Buzzell",
+        "about": "Economist, forex trader and writer with a keen eye for spotting international trading trends.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Professional Forex Trader at Foreign ...",
+        "source_url": "https://www.linkedin.com/in/dwayne-buzzell",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:28.959748"
+    },
+    {
+        "prospect_id": "temp_617a64e4-6fa8-4f3f-9b6b-b4396e74be7c",
+        "source_platform": "linkedin",
+        "name": "Gary Vestal",
+        "about": "Full-time independent forex trader focused on market structure, liquidity, and institutional trading concepts.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Forex trader with a focus on market structure",
+        "source_url": "https://www.linkedin.com/in/garyvestalofficial",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:28.959754"
+    },
+    {
+        "prospect_id": "temp_d85f42d2-923d-4886-8449-ed6d0a06f5ae",
+        "source_platform": "linkedin",
+        "name": "Charlie Arwood",
+        "about": "Trader experienced in commodities, equities, options, currently focused on Forex, specifically GBP/JPY with a day trading style.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Forex Trader at Veritas Hedge Fund",
+        "source_url": "https://www.linkedin.com/in/charlie-arwood-45749a114",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:28.959764"
+    },
+    {
+        "prospect_id": "temp_f4990086-6f10-4309-9697-d9ba4a2230a8",
+        "source_platform": "linkedin",
+        "name": "Adam Forex",
+        "about": "Head Trader at FXPipCapital.com with a professional forex team having over 20 years of trading experience for major banks and proprietary firms.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": "www.fxpipcapital.com"
+        },
+        "location": "",
+        "business_context": "Head Trader @ www.fxpipcapital.com",
+        "source_url": "https://www.linkedin.com/in/adam-forex-7907458",
+        "discovery_confidence_score": 0.35,
+        "timestamp": "2026-01-22T14:50:28.959771"
+    },
+    {
+        "prospect_id": "temp_989ac215-fe63-4915-8a0d-422c4730cc66",
+        "source_platform": "linkedin",
+        "name": "Peter Parsons",
+        "about": "Creator of forex software since 1996, forex trader and consultant with experience in Wall Street Systems graphics and trading.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Developer of Forex Softwares",
+        "source_url": "https://www.linkedin.com/in/peter-parsons-8899343b",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:28.959778"
+    },
+    {
+        "prospect_id": "temp_26347c8e-395f-413c-bfbf-93048d37c22c",
+        "source_platform": "linkedin",
+        "name": "Paula Sofia Crespo",
+        "about": "Latam FX Trader at Goldman Sachs. Born and raised in Quito, Ecuador, graduated from Boston College in May 2023 with a Bachelor's degree in Economics. Currently works at Goldman Sachs within the Global Banking and Markets division as an Emerging Markets FX Trader, specializing in Latin America.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "Quito, Ecuador",
+        "business_context": "Latam FX Trader at Goldman Sachs",
+        "source_url": "https://www.linkedin.com/in/paulasofiacrespo",
+        "discovery_confidence_score": 0.3,
+        "timestamp": "2026-01-22T14:50:38.306209"
+    },
+    {
+        "prospect_id": "temp_d4957969-6753-4b76-b205-4633ffe89039",
+        "source_platform": "linkedin",
+        "name": "Jeff Schorer",
+        "about": "Executive Director, FX Trading at Wells Fargo with broad and expansive financial markets experience of 30 years from Los Angeles to Zurich to London to NYC.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Executive Director, FX Trading at Wells Fargo",
+        "source_url": "https://www.linkedin.com/in/jeff-schorer-20567310b",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:38.306247"
+    },
+    {
+        "prospect_id": "temp_0ae298f0-9b0f-4029-b877-fbcb9185985d",
+        "source_platform": "linkedin",
+        "name": "Jody Samuels",
+        "about": "Founder & CEO of The FX Trader's EDGE. One of North America's leading coaches for successful traders and a sought after speaker at the World Money Shows and NY and Las Vegas events.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Founder & CEO, The FX Trader's EDGE",
+        "source_url": "https://ca.linkedin.com/in/jodysamuels",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:38.306268"
+    },
+    {
+        "prospect_id": "temp_74a203d1-7c61-4a9c-80df-e6bf3ac40f76",
+        "source_platform": "linkedin",
+        "name": "Patrick Madden",
+        "about": "FX Trader with experience at HSBC. Educated at Yale University. Located in the United States with 424 connections on LinkedIn.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "United States",
+        "business_context": "FX Trader at HSBC",
+        "source_url": "https://www.linkedin.com/in/patrick-madden-04615382",
+        "discovery_confidence_score": 0.3,
+        "timestamp": "2026-01-22T14:50:38.306285"
+    },
+    {
+        "prospect_id": "temp_b76230bd-b302-43c5-b81c-96aca4fecac8",
+        "source_platform": "linkedin",
+        "name": "Steven Strohm",
+        "about": "Experienced Foreign Exchange Trader with a demonstrated history of working in the financial services industry. Strong finance professional skilled in FX Hedging and trading for Securities Services at BNP.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "FX Trader for Securities Services at BNP",
+        "source_url": "https://www.linkedin.com/in/steven-strohm-806a174",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:38.306301"
+    },
+    {
+        "prospect_id": "temp_829cbbf8-68f7-49d3-ae72-79776b7d85e0",
+        "source_platform": "linkedin",
+        "name": "Justin Martin",
+        "about": "FX Trader at BlackRock. Educated at Cornell Johnson Graduate School of Management. Located in New York with 500+ connections on LinkedIn.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "New York",
+        "business_context": "FX Trader at BlackRock",
+        "source_url": "https://www.linkedin.com/in/justin-j-martin",
+        "discovery_confidence_score": 0.3,
+        "timestamp": "2026-01-22T14:50:38.306317"
+    },
+    {
+        "prospect_id": "temp_8be79b7a-4596-4dd9-9432-181d16617377",
+        "source_platform": "linkedin",
+        "name": "Brianna Conroy",
+        "about": "FX Trader at BNY Mellon. Ceemea Foreign Exchange Trader. Educated at Boston University. Located in New York with 500+ connections on LinkedIn.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "New York",
+        "business_context": "FX Trader at BNY Mellon",
+        "source_url": "https://www.linkedin.com/in/brianna-conroy-050157aa",
+        "discovery_confidence_score": 0.3,
+        "timestamp": "2026-01-22T14:50:38.306333"
+    },
+    {
+        "prospect_id": "temp_bdcc9b5b-9aae-467d-8a01-a79ef38a19bb",
+        "source_platform": "linkedin",
+        "name": "Peter C. Kim Jr",
+        "about": "Strong background in all aspects of the financial services business from equity and FX trading and sales, product development to trading connectivity.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Equity & FX Trader at Fidelity",
+        "source_url": "https://www.linkedin.com/in/peter-c-kim-jr-035b339",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:38.306350"
+    },
+    {
+        "prospect_id": "temp_10eeb41f-de6a-4f38-8c6f-de297b9010ce",
+        "source_platform": "linkedin",
+        "name": "Richard Krivo",
+        "about": "FOREX Trader and Mentor. Wrote articles on trading in the FX market, conducted webinars on trading related topics and live FX trading seminars at Currency Trading Expos.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "FOREX Trader and Mentor",
+        "source_url": "https://www.linkedin.com/in/richard-krivo-2abb9189",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:38.306366"
+    },
+    {
+        "prospect_id": "temp_348aec43-d956-49e5-a547-4ed17d156809",
+        "source_platform": "linkedin",
+        "name": "Adam Duncan",
+        "about": "FX Trader with experience in FX and precious metals, corporate/commercial lending, and leveraged finance (LBO/MBO transactions). Enjoys reading, golfing, and playing.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "FX Trader",
+        "source_url": "https://ca.linkedin.com/in/adam-duncan-44b40411",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:38.306386"
+    },
+    {
+        "prospect_id": "temp_319c4591-3237-4074-b315-1c7d3ccffda2",
+        "source_platform": "linkedin",
+        "name": "Tyler Yuntao Wang",
+        "about": "Trading Index and fixed income futures. Primarily a position and event trader, also do scalping in more volatile markets. Investment advisor at Manulife.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Proprietary Trader",
+        "source_url": "https://ca.linkedin.com/in/tyler-yuntao-wang-8122222a",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:32.671190"
+    },
+    {
+        "prospect_id": "temp_3d238a72-bcf1-4405-874c-50c8fc1f295f",
+        "source_platform": "linkedin",
+        "name": "Hojun Lee",
+        "about": "Proprietary Trader and Capital Management professional with over five years of experience in global CFD markets and market analysis.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Proprietary Trader | Capital Management | Market Analyst",
+        "source_url": "https://ca.linkedin.com/in/hojun-lee-a808a8327",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:32.671232"
+    },
+    {
+        "prospect_id": "temp_e53eaf96-4bee-4256-9bee-54e22a0083a7",
+        "source_platform": "linkedin",
+        "name": "Benjamin Buraconak",
+        "about": "CEO & Founder at Stealth, Proprietary Trader and Investor focused on Cyber Startups. Experienced in fintech startup environment.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "CEO & Founder @ Stealth | Proprietary Trader | Investor",
+        "source_url": "https://ca.linkedin.com/in/benjamin-buraconak-190062239",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:32.671256"
+    },
+    {
+        "prospect_id": "temp_f004a77b-4050-47b0-9e78-37908d4c7e59",
+        "source_platform": "linkedin",
+        "name": "Wayne Wang",
+        "about": "Proprietary Trader and Assistant Risk Manager with experience at Select Vantage Inc. Educated at Lazaridis School of Business & Economics at Wilfrid Laurier University.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Proprietary Trader and Assistant Risk Manager",
+        "source_url": "https://ca.linkedin.com/in/wayne-wang17",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:32.671278"
+    },
+    {
+        "prospect_id": "temp_93a19849-367b-4f37-af79-d491961fa4fa",
+        "source_platform": "linkedin",
+        "name": "Rishi Thakkar",
+        "about": "Dedicated stock trader specializing in buying and selling securities with a focus on generating returns through strategic decision-making.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Proprietary Trader | Specializing in Equity",
+        "source_url": "https://ca.linkedin.com/in/rishi-thakkar-066a47302",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:32.671298"
+    },
+    {
+        "prospect_id": "temp_88521527-04d7-4f71-8eb4-cb6a4a9c1a9c",
+        "source_platform": "linkedin",
+        "name": "yash M.",
+        "about": "Proprietary Trader at AudaCity Capital with experience in foreign exchange trading and previous roles including chef and employee at Coffee Culture in Ontario, Canada.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "Ontario, Canada",
+        "business_context": "Proprietary Trader at AudaCity Capital",
+        "source_url": "https://ca.linkedin.com/in/yash-m-b0836982?trk=public_profile_browsemap",
+        "discovery_confidence_score": 0.3,
+        "timestamp": "2026-01-22T14:50:32.671319"
+    },
+    {
+        "prospect_id": "temp_e6c8cabc-dd33-40cf-aaa6-fabf3c5738a6",
+        "source_platform": "linkedin",
+        "name": "Takeshi Saito",
+        "about": "Proprietary Trader at HOTSHINO INVESTMENT GROUP with 16 years of derivatives market experience including commodities.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Proprietary Trader at HOTSHINO INVESTMENT GROUP",
+        "source_url": "https://ca.linkedin.com/in/takeshisaito",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:32.671339"
+    },
+    {
+        "prospect_id": "temp_ff93bbc6-102d-43db-996f-07ac89346856",
+        "source_platform": "linkedin",
+        "name": "Olivier Terrier",
+        "about": "Proprietary Trader with experience in proprietary trading and education from Université Panthéon Assas (Paris II). Located in Canada.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "Canada",
+        "business_context": "Proprietary Trader",
+        "source_url": "https://ca.linkedin.com/in/olivier-terrier-6b843116",
+        "discovery_confidence_score": 0.3,
+        "timestamp": "2026-01-22T14:50:32.671359"
+    },
+    {
+        "prospect_id": "temp_1aded4ce-9e14-485d-8065-4e1bff91852d",
+        "source_platform": "linkedin",
+        "name": "Marc Genovese",
+        "about": "Self-funded proprietary trader managing a diverse portfolio including equity, Treasury, oil futures, and options on futures.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Proprietary Trader - Futures, Options",
+        "source_url": "https://www.linkedin.com/in/marc-j-genovese-58mg",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:32.671375"
+    },
+    {
+        "prospect_id": "temp_9fd5b8a5-5bef-4292-b32d-56b12d8dc38f",
+        "source_platform": "linkedin",
+        "name": "John Devito",
+        "about": "Experienced Financial Advisor and Proprietary Trader with a history in the financial services industry, self-employed.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Proprietary Trader (Self-employed)",
+        "source_url": "https://www.linkedin.com/in/john-devito-a6b3814b",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:32.671396"
+    },
+    {
+        "prospect_id": "temp_456bcced-fecb-465c-9a9d-f2bbb8d19751",
+        "source_platform": "linkedin",
+        "name": "Siddhant Aggarwal",
+        "about": "Mentor traders through Beyond the Pips Trading Academy, teaching the process from retail trader to managing a $500K funded account.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Topstep $500K Funded Trader",
+        "source_url": "https://ca.linkedin.com/in/siddhant-aggarwal",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:30.917472"
+    },
+    {
+        "prospect_id": "temp_813fe956-47e5-4850-9937-29f7f547d343",
+        "source_platform": "linkedin",
+        "name": "Guy Levy",
+        "about": "Professional Trader & Trading Psychology Specialist with over 14 years of experience mastering trading.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Trading Psychology Mentor",
+        "source_url": "https://www.linkedin.com/in/marketscoach",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:30.917513"
+    },
+    {
+        "prospect_id": "temp_79738d45-5451-48d3-b605-a0cd54be2ca3",
+        "source_platform": "linkedin",
+        "name": "Janelle Booth",
+        "about": "Trading coach helping new and developing traders build clarity, confidence, and consistency in the markets with a focus on simplifying market concepts.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Trading Coach & Accountability Mentor",
+        "source_url": "https://ca.linkedin.com/in/janelle-booth-the-lazy-trader",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:30.917537"
+    },
+    {
+        "prospect_id": "temp_4962d62b-6d57-45bc-a733-12b98f5d8397",
+        "source_platform": "linkedin",
+        "name": "Adam Ryan",
+        "about": "Professional Trader, Educator, and Mentor passionate about day trading, chart analysis, and sharing market insights.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Professional Trader | Educator | Mentor",
+        "source_url": "https://ca.linkedin.com/in/adam-ryan-717527aa",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:30.917557"
+    },
+    {
+        "prospect_id": "temp_95e4331b-e6c7-4abc-934e-7771429d6158",
+        "source_platform": "linkedin",
+        "name": "GERT PAPA",
+        "about": "Provides mentorship programs designed to help traders overcome practical challenges through learning and consistent practice.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Trading Mentor",
+        "source_url": "https://cy.linkedin.com/in/gert-papa-46a452116",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:30.917574"
+    },
+    {
+        "prospect_id": "temp_00b22345-ea71-487e-b3f1-0f75580809dc",
+        "source_platform": "linkedin",
+        "name": "Damaris Avila",
+        "about": "Experienced options trader offering individualized mentorship to help new or struggling traders grow.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Options Trading Mentor",
+        "source_url": "https://www.linkedin.com/in/damaristrades",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:30.917593"
+    },
+    {
+        "prospect_id": "temp_0648f5d6-5e6c-4e9f-be92-516e526a91de",
+        "source_platform": "linkedin",
+        "name": "Dan Keegan",
+        "about": "Founder and chief options mentor at optionthinker.com with 40+ years of options trading experience helping investors of all levels.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": "optionthinker.com"
+        },
+        "location": "",
+        "business_context": "Options Trading Mentor",
+        "source_url": "https://www.linkedin.com/in/dkeegan",
+        "discovery_confidence_score": 0.35,
+        "timestamp": "2026-01-22T14:50:30.917610"
+    },
+    {
+        "prospect_id": "temp_411c9f12-1a66-4dc4-b139-98749e08436a",
+        "source_platform": "linkedin",
+        "name": "Joe Damien",
+        "about": "Technical analyst and mentor providing trading ideas on financial assets and coaching beginners and others.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": "Financial Market Analyst | Trading Mentor",
+        "source_url": "https://lb.linkedin.com/in/joe-damien-0a303863",
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:30.917625"
+    },
+    {
+        "prospect_id": "temp_9e2d8d11-51e0-4701-b423-b18c3701109d",
         "source_platform": "linkedin",
         "name": "David Bile",
-        "about": "Trading mentor guiding aspiring traders to develop skills, strategies, and mindset for market success. Active content creator known as @ ...",
+        "about": "Trading mentor guiding aspiring traders to develop skills, strategies, and mindset for market success; active content creator.",
         "contact_info": {
             "email": null,
             "phone": null,
             "website": null
         },
         "location": "",
-        "business_context": "Proprietary trader, trading mentor managing ...",
+        "business_context": "Proprietary trader, trading mentor",
         "source_url": "https://www.linkedin.com/in/david-bile-jdbtradez",
         "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:09.508915"
+        "timestamp": "2026-01-22T14:50:30.917642"
     },
     {
-        "prospect_id": "temp_8fbb5741-5770-4652-856c-0c8cb93a7868",
+        "prospect_id": "temp_2d9d1e5d-77d1-4181-8c49-0117da8edc8a",
         "source_platform": "linkedin",
-        "name": "David Chau",
-        "about": "Mentor to 1K+ Options Traders, Founder of InsideOptions.io & Fund Manager at SPX MGMT, empowering traders with $26K+ capital to trade with one proven strategy.",
+        "name": "William (Bill) McCready",
+        "about": "Trading mentor teaching day trading of futures, indexes, stocks, and options using the Futures Trading Secrets course.",
         "contact_info": {
             "email": null,
             "phone": null,
-            "website": "InsideOptions.io"
+            "website": "FuturesTradingSecrets.com"
         },
         "location": "",
-        "business_context": "Mentor to 1K+ Options Traders, Founder of InsideOptions.io & Fund Manager at SPX MGMT",
-        "source_url": "https://www.linkedin.com/in/davidchau1",
+        "business_context": "Chief Trader and Trading Mentor",
+        "source_url": "https://www.linkedin.com/in/billmccready",
         "discovery_confidence_score": 0.35,
-        "timestamp": "2026-01-22T11:04:09.508933"
+        "timestamp": "2026-01-22T14:50:30.917660"
     },
     {
-        "prospect_id": "temp_9af34671-3b85-4966-8e84-8eef97b783c1",
-        "source_platform": "linkedin",
-        "name": "Susan Phillips",
-        "about": "Professional stock analyst and independent trader who engineered a proprietary trading system predicting reversal points and daily price targets.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Stock Market Analyst, Day Trader, Investor",
-        "source_url": "https://www.linkedin.com/in/phillipssusan",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:09.508950"
-    },
-    {
-        "prospect_id": "temp_c3fb7757-3522-4b86-b03a-345bd48f3a0b",
-        "source_platform": "linkedin",
-        "name": "Matt Gilmore",
-        "about": "Stock Trading and Investing Mentor with a B.S. in Resort and Hospitality Management from FGCU, passionate about mentoring in trading and investing.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Stock Trading and Investing Mentor",
-        "source_url": "https://www.linkedin.com/in/mtgilmore2085",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:09.508968"
-    },
-    {
-        "prospect_id": "temp_d55d7d73-ed97-4ddc-8738-09845e791892",
-        "source_platform": "linkedin",
-        "name": "Xiuxian Du (Steven Dux)",
-        "about": "Day Trader, Mentor, and Gamer teaching people to maximize profits in the stock market.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": "Day Trader | Mentor | Gamer",
-        "source_url": "https://www.linkedin.com/in/steven-dux",
-        "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:09.508984"
-    },
-    {
-        "prospect_id": "temp_09e710d6-e0bc-4e2e-8adb-10a811a193f2",
+        "prospect_id": "temp_c6c1f9e2-359b-40fb-b1c9-40d39cbc4cf2",
         "source_platform": "linkedin",
         "name": "Ali Casey",
-        "about": "Ali Casey is focused on increasing algorithmic trading systems to guide investments with the goal of eventually introducing a hedge fund.",
+        "about": "I have begun to increase my algorithmic trading systems to guide my investments, and as I refine the process, I hope to introduce a hedge fund.",
         "contact_info": {
             "email": null,
             "phone": null,
@@ -637,13 +653,13 @@
         "business_context": null,
         "source_url": "https://ca.linkedin.com/in/alicasey",
         "discovery_confidence_score": 0.0,
-        "timestamp": "2026-01-22T11:04:04.310331"
+        "timestamp": "2026-01-22T14:50:33.518205"
     },
     {
-        "prospect_id": "temp_565308a5-39be-4511-85f6-45c5ef625535",
+        "prospect_id": "temp_21a0ea80-8dcf-47ef-afa0-a6f4cf2e5bcb",
         "source_platform": "linkedin",
         "name": "Sajed Karimy",
-        "about": "Sajed Karimy specializes in transforming complex theories into actionable solutions for financial markets with a strong foundation in computational complexity.",
+        "about": "Whether developing trading algorithms, exploring financial modeling, or experimenting with neural networks, I am driven to innovate in the quantitative finance space.",
         "contact_info": {
             "email": null,
             "phone": null,
@@ -653,13 +669,13 @@
         "business_context": null,
         "source_url": "https://ca.linkedin.com/in/sajedkarimy",
         "discovery_confidence_score": 0.0,
-        "timestamp": "2026-01-22T11:04:04.310364"
+        "timestamp": "2026-01-22T14:50:33.518240"
     },
     {
-        "prospect_id": "temp_53ef3dec-9a39-4d63-88a5-c70150b94ca5",
+        "prospect_id": "temp_d0099312-8ab0-45d6-ac37-d4b9db4956a7",
         "source_platform": "linkedin",
         "name": "Gautam Soni",
-        "about": "Gautam Soni integrates principles from business and computer science to create data-driven trading strategies combining market analysis with algorithmic execution.",
+        "about": "Integrated principles from business and computer science to create data-driven trading strategies, combining market analysis with algorithmic execution.",
         "contact_info": {
             "email": null,
             "phone": null,
@@ -669,29 +685,13 @@
         "business_context": null,
         "source_url": "https://ca.linkedin.com/in/gautam-soni",
         "discovery_confidence_score": 0.0,
-        "timestamp": "2026-01-22T11:04:04.310378"
+        "timestamp": "2026-01-22T14:50:33.518258"
     },
     {
-        "prospect_id": "temp_eb5f4b52-c431-416e-be0b-5ffc95ffed53",
-        "source_platform": "linkedin",
-        "name": "Thomas Armstrong",
-        "about": "Thomas Armstrong is an equity trading analyst at a proprietary trading firm involved in developing statistical arbitrage trading strategies including high-frequency and algorithmic trading.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": null,
-        "source_url": "https://ca.linkedin.com/in/thomasviningarmstrong",
-        "discovery_confidence_score": 0.0,
-        "timestamp": "2026-01-22T11:04:04.310389"
-    },
-    {
-        "prospect_id": "temp_90d3070b-81a3-42ee-920c-56d1a1660153",
+        "prospect_id": "temp_d12e1d35-ad47-40a8-ae02-cb03974ad927",
         "source_platform": "linkedin",
         "name": "Ken Loh",
-        "about": "Ken Loh contributed to over 15 AI development projects, testing model capabilities with high accuracy and consistency under strict quality standards.",
+        "about": "Contributed to 15+ AI development projects, testing model capabilities with a high level of accuracy and consistency under strict quality standards.",
         "contact_info": {
             "email": null,
             "phone": null,
@@ -701,13 +701,13 @@
         "business_context": null,
         "source_url": "https://ca.linkedin.com/in/ken-loh-jk",
         "discovery_confidence_score": 0.0,
-        "timestamp": "2026-01-22T11:04:04.310504"
+        "timestamp": "2026-01-22T14:50:33.518276"
     },
     {
-        "prospect_id": "temp_c39181f4-ba8e-43ab-9846-a2376f68c8c8",
+        "prospect_id": "temp_e2eb4fd5-e9d3-4494-b57b-ea53040b15c6",
         "source_platform": "linkedin",
         "name": "Arjan Sharma",
-        "about": "Arjan Sharma holds a Master's Degree in LL.M. (Taxation) and has years of experience in trading and the capital markets industry, focusing on compliance and trading.",
+        "about": "Algorithmic Trader | Real Estate Enthusiast | Capital Markets · With a Master's Degree in LL.M. (Taxation) and years of work experience in trading and the capital markets.",
         "contact_info": {
             "email": null,
             "phone": null,
@@ -717,13 +717,13 @@
         "business_context": null,
         "source_url": "https://ca.linkedin.com/in/arjan-sharma-2719504a",
         "discovery_confidence_score": 0.0,
-        "timestamp": "2026-01-22T11:04:04.310515"
+        "timestamp": "2026-01-22T14:50:33.518293"
     },
     {
-        "prospect_id": "temp_65079fad-e46e-400b-910e-71ba38c9977b",
+        "prospect_id": "temp_f6e34f7c-1b35-4847-8770-f5296100b644",
         "source_platform": "linkedin",
         "name": "Max Trader",
-        "about": "Max Trader specializes in the development and implementation of automated trading systems, backtesting strategies, analyzing market data, and monitoring trading performance.",
+        "about": "As an experienced forex algorithmic trader, I possess a deep understanding of financial markets and the technical skills required to create and implement trading algorithms.",
         "contact_info": {
             "email": null,
             "phone": null,
@@ -733,29 +733,13 @@
         "business_context": "SCR Traders Group",
         "source_url": "https://www.linkedin.com/in/maxtrader",
         "discovery_confidence_score": 0.15,
-        "timestamp": "2026-01-22T11:04:04.310529"
+        "timestamp": "2026-01-22T14:50:33.518314"
     },
     {
-        "prospect_id": "temp_67904cc0-5032-4e02-9bb5-3536df6c396f",
-        "source_platform": "linkedin",
-        "name": "Samuel Beaudoin",
-        "about": "Samuel Beaudoin is a Data Science student with 4 years of professional experience, over 6 years of personal projects, and 3 years in quantitative trading.",
-        "contact_info": {
-            "email": null,
-            "phone": null,
-            "website": null
-        },
-        "location": "",
-        "business_context": null,
-        "source_url": "https://ca.linkedin.com/in/samuel-beaudoin",
-        "discovery_confidence_score": 0.0,
-        "timestamp": "2026-01-22T11:04:04.310549"
-    },
-    {
-        "prospect_id": "temp_2d5795d6-4cdc-432b-92e0-bd2dcc25edfe",
+        "prospect_id": "temp_f27a1626-93d9-44c3-ad57-1efbee41fad2",
         "source_platform": "linkedin",
         "name": "Andy Nguyen",
-        "about": "Andy Nguyen is a self-employed trader specializing in the stock market with a focus on creating and optimizing automated trading systems.",
+        "about": "I am a self-employed trader specializing in the stock market, with a focus on creating and optimizing automated trading systems.",
         "contact_info": {
             "email": null,
             "phone": null,
@@ -765,22 +749,54 @@
         "business_context": null,
         "source_url": "https://www.linkedin.com/in/andytumsl17",
         "discovery_confidence_score": 0.0,
-        "timestamp": "2026-01-22T11:04:04.310561"
+        "timestamp": "2026-01-22T14:50:33.518331"
     },
     {
-        "prospect_id": "temp_86338e2d-d2d4-4aa2-9ce9-f47bc8d4d554",
+        "prospect_id": "temp_5662a87c-0479-4f71-a674-7872ca4b3620",
         "source_platform": "linkedin",
         "name": "Gabriel Kwok",
-        "about": "Gabriel Kwok is an Algorithmic Trader who is self-employed with education from University of British Columbia, Okanagan.",
+        "about": "Experience includes Algorithmic Trader, Full Stack Developer, Java Developer, and Contractor. Developed frontend and backend components for trading applications.",
         "contact_info": {
             "email": null,
             "phone": null,
             "website": null
         },
-        "location": "Richmond",
+        "location": "",
         "business_context": "Self Employed",
         "source_url": "https://ca.linkedin.com/in/gabriel-kwok-45941131b",
-        "discovery_confidence_score": 0.3,
-        "timestamp": "2026-01-22T11:04:04.310575"
+        "discovery_confidence_score": 0.15,
+        "timestamp": "2026-01-22T14:50:33.518347"
+    },
+    {
+        "prospect_id": "temp_6593df61-ce75-4928-9266-32b2d157848b",
+        "source_platform": "linkedin",
+        "name": "Sina Zahmatkeshan",
+        "about": "I'm a system-driven trader, strategist, and quant enthusiast with a strong foundation in price action and market microstructure. My journey in trading began with a passion for quantitative methods.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": null,
+        "source_url": "https://ir.linkedin.com/in/sina-zahmatkeshan-a441b9239",
+        "discovery_confidence_score": 0.0,
+        "timestamp": "2026-01-22T14:50:33.518363"
+    },
+    {
+        "prospect_id": "temp_a861985a-6925-464d-a524-5dd73178b826",
+        "source_platform": "linkedin",
+        "name": "Doron Whitman",
+        "about": "Founder of the Algorithmic Traders Association (ATA), a leading global resource for professional discussion of algorithmic trading strategies, analysis methods, and software, with an online community of traders.",
+        "contact_info": {
+            "email": null,
+            "phone": null,
+            "website": null
+        },
+        "location": "",
+        "business_context": null,
+        "source_url": "https://ca.linkedin.com/in/doronwhitman",
+        "discovery_confidence_score": 0.0,
+        "timestamp": "2026-01-22T14:50:33.518378"
     }
 ]

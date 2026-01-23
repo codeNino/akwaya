@@ -4,6 +4,9 @@ from datetime import datetime
 from internal.config.secret import SecretManager
 import uuid
 
+
+from urllib.parse import urlparse, urlunparse
+
 from langchain_openai import ChatOpenAI
 from .prompt import parser_prompt
 from .scoring import calculate_discovery_confidence
@@ -49,6 +52,16 @@ def extract_important_google_places_info(places: List[Dict]) -> List[ProspectDic
 
     return important_data
 
+
+def normalize_linkedin_url(url: str) -> str:
+    parsed = urlparse(url)
+
+    if parsed.netloc.endswith("linkedin.com"):
+        parts = parsed.netloc.split(".")
+        # Replace subdomain with 'www'
+        parsed = parsed._replace(netloc="www.linkedin.com")
+
+    return urlunparse(parsed)
 
 
 

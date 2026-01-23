@@ -1,17 +1,20 @@
-from typing import List, Dict, TypedDict, Optional
+from typing import List, Dict
 import asyncio
 import json
 
-from internal.utils.search_engine import search_linkedin, search_google_places
-from internal.utils.loader import load_yaml, AppLogger
+from internal.domain.scraper.sources.dto import (LinkedInProfileInput, 
+    IngestionResults, EnrichedLinkedInProfileOutput)
 
-logger = AppLogger("WebCawler")()
+from internal.domain.scraper.sources.linkedIn import (search_linkedin, 
+    deep_scrape_linkedin_profiles)
+from internal.domain.scraper.sources.google import search_google_places
 
-class IngestionResults(TypedDict, total=False):
-    whitelabels: Optional[List]
-    individuals: Optional[List]
+from internal.utils.loader import load_yaml, AppLogger, export_to_json
 
-class WebCawler:
+logger = AppLogger("internal.domain.scraper.crawler")()
+
+
+class WebCrawler:
 
     def __init__(self, max_concurrent_requests: int = 5):
         # Semaphore limits concurrent requests to avoid rate limiting
@@ -32,7 +35,7 @@ class WebCawler:
             keywords = whitelabels_params.get("keywords", None)
             if not keywords:
                 raise ValueError("Whitelabel Keywords not found in the config file")
-            google_places_task = self.scrape_google_places(batch_size, keywords)
+            google_places_task = self.source_from_google_places(batch_size, keywords)
             tasks.append(google_places_task)
             task_keys.append("whitelabels")
         
@@ -42,7 +45,7 @@ class WebCawler:
             keywords = individuals_params.get("keywords", None)
             if not keywords:
                 raise ValueError("Individuals Keywords not found in the config file")
-            linkedin_task = self.scrape_linkedin(batch_size, keywords)
+            linkedin_task = self.source_from_linkedin(batch_size, keywords)
             tasks.append(linkedin_task)
             task_keys.append("individuals")
         
@@ -62,7 +65,7 @@ class WebCawler:
         async with self.semaphore:
             return await func(keyword, batch_size)
 
-    async def scrape_linkedin(self, batch_size: int, keywords: List[str]):
+    async def source_from_linkedin(self, batch_size: int, keywords: List[str]):
         try:
             logger.info("Scraping LinkedIn for keywords: %s", keywords)
 
@@ -77,7 +80,7 @@ class WebCawler:
             return []
 
 
-    async def scrape_google_places(self, batch_size: int, keywords: List[str]):
+    async def source_from_google_places(self, batch_size: int, keywords: List[str]):
         try:
             logger.info("Scraping Google Places for keywords: %s", keywords)
 
@@ -90,14 +93,58 @@ class WebCawler:
             logger.error("Failed to scrape Google Places for keywords ::: %s", e)
             return []
 
+    async def enrich_linkedin_profiles(
+        self,
+        profiles: List[LinkedInProfileInput],
+    ) -> List[EnrichedLinkedInProfileOutput]:
+
+        if not profiles:
+            return []
+
+        logger.info("Enriching LinkedIn profiles")
+
+        urls = [p["url"] for p in profiles]
+
+        try:
+            results = await deep_scrape_linkedin_profiles(urls)
+        except Exception as e:
+            logger.error("Failed to scrape LinkedIn profiles ::: %s", e)
+            return []
+
+        # Build O(1) lookup map
+        results_by_url = {
+            r["profile_url"]: r
+            for r in results
+            if r.get("profile_url")
+        }
+
+        # logger.info("Enrichment results: %s", results_by_url)
+
+        enriched_profiles: List[EnrichedLinkedInProfileOutput] = []
+
+        for profile in profiles:
+            result = results_by_url.get(profile["url"])
+            if not result:
+                continue
+
+            enriched_profiles.append(
+                {
+                    "prospect_id": profile["prospect_id"],
+                    "profile": result,
+                }
+            )
+
+        logger.info("Enriched %d LinkedIn profiles", len(enriched_profiles))
+        # logger.info("Enrichment results: %s", enriched_profiles)
+        return enriched_profiles
+
+
     @staticmethod
     def flatten_to_json(nested_list: List[List], json_file_path: str):
-        if len(nested_list) == 0:
-            return None
+        if not nested_list:
+            return
         flat_list = [item for sublist in nested_list for item in sublist]
 
-        # Write to JSON file
-        with open(json_file_path, "w", encoding="utf-8") as f:
-            json.dump(flat_list, f, ensure_ascii=False, indent=4)
+        export_to_json(flat_list, json_file_path)
 
-        return flat_list
+        return

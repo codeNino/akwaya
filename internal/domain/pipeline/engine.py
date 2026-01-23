@@ -5,7 +5,7 @@ Deduplication engine orchestrator
 import uuid
 from typing import List, Dict
 
-from internal.utils.dto import ProspectDict
+from internal.domain.scraper.sources.dto import ProspectDict
 from internal.utils.logger import AppLogger
 from internal.utils.models import CanonicalProspect, MergedContactInfo, SourceReference
 from internal.domain.pipeline.matcher import ProspectMatcher
