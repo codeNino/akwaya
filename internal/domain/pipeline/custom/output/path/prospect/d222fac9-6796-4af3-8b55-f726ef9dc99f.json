@@ -1,0 +1,26 @@
+{
+  "prospect_id": "d222fac9-6796-4af3-8b55-f726ef9dc99f",
+  "name": "Revglobal Forex Institute",
+  "about": null,
+  "platforms": [
+    "google_maps"
+  ],
+  "emails": [],
+  "phones": [
+    "0704 033 5379"
+  ],
+  "websites": [
+    "https://www.revglobalforexinstitute.com"
+  ],
+  "profile_urls": {
+    "google_maps": "https://maps.google.com/?cid=17245712319973657600&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+  },
+  "location": {
+    "full_address": "Ponle Bus Stop, 1 Ponle Street, 2nd Floor, Left Wing wing, Egbeda Idimu, Road",
+    "city": "Ponle Bus Stop",
+    "country": "Road"
+  },
+  "discovery_confidence": 0.55,
+  "created_at": "2026-01-23T14:53:38.888409",
+  "updated_at": null
+}

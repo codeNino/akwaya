@@ -1,0 +1,24 @@
+{
+  "prospect_id": "temp_bf1dc758-1222-49c4-aeca-2c16517c9ba3",
+  "name": "Forex Trading And Investments",
+  "about": null,
+  "platforms": [
+    "google_maps"
+  ],
+  "emails": [],
+  "phones": [
+    "0802 330 6206"
+  ],
+  "websites": [],
+  "profile_urls": {
+    "google_maps": "https://maps.google.com/?cid=5936530805709066329&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+  },
+  "location": {
+    "full_address": "No. 12 Kemberi Road, Lagos",
+    "city": "No. 12 Kemberi Road",
+    "country": "Lagos"
+  },
+  "discovery_confidence": 0.5,
+  "created_at": "2026-01-23T14:53:38.888562",
+  "updated_at": null
+}

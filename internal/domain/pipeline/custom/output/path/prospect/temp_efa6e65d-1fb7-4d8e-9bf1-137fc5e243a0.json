@@ -1,0 +1,24 @@
+{
+  "prospect_id": "temp_efa6e65d-1fb7-4d8e-9bf1-137fc5e243a0",
+  "name": "IBN Sulaiman Forex traders and sons",
+  "about": null,
+  "platforms": [
+    "google_maps"
+  ],
+  "emails": [],
+  "phones": [
+    "0807 102 6351"
+  ],
+  "websites": [],
+  "profile_urls": {
+    "google_maps": "https://maps.google.com/?cid=17360360844483783588&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+  },
+  "location": {
+    "full_address": "First Floor, Car Park 2, The Citadel Global Community Church Complex, 30 Kudirat Abiola Way, Oregun, Ikeja 100212, Lagos, Ikeja",
+    "city": "First Floor",
+    "country": "Ikeja"
+  },
+  "discovery_confidence": 0.35,
+  "created_at": "2026-01-23T14:53:38.888580",
+  "updated_at": null
+}

@@ -1,0 +1,26 @@
+{
+  "prospect_id": "temp_c6e4be51-9f2d-4325-9110-5d0c57f1493e",
+  "name": "FXCG",
+  "about": null,
+  "platforms": [
+    "google_maps"
+  ],
+  "emails": [],
+  "phones": [
+    "020 7097 4323"
+  ],
+  "websites": [
+    "https://www.fxcg.com"
+  ],
+  "profile_urls": {
+    "google_maps": "https://maps.google.com/?cid=5879220848206669195&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+  },
+  "location": {
+    "full_address": "A Obafemi Awolowo Wy, Ikeja",
+    "city": "A Obafemi Awolowo Wy",
+    "country": "Ikeja"
+  },
+  "discovery_confidence": 0.7,
+  "created_at": "2026-01-23T14:53:38.888831",
+  "updated_at": null
+}

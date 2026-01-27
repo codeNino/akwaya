@@ -1,0 +1,24 @@
+{
+  "prospect_id": "temp_829b4a33-4e54-465f-8213-8fa2f51752d5",
+  "name": "Forex Trading Network",
+  "about": null,
+  "platforms": [
+    "google_maps"
+  ],
+  "emails": [],
+  "phones": [
+    "0806 510 7296"
+  ],
+  "websites": [],
+  "profile_urls": {
+    "google_maps": "https://maps.google.com/?cid=8727234110251857536&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+  },
+  "location": {
+    "full_address": "38, Akinwumi, Lagos",
+    "city": "38",
+    "country": "Lagos"
+  },
+  "discovery_confidence": 0.5,
+  "created_at": "2026-01-23T14:53:38.888438",
+  "updated_at": null
+}

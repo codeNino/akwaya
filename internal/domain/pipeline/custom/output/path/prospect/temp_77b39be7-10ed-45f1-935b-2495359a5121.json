@@ -1,0 +1,21 @@
+{
+  "prospect_id": "temp_77b39be7-10ed-45f1-935b-2495359a5121",
+  "name": "Amir Kheradmand",
+  "about": "Amir Kheradmand is an FX Trader at RBC Capital Markets with education from University of Toronto, located in New York.",
+  "platforms": [
+    "linkedin"
+  ],
+  "emails": [],
+  "phones": [],
+  "websites": [],
+  "profile_urls": {
+    "linkedin": "https://ca.linkedin.com/in/amir-kheradmand-436568169"
+  },
+  "location": {
+    "full_address": "New York",
+    "city": "New York"
+  },
+  "discovery_confidence": 0.3,
+  "created_at": "2026-01-22T14:02:07.779642",
+  "updated_at": null
+}

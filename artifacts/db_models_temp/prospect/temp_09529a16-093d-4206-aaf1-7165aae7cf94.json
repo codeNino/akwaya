@@ -1,0 +1,26 @@
+{
+  "prospect_id": "temp_09529a16-093d-4206-aaf1-7165aae7cf94",
+  "name": "Asset & Resource Management Holding Company (ARM)",
+  "about": null,
+  "platforms": [
+    "google_maps"
+  ],
+  "emails": [],
+  "phones": [
+    "12705002"
+  ],
+  "websites": [
+    "https://www.arm.com.ng"
+  ],
+  "profile_urls": {
+    "google_maps": "https://maps.google.com/?cid=4947612220367678365&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+  },
+  "location": {
+    "full_address": "1 Mekunwen Rd, Lagos",
+    "city": "1 Mekunwen Rd",
+    "country": "Lagos"
+  },
+  "discovery_confidence": 0.7,
+  "created_at": "2026-01-23T14:53:38.888857",
+  "updated_at": null
+}

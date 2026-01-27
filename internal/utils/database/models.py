@@ -68,26 +68,6 @@ class Prospect(Base):
 
     def to_dict(self) -> Dict[str, Any]:
         """Convert model to dictionary"""
-        # Format snapshot_at as string (YYYY-MM-DD HH:MM:SS format)
-        snapshot_at_str = None
-        if self.snapshot_at:
-            snapshot_at_str = self.snapshot_at.strftime('%Y-%m-%d %H:%M:%S')
-        
-        return {
-            "snapshot_id": str(self.snapshot_id),
-            "prospect_id": str(self.prospect_id),
-            "platform": self.platform,
-            "contact_info": {
-                "email": None,
-                "phone": None,
-                "website": None,
-            },
-            "location": "",
-            "business_context": self.business_context or "",
-            "source_url": "",
-            "snapshot_at": snapshot_at_str,
-            "is_latest": self.is_latest,
-        }
         return {
             "prospect_id": str(self.prospect_id),
             "name": self.name,

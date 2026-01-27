@@ -1,0 +1,1553 @@
+{
+  "summary": {
+    "total_raw_prospects_processed": 43,
+    "canonical_prospects_created": 22,
+    "auto_merged_count": 7,
+    "review_flagged_count": 7,
+    "unmatched_count": 15,
+    "merge_rate_percent": 16.28,
+    "flagged_rate_percent": 16.28
+  },
+  "prospects_for_enrichment": [
+    {
+      "prospect_id": "0af271f6-5650-4fbd-9a08-903d531bbd89",
+      "name": "FXBrokers NG",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0703 239 6660"
+        ],
+        "websites": [
+          "https://forexbroker.ng/"
+        ]
+      },
+      "location": "9 Royal Estate, Royal St, Lagos",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.7,
+      "source_count": 2,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_b195cccc-668c-4f23-b6a7-6e8a4ea2e905",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=12080369882798628531&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.411119"
+        },
+        {
+          "temp_prospect_id": "temp_258e2938-7d50-4863-9045-c672c84d1b72",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=12080369882798628531&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.457745"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888178"
+    },
+    {
+      "prospect_id": "26777a87-faf8-4452-b93d-8cccf48d7848",
+      "name": "Habby Forex Trading Academy",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0907 309 7779"
+        ],
+        "websites": [
+          "http://habbyforex.com/"
+        ]
+      },
+      "location": "20 Victoria Arobieke St, Lekki",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.7,
+      "source_count": 2,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_233cbe89-0a53-4d4d-a571-43a581424db3",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=9528775924955621063&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.411185"
+        },
+        {
+          "temp_prospect_id": "temp_ba7a8412-1cf4-4a83-9ff8-6c3486ae9be8",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=9528775924955621063&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.457793"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888318"
+    },
+    {
+      "prospect_id": "737be89d-16be-499e-a884-e5630606b38c",
+      "name": "Rolifx Trades (RFT Academy) | Best Forex Mentorship Academy, Lagos",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0805 400 3006"
+        ],
+        "websites": [
+          "https://www.rolifxtrades.com/"
+        ]
+      },
+      "location": "Jakande Gate, 16/18 Egbe Rd, LGA, Oke-Afa/Ejigbo",
+      "about": [],
+      "business_context": "consultant",
+      "confidence_score": 0.7,
+      "source_count": 2,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_13cedcb8-8985-45fd-8f71-93ff8be9f1e9",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=751314493570134369&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.411228"
+        },
+        {
+          "temp_prospect_id": "temp_f2cb57af-6b2c-430d-9878-08ae243b6659",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=751314493570134369&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.457773"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888372"
+    },
+    {
+      "prospect_id": "d222fac9-6796-4af3-8b55-f726ef9dc99f",
+      "name": "Revglobal Forex Institute",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0704 033 5379"
+        ],
+        "websites": [
+          "https://www.revglobalforexinstitute.com/"
+        ]
+      },
+      "location": "Ponle Bus Stop, 1 Ponle Street, 2nd Floor, Left Wing wing, Egbeda Idimu, Road",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.55,
+      "source_count": 2,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_41a3dcd9-418a-41ed-a43e-88bab3bd192f",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=17245712319973657600&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.411256"
+        },
+        {
+          "temp_prospect_id": "temp_50d9e537-ecc4-42a1-86b9-a2c1d87f463c",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=17245712319973657600&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.457882"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888409"
+    },
+    {
+      "prospect_id": "867e23d9-34c8-4fc4-8a15-5bb2afe2a8bc",
+      "name": "Oasis International Forex School Lagos",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0915 541 3085"
+        ],
+        "websites": [
+          "https://web.facebook.com/Oasisforexschool"
+        ]
+      },
+      "location": "1st Floor, close to Oluyole bus stop, 64 Kudirat Abiola Way, Fidelity bank, Ikeja",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.55,
+      "source_count": 2,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_406786b7-31a6-4c71-a9e6-19a15dbb4973",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=6149973161721880121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.411328"
+        },
+        {
+          "temp_prospect_id": "temp_8f0fccb1-d456-4283-850e-29e9969d7e88",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=6149973161721880121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.458004"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888482"
+    },
+    {
+      "prospect_id": "0612fa7c-dba9-4160-bf89-d03c0ba31f27",
+      "name": "Kole Forex Academy",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0808 215 4378"
+        ],
+        "websites": [
+          "https://koleforex.com/"
+        ]
+      },
+      "location": "Block 128, Marwa bus-stop, 4th Floor Polystar Building Plot 1, Lagos",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.55,
+      "source_count": 2,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_91e0c03a-4496-432d-8fc7-5cbf4fe4bbf6",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=13956897727815251431&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.411343"
+        },
+        {
+          "temp_prospect_id": "temp_4462f6b7-6d41-4d86-a7c0-c47d23782fbe",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=13956897727815251431&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.457990"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888508"
+    },
+    {
+      "prospect_id": "89341abe-a869-460f-aebc-e381be9941fa",
+      "name": "Vantage Markets Nigeria",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0916 670 4000"
+        ],
+        "websites": [
+          "http://www.vantagemarkets.com/en-za"
+        ]
+      },
+      "location": "Block 1, Plot 8, Memunat Ayodeji Crescent, By Etal Avenue Ikeja, Lagos",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.55,
+      "source_count": 2,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_ff423752-ae44-42b6-9519-f81b2400d1d5",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=16547767270650064546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.411475"
+        },
+        {
+          "temp_prospect_id": "temp_f1f37a1a-58cc-426c-bf91-4b00ebe52d96",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=16547767270650064546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.458049"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888596"
+    },
+    {
+      "prospect_id": "temp_829b4a33-4e54-465f-8213-8fa2f51752d5",
+      "name": "Forex Trading Network",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0806 510 7296"
+        ],
+        "websites": []
+      },
+      "location": "38, Akinwumi, Lagos",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.5,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_829b4a33-4e54-465f-8213-8fa2f51752d5",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=8727234110251857536&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.5,
+          "timestamp": "2026-01-22T12:32:19.411280"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888438"
+    },
+    {
+      "prospect_id": "temp_e8824107-b4ec-4373-b973-fe462b3c0758",
+      "name": "Flotrade Investments",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0708 114 1535"
+        ],
+        "websites": []
+      },
+      "location": "4, Oyetubo Street, Off Obafemi Awolowo Wy, Lagos",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.5,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_e8824107-b4ec-4373-b973-fe462b3c0758",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=4026166180391588273&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.5,
+          "timestamp": "2026-01-22T12:32:19.411380"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888538"
+    },
+    {
+      "prospect_id": "temp_bf1dc758-1222-49c4-aeca-2c16517c9ba3",
+      "name": "Forex Trading And Investments",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0802 330 6206"
+        ],
+        "websites": []
+      },
+      "location": "No. 12 Kemberi Road, Lagos",
+      "about": [],
+      "business_context": "bank",
+      "confidence_score": 0.5,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_bf1dc758-1222-49c4-aeca-2c16517c9ba3",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=5936530805709066329&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.5,
+          "timestamp": "2026-01-22T12:32:19.411428"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888562"
+    },
+    {
+      "prospect_id": "temp_efa6e65d-1fb7-4d8e-9bf1-137fc5e243a0",
+      "name": "IBN Sulaiman Forex traders and sons",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0807 102 6351"
+        ],
+        "websites": []
+      },
+      "location": "First Floor, Car Park 2, The Citadel Global Community Church Complex, 30 Kudirat Abiola Way, Oregun, Ikeja 100212, Lagos, Ikeja",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.35,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_efa6e65d-1fb7-4d8e-9bf1-137fc5e243a0",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=17360360844483783588&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.35,
+          "timestamp": "2026-01-22T12:32:19.411460"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888580"
+    },
+    {
+      "prospect_id": "temp_5e851363-9c03-4b68-ac18-cc2a99ce1b2b",
+      "name": "HFM Nigeria",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0706 370 5519"
+        ],
+        "websites": [
+          "https://www.hfm.com/int/en-ng/?mcid=17415"
+        ]
+      },
+      "location": "3rd floor, Wuraola House, 90 Allen Avenue, Ikeja, Lagos",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.7,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_5e851363-9c03-4b68-ac18-cc2a99ce1b2b",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=15301943284350860098&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.411492"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888616"
+    },
+    {
+      "prospect_id": "temp_103a12fb-bfd0-42eb-a520-f5a4cce040e6",
+      "name": "PIPS ARCADE",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0808 394 7636"
+        ],
+        "websites": []
+      },
+      "location": "73 Allen Ave, Ikeja",
+      "about": [],
+      "business_context": "consultant",
+      "confidence_score": 0.5,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_103a12fb-bfd0-42eb-a520-f5a4cce040e6",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=12330254786265144197&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.5,
+          "timestamp": "2026-01-22T12:32:19.411507"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888780"
+    },
+    {
+      "prospect_id": "temp_3c637860-7605-4d91-9c2c-8c15d80f57ff",
+      "name": "FRESHKEEM FX ACADEMY",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0905 621 2604"
+        ],
+        "websites": [
+          "https://www.instagram.com/forexbrain_trading?igsh=MTBpdGg1ajVkajVlZQ%3D%3D&utm_source=qr"
+        ]
+      },
+      "location": "11 Isheri St, Lagos",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.55,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_3c637860-7605-4d91-9c2c-8c15d80f57ff",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=8511157316644087912&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.457910"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888790"
+    },
+    {
+      "prospect_id": "temp_1c76d33d-5ae0-411a-8c76-df445f8f6c3a",
+      "name": "Marexo Trading Hub",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0901 730 0904"
+        ],
+        "websites": []
+      },
+      "location": "GPO facility, Ikeja",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.5,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_1c76d33d-5ae0-411a-8c76-df445f8f6c3a",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=18333139144249958913&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.5,
+          "timestamp": "2026-01-22T12:32:19.457948"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888809"
+    },
+    {
+      "prospect_id": "temp_60cb25e3-9dcc-47c5-82d7-b5b29c99a99a",
+      "name": "Firepips Forex Academy Lagos (HQ)",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0913 630 3131"
+        ],
+        "websites": [
+          "https://www.firepipsfx.com/"
+        ]
+      },
+      "location": "Block 1A, Tatiana Court, Ikota Villa Estate, Lagos",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.55,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_60cb25e3-9dcc-47c5-82d7-b5b29c99a99a",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=14410648603110206924&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.457962"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888820"
+    },
+    {
+      "prospect_id": "temp_c6e4be51-9f2d-4325-9110-5d0c57f1493e",
+      "name": "FXCG",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "020 7097 4323"
+        ],
+        "websites": [
+          "https://www.fxcg.com/"
+        ]
+      },
+      "location": "A Obafemi Awolowo Wy, Ikeja",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.7,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_c6e4be51-9f2d-4325-9110-5d0c57f1493e",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=5879220848206669195&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.457976"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888831"
+    },
+    {
+      "prospect_id": "temp_3a9e8f7c-5a1f-4dc6-a6c5-798fe0ce1c8e",
+      "name": "Fx Trader",
+      "contact_info": {
+        "emails": [],
+        "phones": [],
+        "websites": []
+      },
+      "location": "19 to 23, 10 Barbados Ave, Kingston",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.3,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_3a9e8f7c-5a1f-4dc6-a6c5-798fe0ce1c8e",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=14396289589423918241&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.3,
+          "timestamp": "2026-01-22T12:32:19.458022"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888840"
+    },
+    {
+      "prospect_id": "temp_366d73f8-3dc7-4bdc-a90a-36d8b165f72c",
+      "name": "Trade Harbor",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0908 785 5856"
+        ],
+        "websites": []
+      },
+      "location": "43b, Emina Crescent, Toyin Street, Lagos",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.5,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_366d73f8-3dc7-4bdc-a90a-36d8b165f72c",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=1665365338608563123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.5,
+          "timestamp": "2026-01-22T12:32:19.458035"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888847"
+    },
+    {
+      "prospect_id": "temp_09529a16-093d-4206-aaf1-7165aae7cf94",
+      "name": "Asset & Resource Management Holding Company (ARM)",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "12705002"
+        ],
+        "websites": [
+          "https://www.arm.com.ng/"
+        ]
+      },
+      "location": "1 Mekunwen Rd, Lagos",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.7,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_09529a16-093d-4206-aaf1-7165aae7cf94",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=4947612220367678365&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.450028"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888857"
+    },
+    {
+      "prospect_id": "temp_ea94a527-5eb8-4a9a-b016-358a844dfbdc",
+      "name": "Forex House Trading School (Training $ Mentorship)",
+      "contact_info": {
+        "emails": [],
+        "phones": [],
+        "websites": []
+      },
+      "location": "G9FH+QM4, Lagos",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.15,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_ea94a527-5eb8-4a9a-b016-358a844dfbdc",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=17342807831120204797&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.15,
+          "timestamp": "2026-01-22T12:32:19.328182"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888867"
+    },
+    {
+      "prospect_id": "temp_c1bb9588-75dc-4338-baed-ff760b4d13a3",
+      "name": "Digitechray Algorithmic Trading SLT",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0809 756 9905"
+        ],
+        "websites": []
+      },
+      "location": "ishaga bus stop, 7 Fatade St, Lagos",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.35,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_c1bb9588-75dc-4338-baed-ff760b4d13a3",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=12752836581766190769&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.35,
+          "timestamp": "2026-01-22T12:32:19.391192"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888873"
+    }
+  ],
+  "review_flagged": [
+    {
+      "flag_id": "6d8b696d-bac3-4d03-aa70-3279961852b5",
+      "match_confidence": 0.8,
+      "prospects": [
+        {
+          "prospect_id": "temp_236ea4cb-8ffb-4dbd-bf1f-02c46e4522eb",
+          "source_platform": "google_maps",
+          "name": "Forex Trading Company",
+          "contact_info": {
+            "phone": "0805 158 1633",
+            "website": null
+          },
+          "location": "11A Allen Ave, Lagos",
+          "business_context": "consultant",
+          "source_url": "https://maps.google.com/?cid=798174466771761424&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence_score": 0.5,
+          "timestamp": "2026-01-22T12:32:19.411166"
+        },
+        {
+          "prospect_id": "temp_9d77d83c-27ae-4b5f-be71-d7b5e6804c72",
+          "source_platform": "google_maps",
+          "name": "Forex Trading Company",
+          "contact_info": {
+            "phone": "0805 158 1633",
+            "website": null
+          },
+          "location": "11A Allen Ave, Lagos",
+          "business_context": "consultant",
+          "source_url": "https://maps.google.com/?cid=798174466771761424&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence_score": 0.5,
+          "timestamp": "2026-01-22T12:32:19.457808"
+        }
+      ],
+      "reason": "Medium confidence match - requires manual review",
+      "recommended_action": "Verify if these represent the same entity"
+    },
+    {
+      "flag_id": "dd52ebef-341a-42e7-9299-eef9a90d6f0a",
+      "match_confidence": 0.8,
+      "prospects": [
+        {
+          "prospect_id": "temp_dca54339-898d-443c-b14a-364692d866cb",
+          "source_platform": "google_maps",
+          "name": "Rity Trade Hub",
+          "contact_info": {
+            "phone": "0812 292 5314",
+            "website": null
+          },
+          "location": "Lagos",
+          "business_context": "consultant",
+          "source_url": "https://maps.google.com/?cid=5060466325836624256&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence_score": 0.5,
+          "timestamp": "2026-01-22T12:32:19.411295"
+        },
+        {
+          "prospect_id": "temp_b1aedfbb-8ec4-4a16-8bd0-76ce0ba0edb8",
+          "source_platform": "google_maps",
+          "name": "Rity Trade Hub",
+          "contact_info": {
+            "phone": "0812 292 5314",
+            "website": null
+          },
+          "location": "Lagos",
+          "business_context": "consultant",
+          "source_url": "https://maps.google.com/?cid=5060466325836624256&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence_score": 0.5,
+          "timestamp": "2026-01-22T12:32:19.457867"
+        }
+      ],
+      "reason": "Medium confidence match - requires manual review",
+      "recommended_action": "Verify if these represent the same entity"
+    },
+    {
+      "flag_id": "04d62981-186a-4745-84dd-9be48827619c",
+      "match_confidence": 0.8,
+      "prospects": [
+        {
+          "prospect_id": "temp_a151d25b-3bd5-43be-be81-014bfb832949",
+          "source_platform": "google_maps",
+          "name": "Lead Forex Academy",
+          "contact_info": {
+            "phone": "0703 082 1028",
+            "website": null
+          },
+          "location": "79 Ogunlana Dr, Lagos",
+          "business_context": "finance",
+          "source_url": "https://maps.google.com/?cid=7358587631063243957&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence_score": 0.5,
+          "timestamp": "2026-01-22T12:32:19.411310"
+        },
+        {
+          "prospect_id": "temp_cf57ee64-aa06-4324-8e80-8ab422b9151c",
+          "source_platform": "google_maps",
+          "name": "Lead Forex Academy",
+          "contact_info": {
+            "phone": "0703 082 1028",
+            "website": null
+          },
+          "location": "79 Ogunlana Dr, Lagos",
+          "business_context": "finance",
+          "source_url": "https://maps.google.com/?cid=7358587631063243957&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence_score": 0.5,
+          "timestamp": "2026-01-22T12:32:19.457896"
+        }
+      ],
+      "reason": "Medium confidence match - requires manual review",
+      "recommended_action": "Verify if these represent the same entity"
+    },
+    {
+      "flag_id": "1ec822f8-a168-455e-93cd-a8e4393799c1",
+      "match_confidence": 0.8,
+      "prospects": [
+        {
+          "prospect_id": "temp_0c132e76-dc1a-493d-b2fb-dfebed273ea4",
+          "source_platform": "google_maps",
+          "name": "Juggernaut brainz(FOREX Academy)",
+          "contact_info": {
+            "phone": "0706 740 8224",
+            "website": null
+          },
+          "location": "33a Bode Thomas St, Lagos",
+          "business_context": null,
+          "source_url": "https://maps.google.com/?cid=17317199332127536782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence_score": 0.35,
+          "timestamp": "2026-01-22T12:32:19.411363"
+        },
+        {
+          "prospect_id": "temp_115fbe49-4644-4c97-b822-0b0fe12250bb",
+          "source_platform": "google_maps",
+          "name": "Juggernaut brainz(FOREX Academy)",
+          "contact_info": {
+            "phone": "0706 740 8224",
+            "website": null
+          },
+          "location": "33a Bode Thomas St, Lagos",
+          "business_context": null,
+          "source_url": "https://maps.google.com/?cid=17317199332127536782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence_score": 0.35,
+          "timestamp": "2026-01-22T12:32:19.457853"
+        }
+      ],
+      "reason": "Medium confidence match - requires manual review",
+      "recommended_action": "Verify if these represent the same entity"
+    },
+    {
+      "flag_id": "c9886fce-6900-4204-809a-312e525da1e0",
+      "match_confidence": 0.8,
+      "prospects": [
+        {
+          "prospect_id": "temp_25458fc6-821a-45ac-a580-138ebc5096a4",
+          "source_platform": "google_maps",
+          "name": "Tradelandmark FX",
+          "contact_info": {
+            "phone": "0908 785 5856",
+            "website": null
+          },
+          "location": "Pentagon Plaza Wasimi, Lagos",
+          "business_context": "consultant",
+          "source_url": "https://maps.google.com/?cid=7998236673105412821&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence_score": 0.5,
+          "timestamp": "2026-01-22T12:32:19.411397"
+        },
+        {
+          "prospect_id": "temp_dd52220b-bb04-4db5-a835-86d43c646ad7",
+          "source_platform": "google_maps",
+          "name": "Tradelandmark FX",
+          "contact_info": {
+            "phone": "0908 785 5856",
+            "website": null
+          },
+          "location": "Pentagon Plaza Wasimi, Lagos",
+          "business_context": "consultant",
+          "source_url": "https://maps.google.com/?cid=7998236673105412821&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence_score": 0.5,
+          "timestamp": "2026-01-22T12:32:19.457823"
+        }
+      ],
+      "reason": "Medium confidence match - requires manual review",
+      "recommended_action": "Verify if these represent the same entity"
+    },
+    {
+      "flag_id": "62307f36-fbe3-4fc4-8be2-b457de094a13",
+      "match_confidence": 0.8,
+      "prospects": [
+        {
+          "prospect_id": "temp_7c508975-70ed-458c-a91b-66b32829f989",
+          "source_platform": "google_maps",
+          "name": "Forex Trading Academy (Blue Zone Capital)",
+          "contact_info": {
+            "phone": "0706 511 0752",
+            "website": null
+          },
+          "location": "Ajangbadi, Bale Rd, Afromedia Rd, Ojo",
+          "business_context": null,
+          "source_url": "https://maps.google.com/?cid=17338183567153543095&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence_score": 0.35,
+          "timestamp": "2026-01-22T12:32:19.411411"
+        },
+        {
+          "prospect_id": "temp_e076cce0-0823-4b00-977a-d39ee38be85d",
+          "source_platform": "google_maps",
+          "name": "Forex Trading Academy (Blue Zone Capital)",
+          "contact_info": {
+            "phone": "0706 511 0752",
+            "website": null
+          },
+          "location": "Ajangbadi, Bale Rd, Afromedia Rd, Ojo",
+          "business_context": null,
+          "source_url": "https://maps.google.com/?cid=17338183567153543095&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence_score": 0.35,
+          "timestamp": "2026-01-22T12:32:19.457933"
+        }
+      ],
+      "reason": "Medium confidence match - requires manual review",
+      "recommended_action": "Verify if these represent the same entity"
+    },
+    {
+      "flag_id": "ae5a5ae8-1cf2-4fec-84d8-d69f783958e9",
+      "match_confidence": 0.8,
+      "prospects": [
+        {
+          "prospect_id": "temp_125fa06d-2d76-4500-a32d-8be425b9db22",
+          "source_platform": "google_maps",
+          "name": "CitiForex Trading Institute",
+          "contact_info": {
+            "phone": "0803 730 8053",
+            "website": null
+          },
+          "location": "Shop D14 Shoprite, Adeniran Ogunsanya Shopping Mall, Adeniran Ogunsanya St, Lagos",
+          "business_context": "shopping_mall",
+          "source_url": "https://maps.google.com/?cid=2521206066567111052&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence_score": 0.5,
+          "timestamp": "2026-01-22T12:32:19.411445"
+        },
+        {
+          "prospect_id": "temp_17d06c9e-cab0-4864-af27-b33bde4ec45b",
+          "source_platform": "google_maps",
+          "name": "CitiForex Trading Institute",
+          "contact_info": {
+            "phone": "0803 730 8053",
+            "website": null
+          },
+          "location": "Shop D14 Shoprite, Adeniran Ogunsanya Shopping Mall, Adeniran Ogunsanya St, Lagos",
+          "business_context": "shopping_mall",
+          "source_url": "https://maps.google.com/?cid=2521206066567111052&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence_score": 0.5,
+          "timestamp": "2026-01-22T12:32:19.457838"
+        }
+      ],
+      "reason": "Medium confidence match - requires manual review",
+      "recommended_action": "Verify if these represent the same entity"
+    }
+  ],
+  "auto_merged_details": [
+    {
+      "prospect_id": "0af271f6-5650-4fbd-9a08-903d531bbd89",
+      "name": "FXBrokers NG",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0703 239 6660"
+        ],
+        "websites": [
+          "https://forexbroker.ng/"
+        ]
+      },
+      "location": "9 Royal Estate, Royal St, Lagos",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.7,
+      "source_count": 2,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_b195cccc-668c-4f23-b6a7-6e8a4ea2e905",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=12080369882798628531&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.411119"
+        },
+        {
+          "temp_prospect_id": "temp_258e2938-7d50-4863-9045-c672c84d1b72",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=12080369882798628531&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.457745"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888178"
+    },
+    {
+      "prospect_id": "26777a87-faf8-4452-b93d-8cccf48d7848",
+      "name": "Habby Forex Trading Academy",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0907 309 7779"
+        ],
+        "websites": [
+          "http://habbyforex.com/"
+        ]
+      },
+      "location": "20 Victoria Arobieke St, Lekki",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.7,
+      "source_count": 2,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_233cbe89-0a53-4d4d-a571-43a581424db3",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=9528775924955621063&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.411185"
+        },
+        {
+          "temp_prospect_id": "temp_ba7a8412-1cf4-4a83-9ff8-6c3486ae9be8",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=9528775924955621063&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.457793"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888318"
+    },
+    {
+      "prospect_id": "737be89d-16be-499e-a884-e5630606b38c",
+      "name": "Rolifx Trades (RFT Academy) | Best Forex Mentorship Academy, Lagos",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0805 400 3006"
+        ],
+        "websites": [
+          "https://www.rolifxtrades.com/"
+        ]
+      },
+      "location": "Jakande Gate, 16/18 Egbe Rd, LGA, Oke-Afa/Ejigbo",
+      "about": [],
+      "business_context": "consultant",
+      "confidence_score": 0.7,
+      "source_count": 2,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_13cedcb8-8985-45fd-8f71-93ff8be9f1e9",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=751314493570134369&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.411228"
+        },
+        {
+          "temp_prospect_id": "temp_f2cb57af-6b2c-430d-9878-08ae243b6659",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=751314493570134369&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.457773"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888372"
+    },
+    {
+      "prospect_id": "d222fac9-6796-4af3-8b55-f726ef9dc99f",
+      "name": "Revglobal Forex Institute",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0704 033 5379"
+        ],
+        "websites": [
+          "https://www.revglobalforexinstitute.com/"
+        ]
+      },
+      "location": "Ponle Bus Stop, 1 Ponle Street, 2nd Floor, Left Wing wing, Egbeda Idimu, Road",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.55,
+      "source_count": 2,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_41a3dcd9-418a-41ed-a43e-88bab3bd192f",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=17245712319973657600&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.411256"
+        },
+        {
+          "temp_prospect_id": "temp_50d9e537-ecc4-42a1-86b9-a2c1d87f463c",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=17245712319973657600&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.457882"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888409"
+    },
+    {
+      "prospect_id": "867e23d9-34c8-4fc4-8a15-5bb2afe2a8bc",
+      "name": "Oasis International Forex School Lagos",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0915 541 3085"
+        ],
+        "websites": [
+          "https://web.facebook.com/Oasisforexschool"
+        ]
+      },
+      "location": "1st Floor, close to Oluyole bus stop, 64 Kudirat Abiola Way, Fidelity bank, Ikeja",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.55,
+      "source_count": 2,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_406786b7-31a6-4c71-a9e6-19a15dbb4973",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=6149973161721880121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.411328"
+        },
+        {
+          "temp_prospect_id": "temp_8f0fccb1-d456-4283-850e-29e9969d7e88",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=6149973161721880121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.458004"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888482"
+    },
+    {
+      "prospect_id": "0612fa7c-dba9-4160-bf89-d03c0ba31f27",
+      "name": "Kole Forex Academy",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0808 215 4378"
+        ],
+        "websites": [
+          "https://koleforex.com/"
+        ]
+      },
+      "location": "Block 128, Marwa bus-stop, 4th Floor Polystar Building Plot 1, Lagos",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.55,
+      "source_count": 2,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_91e0c03a-4496-432d-8fc7-5cbf4fe4bbf6",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=13956897727815251431&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.411343"
+        },
+        {
+          "temp_prospect_id": "temp_4462f6b7-6d41-4d86-a7c0-c47d23782fbe",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=13956897727815251431&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.457990"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888508"
+    },
+    {
+      "prospect_id": "89341abe-a869-460f-aebc-e381be9941fa",
+      "name": "Vantage Markets Nigeria",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0916 670 4000"
+        ],
+        "websites": [
+          "http://www.vantagemarkets.com/en-za"
+        ]
+      },
+      "location": "Block 1, Plot 8, Memunat Ayodeji Crescent, By Etal Avenue Ikeja, Lagos",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.55,
+      "source_count": 2,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_ff423752-ae44-42b6-9519-f81b2400d1d5",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=16547767270650064546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.411475"
+        },
+        {
+          "temp_prospect_id": "temp_f1f37a1a-58cc-426c-bf91-4b00ebe52d96",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=16547767270650064546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.458049"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888596"
+    }
+  ],
+  "unmatched_details": [
+    {
+      "prospect_id": "temp_829b4a33-4e54-465f-8213-8fa2f51752d5",
+      "name": "Forex Trading Network",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0806 510 7296"
+        ],
+        "websites": []
+      },
+      "location": "38, Akinwumi, Lagos",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.5,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_829b4a33-4e54-465f-8213-8fa2f51752d5",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=8727234110251857536&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.5,
+          "timestamp": "2026-01-22T12:32:19.411280"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888438"
+    },
+    {
+      "prospect_id": "temp_e8824107-b4ec-4373-b973-fe462b3c0758",
+      "name": "Flotrade Investments",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0708 114 1535"
+        ],
+        "websites": []
+      },
+      "location": "4, Oyetubo Street, Off Obafemi Awolowo Wy, Lagos",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.5,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_e8824107-b4ec-4373-b973-fe462b3c0758",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=4026166180391588273&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.5,
+          "timestamp": "2026-01-22T12:32:19.411380"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888538"
+    },
+    {
+      "prospect_id": "temp_bf1dc758-1222-49c4-aeca-2c16517c9ba3",
+      "name": "Forex Trading And Investments",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0802 330 6206"
+        ],
+        "websites": []
+      },
+      "location": "No. 12 Kemberi Road, Lagos",
+      "about": [],
+      "business_context": "bank",
+      "confidence_score": 0.5,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_bf1dc758-1222-49c4-aeca-2c16517c9ba3",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=5936530805709066329&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.5,
+          "timestamp": "2026-01-22T12:32:19.411428"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888562"
+    },
+    {
+      "prospect_id": "temp_efa6e65d-1fb7-4d8e-9bf1-137fc5e243a0",
+      "name": "IBN Sulaiman Forex traders and sons",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0807 102 6351"
+        ],
+        "websites": []
+      },
+      "location": "First Floor, Car Park 2, The Citadel Global Community Church Complex, 30 Kudirat Abiola Way, Oregun, Ikeja 100212, Lagos, Ikeja",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.35,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_efa6e65d-1fb7-4d8e-9bf1-137fc5e243a0",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=17360360844483783588&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.35,
+          "timestamp": "2026-01-22T12:32:19.411460"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888580"
+    },
+    {
+      "prospect_id": "temp_5e851363-9c03-4b68-ac18-cc2a99ce1b2b",
+      "name": "HFM Nigeria",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0706 370 5519"
+        ],
+        "websites": [
+          "https://www.hfm.com/int/en-ng/?mcid=17415"
+        ]
+      },
+      "location": "3rd floor, Wuraola House, 90 Allen Avenue, Ikeja, Lagos",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.7,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_5e851363-9c03-4b68-ac18-cc2a99ce1b2b",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=15301943284350860098&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.411492"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888616"
+    },
+    {
+      "prospect_id": "temp_103a12fb-bfd0-42eb-a520-f5a4cce040e6",
+      "name": "PIPS ARCADE",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0808 394 7636"
+        ],
+        "websites": []
+      },
+      "location": "73 Allen Ave, Ikeja",
+      "about": [],
+      "business_context": "consultant",
+      "confidence_score": 0.5,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_103a12fb-bfd0-42eb-a520-f5a4cce040e6",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=12330254786265144197&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.5,
+          "timestamp": "2026-01-22T12:32:19.411507"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888780"
+    },
+    {
+      "prospect_id": "temp_3c637860-7605-4d91-9c2c-8c15d80f57ff",
+      "name": "FRESHKEEM FX ACADEMY",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0905 621 2604"
+        ],
+        "websites": [
+          "https://www.instagram.com/forexbrain_trading?igsh=MTBpdGg1ajVkajVlZQ%3D%3D&utm_source=qr"
+        ]
+      },
+      "location": "11 Isheri St, Lagos",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.55,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_3c637860-7605-4d91-9c2c-8c15d80f57ff",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=8511157316644087912&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.457910"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888790"
+    },
+    {
+      "prospect_id": "temp_1c76d33d-5ae0-411a-8c76-df445f8f6c3a",
+      "name": "Marexo Trading Hub",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0901 730 0904"
+        ],
+        "websites": []
+      },
+      "location": "GPO facility, Ikeja",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.5,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_1c76d33d-5ae0-411a-8c76-df445f8f6c3a",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=18333139144249958913&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.5,
+          "timestamp": "2026-01-22T12:32:19.457948"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888809"
+    },
+    {
+      "prospect_id": "temp_60cb25e3-9dcc-47c5-82d7-b5b29c99a99a",
+      "name": "Firepips Forex Academy Lagos (HQ)",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0913 630 3131"
+        ],
+        "websites": [
+          "https://www.firepipsfx.com/"
+        ]
+      },
+      "location": "Block 1A, Tatiana Court, Ikota Villa Estate, Lagos",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.55,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_60cb25e3-9dcc-47c5-82d7-b5b29c99a99a",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=14410648603110206924&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.55,
+          "timestamp": "2026-01-22T12:32:19.457962"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888820"
+    },
+    {
+      "prospect_id": "temp_c6e4be51-9f2d-4325-9110-5d0c57f1493e",
+      "name": "FXCG",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "020 7097 4323"
+        ],
+        "websites": [
+          "https://www.fxcg.com/"
+        ]
+      },
+      "location": "A Obafemi Awolowo Wy, Ikeja",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.7,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_c6e4be51-9f2d-4325-9110-5d0c57f1493e",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=5879220848206669195&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.457976"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888831"
+    },
+    {
+      "prospect_id": "temp_3a9e8f7c-5a1f-4dc6-a6c5-798fe0ce1c8e",
+      "name": "Fx Trader",
+      "contact_info": {
+        "emails": [],
+        "phones": [],
+        "websites": []
+      },
+      "location": "19 to 23, 10 Barbados Ave, Kingston",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.3,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_3a9e8f7c-5a1f-4dc6-a6c5-798fe0ce1c8e",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=14396289589423918241&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.3,
+          "timestamp": "2026-01-22T12:32:19.458022"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888840"
+    },
+    {
+      "prospect_id": "temp_366d73f8-3dc7-4bdc-a90a-36d8b165f72c",
+      "name": "Trade Harbor",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0908 785 5856"
+        ],
+        "websites": []
+      },
+      "location": "43b, Emina Crescent, Toyin Street, Lagos",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.5,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_366d73f8-3dc7-4bdc-a90a-36d8b165f72c",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=1665365338608563123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.5,
+          "timestamp": "2026-01-22T12:32:19.458035"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888847"
+    },
+    {
+      "prospect_id": "temp_09529a16-093d-4206-aaf1-7165aae7cf94",
+      "name": "Asset & Resource Management Holding Company (ARM)",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "12705002"
+        ],
+        "websites": [
+          "https://www.arm.com.ng/"
+        ]
+      },
+      "location": "1 Mekunwen Rd, Lagos",
+      "about": [],
+      "business_context": "finance",
+      "confidence_score": 0.7,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_09529a16-093d-4206-aaf1-7165aae7cf94",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=4947612220367678365&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.7,
+          "timestamp": "2026-01-22T12:32:19.450028"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888857"
+    },
+    {
+      "prospect_id": "temp_ea94a527-5eb8-4a9a-b016-358a844dfbdc",
+      "name": "Forex House Trading School (Training $ Mentorship)",
+      "contact_info": {
+        "emails": [],
+        "phones": [],
+        "websites": []
+      },
+      "location": "G9FH+QM4, Lagos",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.15,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_ea94a527-5eb8-4a9a-b016-358a844dfbdc",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=17342807831120204797&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.15,
+          "timestamp": "2026-01-22T12:32:19.328182"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888867"
+    },
+    {
+      "prospect_id": "temp_c1bb9588-75dc-4338-baed-ff760b4d13a3",
+      "name": "Digitechray Algorithmic Trading SLT",
+      "contact_info": {
+        "emails": [],
+        "phones": [
+          "0809 756 9905"
+        ],
+        "websites": []
+      },
+      "location": "ishaga bus stop, 7 Fatade St, Lagos",
+      "about": [],
+      "business_context": null,
+      "confidence_score": 0.35,
+      "source_count": 1,
+      "sources": [
+        {
+          "temp_prospect_id": "temp_c1bb9588-75dc-4338-baed-ff760b4d13a3",
+          "source_platform": "google_maps",
+          "source_url": "https://maps.google.com/?cid=12752836581766190769&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "discovery_confidence": 0.35,
+          "timestamp": "2026-01-22T12:32:19.391192"
+        }
+      ],
+      "created_at": "2026-01-23T14:53:38.888873"
+    }
+  ]
+}

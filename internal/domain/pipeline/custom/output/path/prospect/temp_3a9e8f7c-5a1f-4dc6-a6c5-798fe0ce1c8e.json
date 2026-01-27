@@ -1,0 +1,22 @@
+{
+  "prospect_id": "temp_3a9e8f7c-5a1f-4dc6-a6c5-798fe0ce1c8e",
+  "name": "Fx Trader",
+  "about": null,
+  "platforms": [
+    "google_maps"
+  ],
+  "emails": [],
+  "phones": [],
+  "websites": [],
+  "profile_urls": {
+    "google_maps": "https://maps.google.com/?cid=14396289589423918241&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+  },
+  "location": {
+    "full_address": "19 to 23, 10 Barbados Ave, Kingston",
+    "city": "19 to 23",
+    "country": "Kingston"
+  },
+  "discovery_confidence": 0.3,
+  "created_at": "2026-01-23T14:53:38.888840",
+  "updated_at": null
+}

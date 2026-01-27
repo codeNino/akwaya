@@ -1,0 +1,21 @@
+{
+  "prospect_id": "temp_9b8af4f6-04c3-4fd2-923e-e903f3145410",
+  "name": "Mark Engelking, CFA",
+  "about": "Mark Engelking is an FX Trader at ATB Financial with education from University of Alberta, located in Calgary.",
+  "platforms": [
+    "linkedin"
+  ],
+  "emails": [],
+  "phones": [],
+  "websites": [],
+  "profile_urls": {
+    "linkedin": "https://ca.linkedin.com/in/mark-engelking-cfa-33166237"
+  },
+  "location": {
+    "full_address": "Calgary",
+    "city": "Calgary"
+  },
+  "discovery_confidence": 0.3,
+  "created_at": "2026-01-22T14:02:07.779647",
+  "updated_at": null
+}

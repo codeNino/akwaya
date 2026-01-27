@@ -1,0 +1,26 @@
+{
+  "prospect_id": "89341abe-a869-460f-aebc-e381be9941fa",
+  "name": "Vantage Markets Nigeria",
+  "about": null,
+  "platforms": [
+    "google_maps"
+  ],
+  "emails": [],
+  "phones": [
+    "0916 670 4000"
+  ],
+  "websites": [
+    "http://www.vantagemarkets.com/en-za"
+  ],
+  "profile_urls": {
+    "google_maps": "https://maps.google.com/?cid=16547767270650064546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+  },
+  "location": {
+    "full_address": "Block 1, Plot 8, Memunat Ayodeji Crescent, By Etal Avenue Ikeja, Lagos",
+    "city": "Block 1",
+    "country": "Lagos"
+  },
+  "discovery_confidence": 0.55,
+  "created_at": "2026-01-23T14:53:38.888596",
+  "updated_at": null
+}

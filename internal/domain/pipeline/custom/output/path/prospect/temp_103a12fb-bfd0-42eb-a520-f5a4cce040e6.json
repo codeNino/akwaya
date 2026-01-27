@@ -1,0 +1,24 @@
+{
+  "prospect_id": "temp_103a12fb-bfd0-42eb-a520-f5a4cce040e6",
+  "name": "PIPS ARCADE",
+  "about": null,
+  "platforms": [
+    "google_maps"
+  ],
+  "emails": [],
+  "phones": [
+    "0808 394 7636"
+  ],
+  "websites": [],
+  "profile_urls": {
+    "google_maps": "https://maps.google.com/?cid=12330254786265144197&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+  },
+  "location": {
+    "full_address": "73 Allen Ave, Ikeja",
+    "city": "73 Allen Ave",
+    "country": "Ikeja"
+  },
+  "discovery_confidence": 0.5,
+  "created_at": "2026-01-23T14:53:38.888780",
+  "updated_at": null
+}

@@ -3,7 +3,7 @@ Database manager for prospect operations
 """
 
 import uuid
-from typing import List, Dict, Optional, Any
+from typing import List, Dict, Optional, Any, TypedDict
 from datetime import datetime
 
 from sqlalchemy.orm import Session
@@ -15,6 +15,12 @@ from internal.utils.database.session import get_session
 
 logger = AppLogger("utils.database.manager")()
 
+# dataclass for enrichments queue
+class EnrichmentsQueue(TypedDict):
+    prospect_id: str
+    linkedin_url: Optional[str]
+    website_url: Optional[str]
+    discovery_confidence: float
 
 class DatabaseManager:
     """Manages database operations for prospects"""
@@ -230,7 +236,7 @@ class DatabaseManager:
         self,
         min_confidence: float = 0.5,
         session: Optional[Session] = None
-    ) -> List[Dict]:
+    ) -> List[EnrichmentsQueue]:
         """
         Get prospects for enrichment queue
         
@@ -265,3 +271,25 @@ class DatabaseManager:
             logger.error("Failed to get enrichment queue: %s", e)
             return []
 
+
+    def enrich_prospect(self, prospect_id: str, session: Optional[Session] = None) -> None:
+        """
+        Enrich a prospect
+
+        Args:
+            prospect_id: ID of the prospect to enrich
+        """
+        db_session = session or self._get_session()
+        try:
+            prospect = db_session.query(Prospect).filter(
+                Prospect.prospect_id == prospect_id
+            ).first()
+            if not prospect:
+                logger.error("Prospect not found: %s", prospect_id)
+                return
+            prospect.enriched = True
+            db_session.commit()
+            logger.info("Prospect enriched: %s", prospect_id)
+        except Exception as e:
+            logger.error("Failed to enrich prospect %s: %s", prospect_id, e)
+            return None

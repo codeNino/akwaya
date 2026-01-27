@@ -24,6 +24,7 @@ from internal.config.paths_config import (
     DEDUPLICATION_RESULTS_PATH,
     RAW_PROSPECTIVE_INDIVIDUALS_PATH,
     DB_MODELS_TEMP_DIR,
+    DEDUPLICATION_WHITELABELS_RESULTS_PATH,
 )
 from internal.utils.database import DatabaseManager, get_session, init_db
 from internal.utils.database.models import Prospect, ProspectSource, RawSnapshot
@@ -419,7 +420,6 @@ def load_deduplication_results(
 
                 # Insert sources and snapshots
                 for source in sources:
-                    # Parse discovered_at timestamp
                     discovered_at_str = source.get("timestamp", created_at_str)
                     try:
                         discovered_at = datetime.fromisoformat(
@@ -525,7 +525,8 @@ def load_deduplication_results(
 
 def main():
     """Main entry point for loading deduplication results"""
-    results_path = DEDUPLICATION_RESULTS_PATH
+    # results_path = DEDUPLICATION_RESULTS_PATH
+    results_path = DEDUPLICATION_WHITELABELS_RESULTS_PATH
 
     if not results_path.exists():
         logger.error("Deduplication results file not found: %s", results_path)
@@ -533,13 +534,13 @@ def main():
 
     # Load results into database
     # stats = load_deduplication_results(str(results_path))
-
+    
     # Save models as JSON without database insertion
-    stats = save_deduplication_results_as_json(str(DEDUPLICATION_RESULTS_PATH))
+    stats = save_deduplication_results_as_json(str(DEDUPLICATION_WHITELABELS_RESULTS_PATH))
 
     # Or specify custom output directory
     stats = save_deduplication_results_as_json(
-        str(DEDUPLICATION_RESULTS_PATH), output_dir=Path("custom/output/path")
+        str(DEDUPLICATION_WHITELABELS_RESULTS_PATH), output_dir=Path("custom/output/path")
     )
 
     # Print summary

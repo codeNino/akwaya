@@ -1,0 +1,21 @@
+{
+  "prospect_id": "temp_ff622551-79f1-4e52-9e7e-00c74aa3b25c",
+  "name": "Nabil Abedi",
+  "about": "Nabil Abedi is a specialist in commercial foreign exchange based in the heart of Toronto's financial district, offering bespoke FX execution products designed to help clients.",
+  "platforms": [
+    "linkedin"
+  ],
+  "emails": [],
+  "phones": [],
+  "websites": [],
+  "profile_urls": {
+    "linkedin": "https://ca.linkedin.com/in/nabil-abedi"
+  },
+  "location": {
+    "full_address": "Toronto",
+    "city": "Toronto"
+  },
+  "discovery_confidence": 0.3,
+  "created_at": "2026-01-22T14:02:07.779658",
+  "updated_at": null
+}

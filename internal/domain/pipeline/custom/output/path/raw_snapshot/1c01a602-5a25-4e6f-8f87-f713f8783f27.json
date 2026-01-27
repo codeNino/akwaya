@@ -1,0 +1,15 @@
+{
+  "snapshot_id": "1c01a602-5a25-4e6f-8f87-f713f8783f27",
+  "prospect_id": "0af271f6-5650-4fbd-9a08-903d531bbd89",
+  "platform": "google_maps",
+  "contact_info": {
+    "email": null,
+    "phone": null,
+    "website": null
+  },
+  "location": "",
+  "business_context": "finance",
+  "source_url": "",
+  "snapshot_at": "2026-01-22 12:32:19",
+  "is_latest": true
+}

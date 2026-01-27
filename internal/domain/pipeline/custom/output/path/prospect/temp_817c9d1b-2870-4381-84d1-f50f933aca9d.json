@@ -1,0 +1,22 @@
+{
+  "prospect_id": "temp_817c9d1b-2870-4381-84d1-f50f933aca9d",
+  "name": "Ravinder Singh",
+  "about": "Forex Trader at Preserve Forex since Dec 2017. Trained Forex Trader dealing only in Majors. Fixed Operations Director.",
+  "platforms": [
+    "linkedin"
+  ],
+  "emails": [],
+  "phones": [],
+  "websites": [],
+  "profile_urls": {
+    "linkedin": "https://ca.linkedin.com/in/singh1959"
+  },
+  "location": {
+    "full_address": "Toronto, Canada Area",
+    "city": "Toronto",
+    "country": "Canada Area"
+  },
+  "discovery_confidence": 0.3,
+  "created_at": "2026-01-22T14:02:07.779479",
+  "updated_at": null
+}
