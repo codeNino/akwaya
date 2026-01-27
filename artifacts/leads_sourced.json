@@ -1,0 +1,1063 @@
+{
+    "individuals": [],
+    "businesses": [
+        {
+            "source_platform": "google_places",
+            "name": "Royal Financial Trading (Cy) Ltd. (oneroyal.eu)",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 080880",
+                "website": "https://www.oneroyal.eu/en/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Franklin Roosevelt 152, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "FxPro Group Ltd",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 969200",
+                "website": "https://www.fxpro.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Karyatidon 1, Ypsonas"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "FXGlobe Limited",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "22 222694",
+                "website": "https://fxglobe.eu/?utm_source=gmb&utm_medium=Google_Business_Profile"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Louki Akrita 2, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "HF Markets Group",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "020 3318 8569",
+                "website": "https://www.hfeu.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Spyrou Kyprianou 50, Irida 3 Tower, 10th Floor, Larnaka"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "XM Group",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 029900",
+                "website": "https://www.xm.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Richard I & Berengaria Of Navarre, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Instaforex",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 654112",
+                "website": "https://www.instaforex.eu/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Spetson 23A, Leda Court, Block B, Office B203, 4000 Mesa, Limassol, Cyprus Limassol"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "LYDYA FINANCIAL LTD (Forex24)",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 252299",
+                "website": null
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "5 Nikou Kazantzaki George Court 1st Floor, Agios Theodoros, 8035, Pafos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Orbex",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 588855",
+                "website": "https://www.orbex.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "82nd Street-No.6 Ground Floor, Kato Polemidia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Windsor Brokers",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 500700",
+                "website": "https://en.windsorbrokers.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Spyrou Kyprianou Ave 53-4003, Mesa Geitonia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "IUX",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0482 084 221",
+                "website": "http://www.iux.com/en"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Foti Kolakidi 16-1st Floor, Office A 3031, Lemesos"
+            },
+            "business_context": "corporate_office"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Trust Capital",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 378899",
+                "website": "https://trustcapitaltc.eu/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Libra Tower, Olympion 23, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "FXORO",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 205555",
+                "website": "http://fxoro.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Petrou Tsirou 82, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "TopFX",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 352244",
+                "website": "http://topfx.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "KSenos Building, Troodous 2-Office No.502, Agios Athanasios"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "GBE brokers \u2013 Cyprus \u2013 Headquarters",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 281736",
+                "website": "https://www.gbebrokers.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Thesalonikis 11, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "FXCC",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 870750",
+                "website": "https://www.fxcc.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Samou 2, Germasogeia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "RoboMarkets Ltd",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 123275",
+                "website": "https://www.robomarkets.com.cy/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Arch. Makarios III Avenue 169-171, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Vistabrokers CIF Ltd",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "22 000787",
+                "website": null
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "8 John Kennedy Str. IRIS House, 540AB 5th Floor,, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Alvexo",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 030937",
+                "website": "https://www.alvexo.eu/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "KPMG BUILDING, Agias Filaxeos 1, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "OEXN Limited",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "24 242499",
+                "website": "https://www.oexn.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Poullaides Tower, Kalimnou 1-Suite 602, Larnaka"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "SquaredFinancial",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "22 090227",
+                "website": "http://www.squaredfinancial.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Victory House, Arch. Makarios III Avenue 205-BLOCK A, 5th Floor, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Trading.de",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0174 9777071",
+                "website": "https://trading.de/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "RF5R+4MH, Mazotos"
+            },
+            "business_context": "consultant"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "TFI Markets Ltd",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "22 749800",
+                "website": "https://www.tfimarkets.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Alpha Business Center, Pindarou 27-3rd Floor, Office 301 Block A, Nicosia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Colmex Pro Ltd",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 030036",
+                "website": "https://www.colmexpro.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Sisifou, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Atonline Limited",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "22 222332",
+                "website": "http://www.otcm.eu/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "\u039b\u03b5\u03c9\u03c6. \u0391\u03c1\u03c7\u03b9\u03b5\u03c0\u03b9\u03c3\u03ba\u03cc\u03c0\u03bf\u03c5 \u039c\u03b1\u03ba\u03b1\u03c1\u03af\u03bf\u03c5 \u0393' 73, Nicosia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Trading on the Markets",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0330 445 0165",
+                "website": "https://tradingonthemarkets.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Leontiou Machaira, 75, Indigo Center, 203, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Earn",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "22 514442",
+                "website": "http://www.earn.eu/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "\u039b\u03b5\u03c9\u03c6. \u0391\u03c1\u03c7\u03b9\u03b5\u03c0\u03b9\u03c3\u03ba\u03cc\u03c0\u03bf\u03c5 \u039c\u03b1\u03ba\u03b1\u03c1\u03af\u03bf\u03c5 \u0393' 88, Nicosia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "GWG (Cyprus) Ltd",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "22 008100",
+                "website": null
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Victory Tower, Achillion 3, Kyriakou Matsi 18-office 302, Nicosia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Ezinvest",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "22 000878",
+                "website": "https://www.ezinvest.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Ellinas House 5th Floor 85, Limassol Avenue, Aglantzia, Nicosia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Cyprus Trading Corporation PLC",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": null
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "200 Lemesos Avenue, \u039b\u03b5\u03c9\u03c6. \u039b\u03b5\u03bc\u03b5\u03c3\u03bf\u03cd 2025, Strovolos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "eToro (Cyprus) LTD",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.etoro.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Kanika International Business Center, 7th floor 4 Profiti Ilia Street Germasogeia Limassol CY 4046, Profiti Ilias 4, Germasogeia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Search Results Web results Trader AIT",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "8 (812) 200-83-71",
+                "website": null
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "28 \u2013 130 Limassol Avenue, 3rd floor, Office 301, Strovolos, CY 2015, Nicosia"
+            },
+            "business_context": "corporate_office"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "ARGUS Stockbrokers LTD",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "22 717000",
+                "website": "http://www.argus.com.cy/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Dimostheni Severi 25-Tower, 1st & 2nd Floor, Nicosia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Online Solutions",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 261060",
+                "website": "https://onlinesolutions.com.cy/"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": "CY",
+                "address": "Glastonos 74, Pantadromos Court, First Floor, Lemesos"
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Rynat Trading Limited",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 258020",
+                "website": "http://rynattrading.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "M2JH+4F, Monis Machaira 18, Lemesos"
+            },
+            "business_context": "corporate_office"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "FXGT Limassol",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://fxgtcareers.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Agios Athanasios Industrial Zone, Iapetou 17, Agios Athanasios"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Purple Trading",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 123977",
+                "website": "http://www.purple-trading.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Louki Akrita 11 Germasogeia, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "easyMarkets",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 828899",
+                "website": "https://www.easy-markets.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Kolonakiou 25-Block B, Office 101, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Tickmill EU",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 247650",
+                "website": "https://www.tickmill.eu/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Kedron 9, Mesa Geitonia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "NAGA Central",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 041410",
+                "website": "https://www.naga.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Agias Zonis 11, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "FXGiants Nigeria",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0704 805 9146",
+                "website": "https://www.fxgiants.com/"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "1st Floor Plot 1/3 Egbeda, Akowonjo Rd, De Santos Hotel, Lagos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "FXLeaders",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "055 508 1130",
+                "website": "https://www.fxleaders.com/"
+            },
+            "location": {
+                "country": "United Arab Emirates",
+                "country_acronym": "AE",
+                "address": "Arabella 3 - Mudon - Villa 444 - 22A St"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Probaba FX",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0806 866 9727",
+                "website": "https://probabafx.net/"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "Alpha Beach, 2 Ugochukwu Duru St, Lekki"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "InstantForex",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0908 562 3559",
+                "website": "http://www.instantforex.com.ng/"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "Kilometer 752 Lagos-Abeokuta Expressway, Alagbado, Lagos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "ZEDAPEX",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0812 713 0610",
+                "website": "http://zedapex.com/"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "16b Aliu Animashaun Ave, Lekki"
+            },
+            "business_context": "bank"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Xurftcoinz",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0816 141 3198",
+                "website": "http://xurftcoinz.godaddysites.com/"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "16 Divine Ave, Lagos"
+            },
+            "business_context": "consultant"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Argo Exchange \u0391\u03bd\u03c4\u03b1\u03bb\u03bb\u03b1\u03ba\u03c4\u03ae\u03c1\u03b9\u03b1 \u03a3\u03c5\u03bd\u03b1\u03bb\u03bb\u03ac\u03b3\u03bc\u03b1\u03c4\u03bf\u03c2 \u0391.\u0395.",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "21 0323 9659",
+                "website": "http://www.argo-exchange.gr/"
+            },
+            "location": {
+                "country": "Greece",
+                "country_acronym": "GR",
+                "address": "Karagiorgi Servias 10, Athina"
+            },
+            "business_context": "finance"
+        }
+    ],
+    "articles": [
+        {
+            "source_platform": "google_search",
+            "name": "7 Best Forex Brokers in Cyprus for 2026",
+            "about": "To find the best forex brokers in Cyprus, we created a list of all CySEC authorised brokers, then ranked brokers by their Overall ranking.",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.forexbrokers.com/guides/cyprus"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "What are they doing in those \"forex\" companies? : r/cyprus - Reddit",
+            "about": "People who work in \"Forex\" in Cyprus are mostly in sales. Their responsibility is to convert leads (phone numbers / emails of potentially ...",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.reddit.com/r/cyprus/comments/1e57lsy/what_are_they_doing_in_those_forex_companies/"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "CySEC (Cyprus) Regulated Forex Brokers",
+            "about": "Find our selection of top forex brokers regulated in the Cyprus by the CySEC (Cyprus Securities and Exchange Commission).",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.bestbrokers.com/forex-brokers/cysec-regulated-forex-brokers/"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "Cyprus Forex Brokers",
+            "about": "Easy Forex is a Cyprus financial services provider, registered and regulated by the CySec, the official Cyprus regulatory authority.",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.cyprusforexbrokers.com/"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "5 Best Forex Brokers in Cyprus in January, 2026 - DailyForex",
+            "about": "Best Cypriot Brokers Comparison \u00b7 Eightcap \u00b7 AvaTrade \u00b7 FP Markets \u00b7 Pepperstone \u00b7 BlackBull Markets \u00b7 eToro. In Summary Best broker for social ...",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.dailyforex.com/forex-brokers/best-forex-brokers/cyprus"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "Best Forex Brokers in Cyprus in 2025 - WikiFX",
+            "about": "Best Forex Brokers in Cyprus in 2025 \u00b7 XM \u00b7 Exness \u00b7 IronFX \u00b7 HFM \u00b7 Plus500 \u00b7 Skilling \u00b7 IQ Option. logo. Overall. Regulation: CYSEC. Established in 2013, ...",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.wikifx.com/en/best/best-forex-brokers-in-cyprus.html"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "Regulated Forex Brokers in Cyprus - FX-List",
+            "about": "Many regulated forex brokers continue to use Cyprus as a regional base to serve EU-based forex traders.",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://fx-list.com/regulated-forex-brokers-cyprus"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "Forex Broker InstaForex: trading on Forex market",
+            "about": "Trade Forex with InstaForex - competitive spreads, high leverage, bonuses, and secure accounts for beginners and expert traders worldwide.",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.instaforex.eu/"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "FxPro | Trusted Forex Broker | Online Forex Trading Platform",
+            "about": "Trade Forex, Indices, Stocks and more with FxPro - the world's No. 1 broker. Trade like a Pro. A broker you can trust. Very Good. Based on 355 reviews.",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.fxpro.com/"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "Forex companies - Cyprus - OnCyprus",
+            "about": "Find Forex companies in Cyprus in the most complete Online Yellow Pages OnCyprus.Com with thousands of registered Companies in Cyprus.",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.oncyprus.com/en/dir/cyprus_forex_companies.html"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "Forex Companies in Limassol | A Haven for Thriving Careers",
+            "about": "FxPro: A highly respected forex broker with a global presence, FxPro offers a comprehensive suite of trading platforms and tools, as well as ...",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.grsrecruitment.com/forex-companies-limassol/"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "159 Forex jobs in Cyprus (10 new)",
+            "about": "159 Forex Jobs in Cyprus (10 new) \u00b7 Customer Support Agent with Arabic (Forex) \u00b7 Client Services Officer - Arabic Speaker \u00b7 Account Manager (English Speaking).",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://cy.linkedin.com/jobs/forex-jobs"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "Best Forex Brokers in Cyprus in 2025 - WikiFX",
+            "about": "Here we present you the list of Best Forex Brokers in Cyprus for 2025 to save your time and help you to gain more confidence in forex trading.",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.wikifx.com/en/best/best-forex-brokers-in-cyprus.html"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "Why Cyprus is a Forex Broker's Heaven - Lexology",
+            "about": "Why Cyprus is a Forex Broker's Heaven \u00b7 Full support with CySEC licensing and compliance manuals. \u00b7 Company formation and corporate governance.",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.lexology.com/library/detail.aspx?g=cdfca33d-d3ce-4510-bbf2-f5eeb243636a"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "Forex Trading Online | FX Markets | Currencies | FOREX.com Europe",
+            "about": "FOREX.com Europe offers FX & online CFD trading with award-winning platforms, tight spreads, quality executions, powerful trading tools & 24-hour live ...",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.forex.com/ie/"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "HF Markets - World Leader in Financial Trading",
+            "about": "HF Markets is an award winning forex and commodities broker, providing ... Cyprus. Risk Warning: CFDs are complex instruments and come with a high risk ...",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.hfeu.com/en/"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "Best Forex Brokers in Cyprus in 2026 - BrokerChooser",
+            "about": "Dive into our toplist of regulated and trusted brokers that we tested with real money. Each broker is available in Cyprus.",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://brokerchooser.com/best-brokers/best-forex-brokers/cyprus"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "How to get a Forex license in Cyprus - Gofaizen & Sherle",
+            "about": "Why Choose Cyprus for a Forex Broker License? ... The CySEC Forex License allows you to legally provide trading services (STP, Market Maker, MTF, ...",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://gofaizen-sherle.com/forex-license/cyprus"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "197 Forex jobs in Cyprus",
+            "about": "197 Forex jobs in Cyprus ; Chief Risk Officer (CRO) - Forex / CFD. \u20ac70,000 - \u20ac110,000 yearly ; Chief Revenue Officer (CRO) - Forex / CFD. \u20ac55,000 - \u20ac95,000 yearly.",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.cypruswork.com/jobs/?categories[]=Forex"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "Fraudulent Investment And Forex Companies In Cyprus - Mondaq",
+            "about": "Common Red Flags \u00b7 Claims of being \"Cyprus regulated\" without a valid CySEC licence \u00b7 Unrealistic promises of fixed monthly returns \u00b7 Lack of a ...",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.mondaq.com/cyprus/fin-tech/1700014/fraudulent-investment-and-forex-companies-in-cyprus-why-immediate-legal-action-matters"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        }
+    ]
+}

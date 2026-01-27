@@ -12,4 +12,7 @@ dependencies = [
     "python-dotenv>=1.2.1",
     "sqlalchemy>=2.0.23",
     "psycopg2-binary>=2.9.9",
+    "scrapfly-sdk>=0.8.24",
+    "parsel>=1.10.0",
+    "beautifulsoup4>=4.14.3",
 ]

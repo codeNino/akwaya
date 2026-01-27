@@ -1,4 +1,5 @@
 import yaml
+import json
 from .logger import AppLogger
 
 logger = AppLogger("utils.Loader")()
@@ -15,6 +16,34 @@ def load_yaml(path: str) -> dict:
         raise
     except yaml.YAMLError as e:
         logger.error('YAML error: %s', e)
+        raise
+    except Exception as e:
+        logger.error('Unexpected error: %s', e)
+        raise
+
+
+def export_to_json(data: list, path: str) -> None:
+    """Export data to a JSON file."""
+    try:
+        with open(path, 'w') as file:
+            json.dump(data, file, indent=4)
+        logger.debug('Data exported to %s', path)
+    except Exception as e:
+        logger.error('Unexpected error: %s', e)
+        raise
+
+def load_json(path: str) -> list:
+    """Load data from a JSON file."""
+    try:
+        with open(path, 'r') as file:
+            data = json.load(file)
+        logger.debug('Data retrieved from %s', path)
+        return data
+    except FileNotFoundError:
+        logger.error('File not found: %s', path)
+        raise
+    except json.JSONDecodeError as e:
+        logger.error('JSON decode error: %s', e)
         raise
     except Exception as e:
         logger.error('Unexpected error: %s', e)
