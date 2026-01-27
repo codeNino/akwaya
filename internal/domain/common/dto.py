@@ -48,6 +48,10 @@ class WebsiteInfo(TypedDict, total=False):
     about: Optional[str]
 
 
+class ArticleExtractionOutput(BaseModel):
+    individuals: List[str] = Field(..., description="keywords about indviduals in article")
+    businesses: List[str] = Field(..., description="Keywords about businesses in article")
+
 class WebsiteScrapingOutput(BaseModel):
    information: List[WebsiteInfo] = Field(..., description="List of valid website information")
 

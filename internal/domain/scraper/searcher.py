@@ -64,12 +64,3 @@ class WebSearcher:
             return []
 
 
-    @staticmethod
-    def flatten_to_json(nested_list: List[List], json_file_path: str):
-        if not nested_list:
-            return
-        flat_list = [item for sublist in nested_list for item in sublist]
-
-        export_to_json(flat_list, json_file_path)
-
-        return
