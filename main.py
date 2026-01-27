@@ -1,29 +1,22 @@
-import asyncio
-import json
+from internal.domain.pipeline.augmentation import trigger_leads_information_augmentation
+from internal.domain.pipeline.ingestion import trigger_leads_sourcing
 from internal.config.secret import validate_environment
-from internal.domain.scraper.sources.parser import normalize_linkedin_url
-from internal.domain.scraper.crawler import WebCrawler
-from internal.utils.loader import export_to_json
-from internal.config.paths_config import (FUNNEL_CONFIG_PATH,
-        RAW_PROSPECTIVE_WHITELABELS_PATH,
-        RAW_PROSPECTIVE_INDIVIDUALS_PATH, ARTIFACTS_DIR)
+from internal.config.paths_config import (LEADS_SOURCED_PATH, LEADS_AUGMENTED_PATH)
 
 validate_environment(
-    ["SERPER_API_KEY", "GOOGLE_API_KEY", "OPENAI_KEY", "SCRAPFLY_KEY"]
+    ["SERPER_API_KEY", "GOOGLE_API_KEY", "OPENAI_KEY"]
 )
     
+def main(): 
 
-web_crawler = WebCrawler()
-
-def main():
-    
-    with open(RAW_PROSPECTIVE_INDIVIDUALS_PATH, "r", encoding="utf-8") as f:
-        data = json.load(f)
-        payload = [{"prospect_id": item['prospect_id'], 
-        "url" : normalize_linkedin_url(item['source_url'])} for item in data]
-        results = asyncio.run(web_crawler.enrich_linkedin_profiles(payload[1:2]))
-        export_to_json(results, ARTIFACTS_DIR / "enriched_linkedin_profiles.json")
-    
+    trigger_leads_sourcing(
+        "Find me companies into forex and web trading in other countries close to cyprus", 
+        LEADS_SOURCED_PATH
+    )    
+    trigger_leads_information_augmentation(
+        LEADS_SOURCED_PATH,
+        LEADS_AUGMENTED_PATH
+    )    
     
 
 
