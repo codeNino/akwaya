@@ -32,3 +32,15 @@ scraped_website_evaluation_prompt = ChatPromptTemplate.from_messages([
     "),
     ("user", "{website_data}"),
 ])
+
+leads_extraction_from_articles_prompt = ChatPromptTemplate.from_messages([
+    ("system", "You are an expert at extracting businesses and individuals from data scraped from articles. \
+        Your task is to extract relevant information (keywords e.g names + locations + context) about businesses or individuals that can be \
+           used to search for them on the internet.\
+            What you extract will be used as a query to source for more information about the leads\
+                on the internet.\
+                    BEWARE THAT THE KEYWORDS ARE EXPECTED TO MATCH TO UNIQUE ENTITIES SO TWO KEYWORDS \
+                        SHOULD NOT DESCRIBE THE SAME ENTITY DIFFERENTLY. AVOID DUPLICATES."),    
+    ("user", "{scraped_data}"),
+])
+    

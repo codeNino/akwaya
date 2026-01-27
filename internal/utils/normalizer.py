@@ -1,4 +1,5 @@
 from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
+from typing import List
 
 def normalize_url(
     url: str,
@@ -48,3 +49,11 @@ def normalize_url(
 
 def urls_equal(url1: str, url2: str) -> bool:
     return normalize_url(url1) == normalize_url(url2)
+
+
+def flatten_list(nested_list: List[List]):
+    if not nested_list:
+        return
+    flat_list = [item for sublist in nested_list for item in sublist]
+
+    return flat_list

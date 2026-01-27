@@ -9,10 +9,10 @@ validate_environment(
     
 def main(): 
 
-    trigger_leads_sourcing(
-        "Find me companies into forex and web trading in other countries close to cyprus", 
-        LEADS_SOURCED_PATH
-    )    
+    # trigger_leads_sourcing(
+    #     "Find me companies who have attended a Forex Expo in the last 2 years", 
+    #     LEADS_SOURCED_PATH
+    # )    
     trigger_leads_information_augmentation(
         LEADS_SOURCED_PATH,
         LEADS_AUGMENTED_PATH

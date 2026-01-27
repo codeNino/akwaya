@@ -6,13 +6,15 @@ from langchain_openai import ChatOpenAI
 from .prompt import (
     keyword_generation_prompt,
     sourced_leads_preprocessing_prompt,
-    scraped_website_evaluation_prompt
+    scraped_website_evaluation_prompt,
+    leads_extraction_from_articles_prompt
 )
 from internal.domain.common.dto import(
     KeywordGenerationOutput,
     LeadsPreprocessingOutput,
     Prospect,
-    WebsiteScrapingOutput
+    WebsiteScrapingOutput,
+    ArticleExtractionOutput
 )
 
 
@@ -71,3 +73,18 @@ async def evaluate_scraped_website(website_data: List[Dict], batch_size: int = 1
         processed_websites.information.extend(output.information)
     # print(processed_websites.information[:3])
     return processed_websites
+
+async def extract_leads_from_articles(articles: List[Dict], batch_size: int = 10) -> ArticleExtractionOutput:
+    batches = chunk_list(articles, batch_size)
+    chain = leads_extraction_from_articles_prompt | llm.with_structured_output(ArticleExtractionOutput)
+    responses = await chain.abatch(
+        [{"scraped_data": batch} for batch in batches]
+    )
+    processed_articles = ArticleExtractionOutput(
+        individuals=[],
+        businesses=[],
+    )
+    for output in responses:
+        processed_articles.individuals.extend(output.individuals)
+        processed_articles.businesses.extend(output.businesses)
+    return processed_articles

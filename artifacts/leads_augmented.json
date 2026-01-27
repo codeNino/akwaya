@@ -1,50 +1,34 @@
 [
     {
         "source_platform": "google_places",
-        "name": "TFI Markets Ltd",
-        "about": "TFI Markets specialises in currency conversions, third party payments and the provision of risk mitigating solutions to corporate clients. It is an Investment Firm regulated by Cyprus Securities and Exchange Commission, CySEC.",
+        "name": "TNFX",
         "contact": {
-            "email": "sales@tfimarkets.com",
-            "phone": "22 749800",
-            "website": "https://www.tfimarkets.com/"
+            "phone": "04 552 6527",
+            "website": "http://tnfx.co/",
+            "email": "[email\u00a0protected]"
         },
         "location": {
-            "country": "Cyprus",
-            "country_acronym": "CY",
-            "address": "Alpha Business Center, Pindarou 27-3rd Floor, Office 301 Block A, Nicosia"
+            "address": "Opal Tower",
+            "country_code": "AE",
+            "country": "United Arab Emirates"
         },
-        "business_context": "finance"
+        "business_context": "finance",
+        "about": "TNFX aims to be one of the world\u2019s leading trading service providers by delivering exceptional support to investors worldwide."
     },
     {
         "source_platform": "google_places",
-        "name": "NAGA Central",
-        "about": "NAGA Markets Europe Ltd is authorised and regulated by the Cyprus Securities and Exchange Commission (CySEC). No additional about information provided.",
+        "name": "Dubai World Trade Centre",
         "contact": {
-            "email": null,
-            "phone": "25 041410",
-            "website": "https://www.naga.com/"
+            "phone": "04 389 3999",
+            "website": "https://www.dwtc.com/",
+            "email": "[email\u00a0protected]"
         },
         "location": {
-            "country": "Cyprus",
-            "country_acronym": "CY",
-            "address": "Agias Zonis 11, Lemesos"
+            "address": "Sheikh Zayed Rd",
+            "country_code": "AE",
+            "country": "United Arab Emirates"
         },
-        "business_context": "finance"
-    },
-    {
-        "source_platform": "google_places",
-        "name": "Argo Exchange \u0391\u03bd\u03c4\u03b1\u03bb\u03bb\u03b1\u03ba\u03c4\u03ae\u03c1\u03b9\u03b1 \u03a3\u03c5\u03bd\u03b1\u03bb\u03bb\u03ac\u03b3\u03bc\u03b1\u03c4\u03bf\u03c2 \u0391.\u0395.",
-        "about": null,
-        "contact": {
-            "email": null,
-            "phone": "21 0323 9659",
-            "website": "http://www.argo-exchange.gr/"
-        },
-        "location": {
-            "country": "Greece",
-            "country_acronym": "GR",
-            "address": "Karagiorgi Servias 10, Athina"
-        },
-        "business_context": "finance"
+        "business_context": "event_venue",
+        "about": "As the region\u2019s leading purpose-built complex for events and exhibitions, Dubai World Trade Centre provides a platform for unparalleled business and networking opportunities. Their vision is to advance Dubai as the world\u2019s leading business destination and the centre of tomorrow\u2019s potential."
     }
 ]
