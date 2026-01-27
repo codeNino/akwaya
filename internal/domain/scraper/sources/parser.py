@@ -1,25 +1,13 @@
-from .dto import (ProspectParserOutput,ProspectDict)
-from typing import List, Dict
-from datetime import datetime
-from internal.config.secret import SecretManager
-import uuid
+from internal.domain.common.dto import Prospect
+from typing import List, Dict, Tuple, Optional
 
+def extract_country(address_components: List[Dict]) -> Tuple[Optional[str], Optional[str]]:
+    for component in address_components or []:
+        if "country" in component.get("types", []):
+            return component.get("longText"), component.get("shortText")
+    return None, None
 
-from urllib.parse import urlparse, urlunparse
-
-from langchain_openai import ChatOpenAI
-from .prompt import parser_prompt
-from .scoring import calculate_discovery_confidence
-
-
-llm = ChatOpenAI(
-    model="gpt-4.1-mini",
-    temperature=0,
-    api_key=SecretManager.OPENAI_KEY,
-)
-
-
-def extract_important_google_places_info(places: List[Dict]) -> List[ProspectDict]:
+def extract_important_google_places_info(places: List[Dict]) -> List[Prospect]:
     def safe_get(obj, *keys):
         for key in keys:
             obj = obj.get(key, {})
@@ -28,55 +16,21 @@ def extract_important_google_places_info(places: List[Dict]) -> List[ProspectDic
     important_data = []
 
     for place in places:
+        country, country_code = extract_country(place.get("addressComponents", []))
         extracted = {
-            "prospect_id": f"temp_{uuid.uuid4()}",
-            "source_platform": "google_maps",
+            "source_platform": "google_places",
             "name":safe_get(place, "displayName", "text"),
-            "contact_info": {
+            "contact": {
                 "phone": place.get("nationalPhoneNumber"),
                 "website": place.get("websiteUri"),
             },
-            "location": place.get("shortFormattedAddress"),
+            "location": {
+                "address": place.get("shortFormattedAddress"),
+                "country_code": country_code,
+                "country": country,
+            },
             "business_context": place.get("primaryType"),
-            "source_url": place.get("googleMapsUri"),
-            "discovery_confidence_score": calculate_discovery_confidence(
-                email=place.get("email"),
-                phone=place.get("nationalPhoneNumber"),
-                website=place.get("websiteUri"),
-                location=place.get("shortFormattedAddress"),
-                business_type=place.get("primaryType"),
-            ),
-            "timestamp": datetime.now().isoformat(),
         }
         important_data.append(extracted)
 
     return important_data
-
-
-def normalize_linkedin_url(url: str) -> str:
-    parsed = urlparse(url)
-
-    if parsed.netloc.endswith("linkedin.com"):
-        parts = parsed.netloc.split(".")
-        # Replace subdomain with 'www'
-        parsed = parsed._replace(netloc="www.linkedin.com")
-
-    return urlunparse(parsed)
-
-
-
-def extract_linkedin_profiles(
-    cse_results: List[Dict]
-) -> List[ProspectDict]:
-    """
-    Takes a list of Google CSE LinkedIn results and returns
-    a list of normalized LinkedIn profiles using one LLM call.
-    """
-
-    chain = parser_prompt | llm.with_structured_output(ProspectParserOutput)
-
-    response = chain.invoke({
-        "results": cse_results
-    })
-
-    return response.model_dump()["prospects"]
