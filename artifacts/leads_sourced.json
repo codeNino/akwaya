@@ -3,129 +3,17 @@
     "businesses": [
         {
             "source_platform": "google_places",
-            "name": "Habby Forex Trading Academy",
+            "name": "FXBrokers NG",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0907 309 7779",
-                "website": "http://habbyforex.com/"
+                "phone": "0703 239 6660",
+                "website": "https://forexbroker.ng/"
             },
             "location": {
                 "country": "Nigeria",
                 "country_acronym": "NG",
-                "address": "20 Victoria Arobieke St, Lekki"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "iFX EXPO",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "25 028710",
-                "website": "https://www.ifxexpo.com/"
-            },
-            "location": {
-                "country": "Cyprus",
-                "country_acronym": "CY",
-                "address": "Hyper Tower, Apostolou Andrea 11-3rd Floor, Limasol"
-            },
-            "business_context": null
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Firepips Forex Academy Lagos (HQ)",
-            "about": "FirePips offers expert forex trading signals, market analysis, and educational resources to help traders succeed in the forex market.",
-            "contact": {
-                "email": null,
-                "phone": "0913 630 3131",
-                "website": "https://www.firepipsfx.com/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "Block 1A, Tatiana Court, Ikota Villa Estate, Lagos"
-            },
-            "business_context": null
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Neuron Markets International LLC",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "054 279 7922",
-                "website": "http://www.neuronmarkets.com/"
-            },
-            "location": {
-                "country": "United Arab Emirates",
-                "country_acronym": "AE",
-                "address": "Pyramid Centre - Umm Hureir Road"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "PrimeX Capital",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "800 774639",
-                "website": "https://primexcapital.com/en"
-            },
-            "location": {
-                "country": "United Arab Emirates",
-                "country_acronym": "AE",
-                "address": "Westburry Office Tower, DAMAC Business Tower - Office No: 2401 Floor No 24"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Profit Arcade - FOREX Trading Secrets Exposed",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0806 926 9863",
-                "website": null
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "30A Agoro St, Ikeja"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "HFM Nigeria",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0706 370 5519",
-                "website": "https://www.hfm.com/int/en-ng/?mcid=17415"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "3rd floor, Wuraola House, 90 Allen Avenue, Ikeja, Lagos"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Flotrade Investments",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0708 114 1535",
-                "website": null
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "4, Oyetubo Street, Off Obafemi Awolowo Wy, Lagos"
+                "address": "9 Royal Estate, Royal St, Lagos"
             },
             "business_context": "finance"
         },
@@ -147,51 +35,163 @@
         },
         {
             "source_platform": "google_places",
-            "name": "TeamFx",
+            "name": "Forex Trading Company",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0701 917 0067",
-                "website": "https://wa.me/2347019170067"
+                "phone": "0805 158 1633",
+                "website": null
             },
             "location": {
                 "country": "Nigeria",
                 "country_acronym": "NG",
-                "address": "TeamFx Academy, Ikeja"
+                "address": "11A Allen Ave, Lagos"
+            },
+            "business_context": "consultant"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "HFM Nigeria",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0706 370 5519",
+                "website": "https://www.hfm.com/int/en-ng/?mcid=17415"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "3rd floor, Wuraola House, 90 Allen Avenue, Ikeja, Lagos"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "FXBrokers NG",
+            "name": "Oasis International Forex School Lagos",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0703 239 6660",
-                "website": "https://forexbroker.ng/"
+                "phone": "0915 541 3085",
+                "website": "https://web.facebook.com/Oasisforexschool"
             },
             "location": {
                 "country": "Nigeria",
                 "country_acronym": "NG",
-                "address": "9 Royal Estate, Royal St, Lagos"
+                "address": "1st Floor, close to Oluyole bus stop, 64 Kudirat Abiola Way, Fidelity bank, Ikeja"
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Profit Arcade - FOREX Trading Secrets Exposed",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0806 926 9863",
+                "website": null
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "30A Agoro St, Ikeja"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "EXCO LAGOS TRADING CENTRE",
+            "name": "Rolifx Trades (RFT Academy) | Best Forex Mentorship Academy, Lagos",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0916 209 7275",
-                "website": "https://excotrader.com/"
+                "phone": "0805 400 3006",
+                "website": "https://www.rolifxtrades.com/"
             },
             "location": {
                 "country": "Nigeria",
                 "country_acronym": "NG",
-                "address": "2, Tunde Gafar Close Off Adeniyi Jones Ikeja, Lagos"
+                "address": "Jakande Gate, 16/18 Egbe Rd, LGA, Oke-Afa/Ejigbo"
+            },
+            "business_context": "consultant"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "MBA FOREX Limited",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0705 461 3070",
+                "website": null
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "2 Allen Ave, Lagos"
             },
             "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Flotrade Investments",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0708 114 1535",
+                "website": null
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "4, Oyetubo Street, Off Obafemi Awolowo Wy, Lagos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Trade Harbor",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0908 785 5856",
+                "website": null
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "43b, Emina Crescent, Toyin Street, Lagos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Vantage Markets Nigeria",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0916 670 4000",
+                "website": "http://www.vantagemarkets.com/en-za"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "Block 1, Plot 8, Memunat Ayodeji Crescent, By Etal Avenue Ikeja, Lagos"
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_places",
+            "name": "ICM Trader",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "020 7442 5610",
+                "website": "http://www.icmtrader.com/"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "73, 5th Floor Oluwatobi House, Allen Avenue Ikeja, Lagos"
+            },
+            "business_context": "consultant"
         },
         {
             "source_platform": "google_places",
@@ -211,190 +211,366 @@
         },
         {
             "source_platform": "google_places",
-            "name": "Exhibition and Trade Fair Limited",
+            "name": "Habby Forex Trading Academy",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "23412135557",
-                "website": null
+                "phone": "0907 309 7779",
+                "website": "http://habbyforex.com/"
             },
             "location": {
                 "country": "Nigeria",
                 "country_acronym": "NG",
-                "address": "39 Opebi Rd, Adebola House, Ikeja"
-            },
-            "business_context": null
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Success Forex Global Investment",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0808 597 0934",
-                "website": null
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "4 Molusi Ave, Lagos"
+                "address": "20 Victoria Arobieke St, Lekki"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "Probaba FX",
+            "name": "PIPS ARCADE",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0806 866 9727",
-                "website": "https://probabafx.net/"
+                "phone": "0808 394 7636",
+                "website": null
             },
             "location": {
                 "country": "Nigeria",
                 "country_acronym": "NG",
-                "address": "Alpha Beach, 2 Ugochukwu Duru St, Lekki"
+                "address": "73 Allen Ave, Ikeja"
+            },
+            "business_context": "consultant"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Rally Trade",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0901 874 0318",
+                "website": "http://www.rally.trade/"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "21 Adeniyi Jones, Ikeja"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "EXPOZE Group",
+            "name": "Revglobal Forex Institute",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0708 000 1191",
-                "website": "https://www.expoze.ng/"
+                "phone": "0704 033 5379",
+                "website": "https://www.revglobalforexinstitute.com/"
             },
             "location": {
                 "country": "Nigeria",
                 "country_acronym": "NG",
-                "address": "1/2 Ijaiye Rd, Lagos"
+                "address": "Ponle Bus Stop, 1 Ponle Street, 2nd Floor, Left Wing wing, Egbeda Idimu, Road"
             },
             "business_context": null
         },
         {
             "source_platform": "google_places",
-            "name": "Forex Trading Club-The Fx-Generals",
+            "name": "CJC MARKETS LAGOS HQ",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0805 402 6489",
-                "website": "http://www.thefxgenerals.com/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "4 Oyekan Shobowale St, Lagos"
-            },
-            "business_context": null
-        },
-        {
-            "source_platform": "google_places",
-            "name": "OCTA.FX TRADE INVESTMENT PLATFORM",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0810 813 3563",
+                "phone": "0905 386 6018",
                 "website": null
             },
             "location": {
                 "country": "Nigeria",
                 "country_acronym": "NG",
-                "address": "Industrial Estate, Plot 9A, Bock E, Lagos - Badagry Expy, Lagos"
+                "address": "103 Allen Ave, Ikeja"
             },
             "business_context": "corporate_office"
         },
         {
             "source_platform": "google_places",
-            "name": "FXGiants Nigeria",
+            "name": "Firepips Forex Academy Ikeja | Best Forex Academy In Lagos, Nigeria",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0704 805 9146",
-                "website": "https://www.fxgiants.com/"
+                "phone": "0913 630 3131",
+                "website": "https://firepipsfx.com/"
             },
             "location": {
                 "country": "Nigeria",
                 "country_acronym": "NG",
-                "address": "1st Floor Plot 1/3 Egbeda, Akowonjo Rd, De Santos Hotel, Lagos"
+                "address": "Suite 17, Motorways Center, Motorways Avenue, SevenUp Bottling Company, Lagos"
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_places",
+            "name": "7B Forex Ltd",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0903 812 9463",
+                "website": "http://7bforex.ng/"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "Block A3, Suite 508/509, HFP Eastline Shopping Complex, Lekki - Epe Expy, Abraham Adesanya Roundabout, Lagos"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "Focus on Trade",
+            "name": "RespectedFX Bureau de Change in Lagos",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0901 263 5783",
+                "phone": "0803 784 6535",
+                "website": "https://www.respectedfx.com/"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "suite c2, vgc, Ikota Shopping Complex, Niyi Okunubi St, Lagos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Instaforex Nigeria",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0813 345 0038",
+                "website": "https://instaforex.com.ng/"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "First Floor, 31 Wetheral Rd, Owerri"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Forward Marketing Bureau De Change",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0802 300 0030",
                 "website": null
             },
             "location": {
                 "country": "Nigeria",
                 "country_acronym": "NG",
-                "address": "1 Somoye Osundairo St, Lagos"
+                "address": "Silverado Mall, 23b Admiralty Wy, Lekki"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "GOOD -START TRADE LINKS BUREAU DE CHANGE NIGERIA LTD",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0810 741 4021",
+                "website": null
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "SHOP F17, OZIDE PLAZA, OSOLO WAY ISOLO, Lagos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "DAN DAHKA AND BROTHERS ENTERPRISE BUREAUX DE CHANGE",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0806 606 9966",
+                "website": null
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "Shop F12, Ozide Plaza, 22 Osolo Wy, Lagos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Dealmakers Bureau De Change",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0808 181 0550",
+                "website": "http://www.dealmakersbdc.com/"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "38b Adebayo Doherty Rd, Lagos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Bureau - De Change Limited",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0803 388 1119",
+                "website": null
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "Suite No. 4, LSPDC Shopping Arcade, Ogba Suite No. 4 LSPDC Shopping Arcade, Ijaiye Rd, Ikeja"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Everdon Bureau de Change",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0809 898 9896",
+                "website": "http://www.everdonbdc.com/"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "Foresight House, 163/165 Broad St, Lagos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "TenTrade",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0700 000 0010",
+                "website": "http://www.tentrade.com/en/"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "45 Opebi Rd, Ikeja"
+            },
+            "business_context": "corporate_office"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "GC Markets",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0809 468 6526",
+                "website": null
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "79 Obafemi Awolowo Wy, Lagos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "IV Markets Nigeria",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0809 490 1115",
+                "website": null
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "Lagos NG, 79/81 Obafemi Awolowo Wy, Ikeja"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "TeamFx",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0701 917 0067",
+                "website": "https://wa.me/2347019170067"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "TeamFx Academy, Ikeja"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "MS Africa Academy",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "0808 094 2279",
+                "website": "https://msafricaacademy.com/"
+            },
+            "location": {
+                "country": "Nigeria",
+                "country_acronym": "NG",
+                "address": "First Floor, Car Park 2, The Citadel Global Community Church Complex, 30 Kudirat Abiola Way, Ikeja"
             },
             "business_context": null
         },
         {
             "source_platform": "google_places",
-            "name": "FXTM Trading",
+            "name": "Bureau de Change",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0809 966 8113",
+                "phone": null,
                 "website": null
             },
             "location": {
                 "country": "Nigeria",
                 "country_acronym": "NG",
-                "address": "4th Floor, 5 Allen Ave, Ikeja"
+                "address": "86 Allen Ave, Ikeja"
             },
-            "business_context": "corporate_office"
+            "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "FMDQ Group PLC",
+            "name": "Forex Trading Academy (Blue Zone Capital)",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0201 700 8555",
-                "website": "https://www.fmdqgroup.com/"
+                "phone": "0706 511 0752",
+                "website": null
             },
             "location": {
                 "country": "Nigeria",
                 "country_acronym": "NG",
-                "address": "Exchange Place, 35 Idowu Taylor St, Lagos"
+                "address": "Ajangbadi, Bale Rd, Afromedia Rd, Ojo"
             },
-            "business_context": "corporate_office"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Afriexporter",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0803 393 5639",
-                "website": "http://www.afriexporter.com/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "SUITE 5, 3RD FLOOR 3C COMPLEX, 7 St Finbarr's College Rd, Lagos"
-            },
-            "business_context": "store"
+            "business_context": null
         }
     ],
     "articles": [
         {
             "source_platform": "google_search",
-            "name": "Forex Expo Dubai 2025 Nears Sell-Out as Over 250 Global Brands ...",
-            "about": "Top-tier participants already confirmed for this year's edition include ADSS, Alpari, CFI Financial Group, CXM, Eightcap, Exness, IC Markets, ...",
+            "name": "Best Forex Brokers for 2026 (Worldwide)",
+            "about": "For our 2026 Forex Broker Review we assessed, rated, and ranked 32 international forex brokers. Here are our findings.",
             "contact": {
                 "email": null,
                 "phone": null,
-                "website": "https://theforexexpo.com/dubai/media-details/forex-expo-dubai-2025-nears-sell-out-as-over-250-global-brands-confirm-participation"
+                "website": "https://www.forexbrokers.com/guides/forex-trading"
             },
             "location": {
                 "country": null,
@@ -405,12 +581,12 @@
         },
         {
             "source_platform": "google_search",
-            "name": "Awards - FOREX.com",
-            "about": "*StoneX retail trading live and demo accounts globally in the last 2 years. We are delighted to have won a number of forex awards for our trading platforms, ...",
+            "name": "HFM Nigeria - World Leader in Online Trading | Forex Broker",
+            "about": "HFM is a multi-asset regulated, licensed global broker, providing trading services & facilities to both retail & institutional clients.",
             "contact": {
                 "email": null,
                 "phone": null,
-                "website": "https://www.forex.com/en/about-us/awards/"
+                "website": "https://www.hfm.com/int/en-ng/"
             },
             "location": {
                 "country": null,
@@ -421,12 +597,12 @@
         },
         {
             "source_platform": "google_search",
-            "name": "Previous Expo Attendees & Companies",
-            "about": "Previous Expo Attendees \u00b7 ForexTime Ltd \u00b7 MetaTrader Solutions \u00b7 InvestBank International \u00b7 TradingSoft Technologies \u00b7 Global Markets Academy \u00b7 EastWest Exchange.",
+            "name": "List of Registered & Regulated Forex Brokers In Nigeria",
+            "about": "With local offices in Abuja and Lagos, FXTM has a great level of customer support, which is available on a 24-hour basis during weekdays. AvaTrade ...",
             "contact": {
                 "email": null,
                 "phone": null,
-                "website": "https://meforexexpo.com/attendees"
+                "website": "https://www.forex4you.com.ng/articles/registered-forex-broker-list/"
             },
             "location": {
                 "country": null,
@@ -437,12 +613,12 @@
         },
         {
             "source_platform": "google_search",
-            "name": "Forex Expo Dubai Wins Guinness World Records\u2122 with ... - ETF.com",
-            "about": "The historical event, Forex Expo took place in Dubai World Trade Center (DWTC) on 6-7 October 2025 with 262 Exhibiting companies and 147 ...",
+            "name": "Respected FX: Best Forex Broker Nigeria",
+            "about": "Exchange your US Dollars, British Pounds, and Euros to Nigerian Naira with ease at RespectedFX, your best Forex broker and bureau de change near you.",
             "contact": {
                 "email": null,
                 "phone": null,
-                "website": "https://www.etf.com/sections/news/forex-expo-dubai-wins-guinness-world-recordstm-20021-visitors"
+                "website": "https://www.respectedfx.com/"
             },
             "location": {
                 "country": null,
@@ -453,12 +629,12 @@
         },
         {
             "source_platform": "google_search",
-            "name": "Forex Expo Dubai Wins Guinness World Records ... - Yahoo Finance",
-            "about": "The historical event, Forex Expo took place in Dubai World Trade Center (DWTC) on 6-7 October 2025 with 262 Exhibiting companies and 147 ...",
+            "name": "Forex Brokers Nigeria | Lagos",
+            "about": "Forex Brokers Nigeria, Lagos. 52 likes \u00183 talking about this \u001313 were here. Forex Trading in Nigeria: The #1 Guide for Nigerian Beginner traders....",
             "contact": {
                 "email": null,
                 "phone": null,
-                "website": "https://finance.yahoo.com/news/forex-expo-dubai-wins-guinness-120000674.html"
+                "website": "https://www.facebook.com/forexbrokernigeria/"
             },
             "location": {
                 "country": null,
@@ -469,76 +645,12 @@
         },
         {
             "source_platform": "google_search",
-            "name": "Forex Expo Dubai 2025 Returns October 6\u20137 With Exclusive Prize ...",
-            "about": "Confirmed exhibitors include leading industry names such as ADSS, Alpari, CFI Financial Group, CXM, Eightcap, Equiti, Exness, FP Markets, IC ...",
+            "name": "10 Best Forex Brokers in Nigeria (2026)",
+            "about": "Exness. Exness is a globally recognized forex and CFD broker known for its tight spreads, fast execution, and strong local support in Nigeria.",
             "contact": {
                 "email": null,
                 "phone": null,
-                "website": "https://fox2now.com/business/press-releases/globenewswire/9530828/forex-expo-dubai-2025-returns-october-6-7-with-exclusive-prize-draw-including-jetour-x70-fl"
-            },
-            "location": {
-                "country": null,
-                "country_acronym": null,
-                "address": null
-            },
-            "business_context": null
-        },
-        {
-            "source_platform": "google_search",
-            "name": "Forex Traders Expo & Summit Dubai 2026",
-            "about": "This landmark edition brings together over 100 top sponsors and exhibitors, more than 90 global experts, and thousands of traders from the Middle East, Europe, ...",
-            "contact": {
-                "email": null,
-                "phone": null,
-                "website": "https://forextraderssummit.com/"
-            },
-            "location": {
-                "country": null,
-                "country_acronym": null,
-                "address": null
-            },
-            "business_context": null
-        },
-        {
-            "source_platform": "google_search",
-            "name": "Forex Expo | Alchemy Markets has been recognized as the Most ...",
-            "about": "25 FOREX EXPO 25 202 FORE EXPO FORE EXPO 2000 25 2025 FOREX EXPO RI 2 2025 . ... She shared what CFI is showcasing this year and how the company ...",
-            "contact": {
-                "email": null,
-                "phone": null,
-                "website": "https://www.instagram.com/reel/DRb3-7sjjcM/"
-            },
-            "location": {
-                "country": null,
-                "country_acronym": null,
-                "address": null
-            },
-            "business_context": null
-        },
-        {
-            "source_platform": "google_search",
-            "name": "Forex Expo Dubai 2025 proudly holds two Guinness World Records ...",
-            "about": "Forex Expo Dubai 2025 proudly holds two Guinness World Records\u2122 titles \u2014 a recognition that goes beyond numbers.",
-            "contact": {
-                "email": null,
-                "phone": null,
-                "website": "https://www.instagram.com/p/DPjV0J7E39B/"
-            },
-            "location": {
-                "country": null,
-                "country_acronym": null,
-                "address": null
-            },
-            "business_context": null
-        },
-        {
-            "source_platform": "google_search",
-            "name": "Neex has been recognized as the Best STP Broker at Forex Expo ...",
-            "about": "HFM has been recognized as the Best Broker of the Year 2... Dec 18, 2025 \u00b7 71 views. 01:21. We caught up with Adam Toro from the institutional ...",
-            "contact": {
-                "email": null,
-                "phone": null,
-                "website": "https://www.facebook.com/TheForexExpo/videos/neex-has-been-recognized-as-the-best-stp-broker-at-forex-expo-dubai-2025as-a-reg/871476918572785/"
+                "website": "https://www.fxleaders.com/forex-brokers/forex-brokers-by-country/forex-brokers-nigeria/"
             },
             "location": {
                 "country": null,
