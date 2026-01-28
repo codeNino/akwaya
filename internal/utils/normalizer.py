@@ -1,6 +1,6 @@
 from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
 import re
-from typing import Optional
+from typing import Optional, List
 
 
 EMAIL_REGEX = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
@@ -89,3 +89,43 @@ def normalize_email(email: str) -> Optional[str]:
     email = email.strip().lower()
 
     return email if EMAIL_REGEX.match(email) else None
+
+def flatten_list(nested_list: List[List]):
+    if not nested_list:
+        return
+    flat_list = [item for sublist in nested_list for item in sublist]
+
+    return flat_list
+
+
+def normalize_phone(phone: str, country_acronym: str) -> Optional[str]:
+    if not phone or not country_acronym:
+        return None
+    digits = DIGITS_ONLY.sub("", phone)
+
+    country_code = COUNTRY_CALLING_CODES.get(country_acronym)
+    if not country_code:
+        return None
+
+    if digits.startswith("0"):
+        digits = digits[1:]
+
+    if digits.startswith(country_code.replace("+", "")):
+        return f"+{digits}"
+
+    return f"{country_code}{digits}"
+
+def normalize_email(email: str) -> Optional[str]:
+    if not isinstance(email, str):
+        return None
+
+    email = email.strip().lower()
+
+    return email if EMAIL_REGEX.match(email) else None
+
+def flatten_list(nested_list: List[List]):
+    if not nested_list:
+        return
+    flat_list = [item for sublist in nested_list for item in sublist]
+
+    return flat_list
