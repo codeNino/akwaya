@@ -8,10 +8,12 @@ dependencies = [
     "langchain>=1.2.6",
     "langchain-core>=1.2.7",
     "langchain-openai>=1.1.7",
+    "langgraph>=0.2.0",
     "python-dotenv>=1.2.1",
     "sqlalchemy>=2.0.23",
     "psycopg2-binary>=2.9.9",
     "scrapfly-sdk>=0.8.24",
     "parsel>=1.10.0",
     "beautifulsoup4>=4.14.3",
+    "retell-sdk>=5.10.0",
 ]
