@@ -178,10 +178,6 @@ def save_enriched_results_as_database(
                 prospect_id = str(uuid.uuid4())
                 prepared_lead["prospect_id"] = prospect_id
                 
-                # Prepare data for models
-                contact = prepared_lead.get("contact", {})  
-                location = prepared_lead.get("location", {})
-                
                 # Extract contact info - filter_and_prepare_leads returns email/phone (singular)
                 email = contact.get("email")
                 phone = contact.get("phone")
@@ -264,7 +260,8 @@ def save_enriched_results_as_database(
 def main():
     """Main entry point for loading deduplication results"""
     results_path = LEADS_AUGMENTED_PATH
-    save_enriched_results_as_json(str(results_path))
+    # save_enriched_results_as_json(str(results_path))
+    save_enriched_results_as_database(str(results_path))
 
 if __name__ == "__main__":
     main()

@@ -22,8 +22,7 @@ import json
 
 from retell import Retell
 from internal.utils.logger import AppLogger
-from internal.utils.database import get_session
-from internal.utils.database.models import Prospect
+from internal.utils.database import get_session, DatabaseManager 
 from internal.config.secret import SecretManager
 from internal.config.paths_config import DB_MODELS_TEMP_DIR
 
@@ -92,7 +91,7 @@ def get_prospects_with_phones_from_files(
 
 def get_prospects_with_phones(limit: Optional[int] = None) -> List[Dict[str, Any]]:
     """
-    Query database for prospects with phone numbers
+    Query database for prospects with phone numbers using DatabaseManager
 
     Args:
         limit: Optional limit on number of prospects to return
@@ -100,27 +99,10 @@ def get_prospects_with_phones(limit: Optional[int] = None) -> List[Dict[str, Any
     Returns:
         List of prospect dictionaries with phone numbers
     """
-    logger.info("Querying database for prospects with phone numbers")
-
-    prospects = []
     with get_session() as session:
-        query = (
-            session.query(Prospect)
-            .filter(Prospect.has_phone == True)
-            .filter(Prospect.phones.isnot(None))
-            .filter(Prospect.phones != "")
-        )
-
-        if limit:
-            query = query.limit(limit)
-
-        db_prospects = query.all()
-
-        for prospect in db_prospects:
-            prospect_dict = prospect.to_dict()
-            prospects.append(prospect_dict)
-
-    logger.info("Found %d prospects with phone numbers", len(prospects))
+        db_manager = DatabaseManager(session=session)
+        prospects = db_manager.get_prospects_with_phones(limit=limit)
+    
     return prospects
 
 
@@ -158,7 +140,7 @@ def make_retell_call(
     Args:
         prospect: Prospect dictionary with phone number and other data
         from_number: Phone number to call from (defaults to RETELL_FROM_NUMBER)
-        agent_id: Optional Retell agent ID
+        agent_id: Retell agent ID (required for outbound calls, defaults to RETELL_AGENT_ID)
 
     Returns:
         Dictionary with call response or error information
@@ -168,6 +150,23 @@ def make_retell_call(
 
     if not from_number:
         error_msg = "No from_number provided and RETELL_FROM_NUMBER not set"
+        logger.error(error_msg)
+        return {
+            "success": False,
+            "error": error_msg,
+            "prospect_id": prospect.get("prospect_id"),
+        }
+    
+    # Agent ID is required for outbound calls
+    if not agent_id:
+        agent_id = SecretManager.RETELL_AGENT_ID
+    
+    if not agent_id:
+        error_msg = (
+            "No agent_id provided and RETELL_AGENT_ID not set. "
+            "Agent ID is required for outbound calls. "
+            "Please set RETELL_AGENT_ID in your environment variables or pass agent_id parameter."
+        )
         logger.error(error_msg)
         return {
             "success": False,
@@ -204,16 +203,11 @@ def make_retell_call(
             to_number,
             from_number,
         )
-
-        # Prepare call parameters
-        # Note: agent_id is not a parameter for create_phone_call()
-        # It should be configured in the Retell dashboard or passed via other means
         call_params = {
             "from_number": from_number,
             "to_number": to_number,
         }
 
-        # Add custom data with prospect information
         call_params["retell_llm_dynamic_variables"] = {
             "prospect_name": prospect.get("name"),
             "business_context": prospect.get("business_context"),
@@ -222,11 +216,13 @@ def make_retell_call(
             "platforms": prospect.get("platforms"),
             "date_time": prospect.get("created_at"),
         }
-        
-        # If agent_id is provided, log it but don't pass it to create_phone_call
-        # The agent_id should be configured in your Retell account settings
-        if agent_id:
-            logger.info("Agent ID provided: %s (not passed to API, configure in Retell dashboard)", agent_id)
+
+        logger.info("Call parameters: %s", call_params)
+        call_params["metadata"] = {
+            "prospect_id": prospect.get("prospect_id"),
+            "prospect_name": prospect.get("name"),
+            "to_number": to_number,
+        }
 
         # Make the call
         phone_call_response = retell_client.call.create_phone_call(**call_params)
@@ -277,8 +273,6 @@ def call_prospects_with_phones(
     """
     logger.info("Starting phone calling campaign for prospects with phone numbers")
 
-    # Get prospects with phone numbers
-    # prospects = get_prospects_with_phones(limit=limit)
     prospects = get_prospects_with_phones_from_files(limit=limit)
 
     if not prospects:
@@ -297,7 +291,6 @@ def call_prospects_with_phones(
         "results": [],
     }
 
-    # Make calls to each prospect
     for prospect in prospects:
         result = make_retell_call(
             prospect=prospect, from_number=from_number, agent_id=agent_id
