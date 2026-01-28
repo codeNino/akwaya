@@ -1,4 +1,19 @@
 from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
+import re
+from typing import Optional
+
+
+EMAIL_REGEX = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
+DIGITS_ONLY = re.compile(r"\D+")
+
+COUNTRY_CALLING_CODES = {
+    "GR": "+30",
+    "CY": "+357",
+    "UK": "+44",
+    "US": "+1",
+    "AU": "+61",
+    "NZ": "+64",
+}
 
 def normalize_url(
     url: str,
@@ -48,3 +63,29 @@ def normalize_url(
 
 def urls_equal(url1: str, url2: str) -> bool:
     return normalize_url(url1) == normalize_url(url2)
+
+
+def normalize_phone(phone: str, country_acronym: str) -> Optional[str]:
+    if not phone or not country_acronym:
+        return None
+    digits = DIGITS_ONLY.sub("", phone)
+
+    country_code = COUNTRY_CALLING_CODES.get(country_acronym)
+    if not country_code:
+        return None
+
+    if digits.startswith("0"):
+        digits = digits[1:]
+
+    if digits.startswith(country_code.replace("+", "")):
+        return f"+{digits}"
+
+    return f"{country_code}{digits}"
+
+def normalize_email(email: str) -> Optional[str]:
+    if not isinstance(email, str):
+        return None
+
+    email = email.strip().lower()
+
+    return email if EMAIL_REGEX.match(email) else None

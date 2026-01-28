@@ -1,0 +1,17 @@
+{
+  "prospect_id": "986d7ddc-b5ac-48dc-bf4c-c3039205e53d",
+  "name": "Argo Exchange Ανταλλακτήρια Συναλλάγματος Α.Ε.",
+  "about": null,
+  "platforms": "google_places",
+  "emails": null,
+  "phones": null,
+  "websites": "http://www.argo-exchange.gr/",
+  "country": "Greece",
+  "country_acronym": "GR",
+  "address": "Karagiorgi Servias 10, Athina",
+  "business_context": "finance",
+  "has_phone": true,
+  "has_email": false,
+  "created_at": "2026-01-27T14:26:42.037947",
+  "updated_at": null
+}

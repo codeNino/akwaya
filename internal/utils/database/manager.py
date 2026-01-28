@@ -10,7 +10,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import and_
 
 from internal.utils.logger import AppLogger
-from internal.utils.database.models import Prospect, ProspectSource, RawSnapshot
+from internal.utils.database.models import Prospect
 from internal.utils.database.session import get_session
 
 logger = AppLogger("utils.database.manager")()
@@ -54,7 +54,9 @@ class DatabaseManager:
         platforms: List[str],
         profile_urls: Dict[str, str],
         location: Dict[str, Any],
-        discovery_confidence: float,
+        business_context: Optional[str],
+        has_phone: bool,
+        has_email: bool,
         created_at: datetime,
         about: Optional[str] = None,
         session: Optional[Session] = None
@@ -71,7 +73,9 @@ class DatabaseManager:
             platforms: List of platforms (e.g., ['linkedin', 'google_maps'])
             profile_urls: Dict mapping platform to URL
             location: Dict with location data
-            discovery_confidence: Confidence score (0.0-1.0)
+            business_context: Business context
+            has_phone: Whether the prospect has a phone
+            has_email: Whether the prospect has an email
             created_at: Creation timestamp
             about: Optional about/description text
             session: Optional session (if not using context manager)
@@ -96,7 +100,9 @@ class DatabaseManager:
                 prospect.websites = websites
                 prospect.profile_urls = profile_urls
                 prospect.location = location
-                prospect.discovery_confidence = discovery_confidence
+                prospect.business_context = business_context
+                prospect.has_phone = has_phone
+                prospect.has_email = has_email
                 logger.debug("Updated prospect %s", prospect_id)
             else:
                 prospect = Prospect(
@@ -109,7 +115,9 @@ class DatabaseManager:
                     websites=websites,
                     profile_urls=profile_urls,
                     location=location,
-                    discovery_confidence=discovery_confidence,
+                    business_context=business_context,
+                    has_phone=has_phone,
+                    has_email=has_email,
                     created_at=created_at
                 )
                 db_session.add(prospect)
@@ -125,112 +133,112 @@ class DatabaseManager:
             logger.error("Failed to create/update prospect %s: %s", prospect_id, e)
             return None
     
-    def create_prospect_source(
-        self,
-        prospect_id: str,
-        platform: str,
-        discovered_at: datetime,
-        discovery_method: Optional[str] = None,
-        raw_snapshot_id: Optional[str] = None,
-        session: Optional[Session] = None
-    ) -> Optional[ProspectSource]:
-        """
-        Create a prospect source record
+    # def create_prospect_source(
+    #     self,
+    #     prospect_id: str,
+    #     platform: str,
+    #     discovered_at: datetime,
+    #     discovery_method: Optional[str] = None,
+    #     raw_snapshot_id: Optional[str] = None,
+    #     session: Optional[Session] = None
+    # ) -> Optional[ProspectSource]:
+    #     """
+    #     Create a prospect source record
         
-        Args:
-            prospect_id: UUID string
-            platform: 'linkedin' or 'google_maps'
-            discovered_at: Discovery timestamp
-            discovery_method: Optional discovery method
-            raw_snapshot_id: Optional UUID string of related snapshot
-            session: Optional session
+    #     Args:
+    #         prospect_id: UUID string
+    #         platform: 'linkedin' or 'google_maps'
+    #         discovered_at: Discovery timestamp
+    #         discovery_method: Optional discovery method
+    #         raw_snapshot_id: Optional UUID string of related snapshot
+    #         session: Optional session
             
-        Returns:
-            ProspectSource model instance or None if error
-        """
-        db_session = session or self._get_session()
+    #     Returns:
+    #         ProspectSource model instance or None if error
+    #     """
+    #     db_session = session or self._get_session()
         
-        try:
-            # Validate and convert raw_snapshot_id to UUID if provided
-            raw_snapshot_uuid = None
-            if raw_snapshot_id:
-                try:
-                    raw_snapshot_uuid = uuid.UUID(raw_snapshot_id)
-                except (ValueError, TypeError):
-                    logger.warning("Invalid raw_snapshot_id format: %s", raw_snapshot_id)
-                    raw_snapshot_uuid = None
+    #     try:
+    #         # Validate and convert raw_snapshot_id to UUID if provided
+    #         raw_snapshot_uuid = None
+    #         if raw_snapshot_id:
+    #             try:
+    #                 raw_snapshot_uuid = uuid.UUID(raw_snapshot_id)
+    #             except (ValueError, TypeError):
+    #                 logger.warning("Invalid raw_snapshot_id format: %s", raw_snapshot_id)
+    #                 raw_snapshot_uuid = None
             
-            source = ProspectSource(
-                prospect_id=prospect_id,  # String, not UUID
-                platform=platform,
-                discovered_at=discovered_at,
-                discovery_method=discovery_method,
-                raw_snapshot_id=raw_snapshot_uuid
-            )
-            db_session.add(source)
+    #         source = ProspectSource(
+    #             prospect_id=prospect_id,  # String, not UUID
+    #             platform=platform,
+    #             discovered_at=discovered_at,
+    #             discovery_method=discovery_method,
+    #             raw_snapshot_id=raw_snapshot_uuid
+    #         )
+    #         db_session.add(source)
             
-            if not session:
-                db_session.commit()
+    #         if not session:
+    #             db_session.commit()
             
-            logger.debug("Created prospect source for %s", prospect_id)
-            return source
-        except Exception as e:
-            if not session:
-                db_session.rollback()
-            logger.error("Failed to create prospect source for %s: %s", prospect_id, e)
-            return None
+    #         logger.debug("Created prospect source for %s", prospect_id)
+    #         return source
+    #     except Exception as e:
+    #         if not session:
+    #             db_session.rollback()
+    #         logger.error("Failed to create prospect source for %s: %s", prospect_id, e)
+    #         return None
     
-    def create_raw_snapshot(
-        self,
-        prospect_id: str,
-        platform: str,
-        snapshot_at: datetime,
-        business_context: Optional[str] = None,
-        session: Optional[Session] = None
-    ) -> Optional[RawSnapshot]:
-        """
-        Create a raw snapshot record
+    # def create_raw_snapshot(
+    #     self,
+    #     prospect_id: str,
+    #     platform: str,
+    #     snapshot_at: datetime,
+    #     business_context: Optional[str] = None,
+    #     session: Optional[Session] = None
+    # ) -> Optional[RawSnapshot]:
+    #     """
+    #     Create a raw snapshot record
         
-        Args:
-            prospect_id: String (canonical prospect_id)
-            platform: 'linkedin' or 'google_maps'
-            business_context: Optional business context text
-            snapshot_at: Snapshot timestamp
-            session: Optional session
+    #     Args:
+    #         prospect_id: String (canonical prospect_id)
+    #         platform: 'linkedin' or 'google_maps'
+    #         business_context: Optional business context text
+    #         snapshot_at: Snapshot timestamp
+    #         session: Optional session
             
-        Returns:
-            RawSnapshot model instance or None if error
-        """
-        db_session = session or self._get_session()
+    #     Returns:
+    #         RawSnapshot model instance or None if error
+    #     """
+    #     db_session = session or self._get_session()
         
-        try:
-            db_session.query(RawSnapshot).filter(
-                and_(
-                    RawSnapshot.prospect_id == prospect_id,  # String, not UUID
-                    RawSnapshot.platform == platform,
-                    RawSnapshot.is_latest == True
-                )
-            ).update({'is_latest': False})
+    #     try:
+    #         db_session.query(RawSnapshot).filter(
+    #             and_(
+    #                 RawSnapshot.prospect_id == prospect_id,  # String, not UUID
+    #                 RawSnapshot.platform == platform,
+    #                 RawSnapshot.is_latest == True
+    #             )
+    #         ).update({'is_latest': False})
             
-            snapshot = RawSnapshot(
-                prospect_id=prospect_id,  # String, not UUID
-                platform=platform,
-                business_context=business_context,
-                snapshot_at=snapshot_at,
-                is_latest=True
-            )
-            db_session.add(snapshot)
+    #         snapshot = RawSnapshot(
+    #             prospect_id=prospect_id,  # String, not UUID
+    #             platform=platform,
+    #             business_context=business_context,
+    #             snapshot_at=snapshot_at,
+    #             is_latest=True
+    #         )
+    #         db_session.add(snapshot)
             
-            if not session:
-                db_session.commit()
+    #         if not session:
+    #             db_session.commit()
             
-            logger.debug("Created raw snapshot for prospect %s", prospect_id)
-            return snapshot
-        except Exception as e:
-            if not session:
-                db_session.rollback()
-            logger.error("Failed to create raw snapshot for %s: %s", prospect_id, e)
-            return None
+    #         logger.debug("Created raw snapshot for prospect %s", prospect_id)
+    #         return snapshot
+    #     except Exception as e:
+    #         if not session:
+    #             db_session.rollback()
+    #         logger.error("Failed to create raw snapshot for %s: %s", prospect_id, e)
+    #         return None
     
     def get_enrichment_queue(
         self,
