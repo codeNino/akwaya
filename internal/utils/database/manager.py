@@ -15,6 +15,7 @@ from internal.utils.database.session import get_session
 
 logger = AppLogger("utils.database.manager")()
 
+
 # dataclass for enrichments queue
 class EnrichmentsQueue(TypedDict):
     prospect_id: str
@@ -22,19 +23,20 @@ class EnrichmentsQueue(TypedDict):
     website_url: Optional[str]
     discovery_confidence: float
 
+
 class DatabaseManager:
     """Manages database operations for prospects"""
-    
+
     def __init__(self, session: Optional[Session] = None):
         """
         Initialize database manager
-        
+
         Args:
             session: Optional SQLAlchemy session. If None, uses context manager
         """
         self._session = session
         self._use_context = session is None
-    
+
     def _get_session(self) -> Session:
         """Get database session"""
         if self._use_context:
@@ -43,7 +45,7 @@ class DatabaseManager:
                 "with get_session() as session: DatabaseManager(session=session)"
             )
         return self._session
-    
+
     def create_prospect(
         self,
         prospect_id: str,
@@ -52,18 +54,19 @@ class DatabaseManager:
         phones: List[str],
         websites: List[str],
         platforms: List[str],
-        profile_urls: Dict[str, str],
-        location: Dict[str, Any],
+        country: Optional[str],
+        country_acronym: Optional[str],
+        address: Optional[str],
         business_context: Optional[str],
         has_phone: bool,
         has_email: bool,
         created_at: datetime,
         about: Optional[str] = None,
-        session: Optional[Session] = None
+        session: Optional[Session] = None,
     ) -> Optional[Prospect]:
         """
         Create or update a prospect
-        
+
         Args:
             prospect_id: UUID string
             name: Prospect name
@@ -71,26 +74,29 @@ class DatabaseManager:
             phones: List of phone numbers
             websites: List of website URLs
             platforms: List of platforms (e.g., ['linkedin', 'google_maps'])
-            profile_urls: Dict mapping platform to URL
-            location: Dict with location data
+            country: Country name
+            country_acronym: Country acronym
+            address: Address
             business_context: Business context
             has_phone: Whether the prospect has a phone
             has_email: Whether the prospect has an email
             created_at: Creation timestamp
             about: Optional about/description text
             session: Optional session (if not using context manager)
-            
+
         Returns:
             Prospect model instance or None if error
         """
         db_session = session or self._get_session()
-        
+
         try:
             # Prospect.prospect_id is String, not UUID
-            prospect = db_session.query(Prospect).filter(
-                Prospect.prospect_id == prospect_id
-            ).first()
-            
+            prospect = (
+                db_session.query(Prospect)
+                .filter(Prospect.prospect_id == prospect_id)
+                .first()
+            )
+
             if prospect:
                 prospect.name = name
                 prospect.about = about
@@ -98,8 +104,9 @@ class DatabaseManager:
                 prospect.emails = emails
                 prospect.phones = phones
                 prospect.websites = websites
-                prospect.profile_urls = profile_urls
-                prospect.location = location
+                prospect.country = country
+                prospect.country_acronym = country_acronym
+                prospect.address = address
                 prospect.business_context = business_context
                 prospect.has_phone = has_phone
                 prospect.has_email = has_email
@@ -113,191 +120,100 @@ class DatabaseManager:
                     emails=emails,
                     phones=phones,
                     websites=websites,
-                    profile_urls=profile_urls,
-                    location=location,
+                    country=country,
+                    country_acronym=country_acronym,
+                    address=address,
                     business_context=business_context,
                     has_phone=has_phone,
                     has_email=has_email,
-                    created_at=created_at
+                    created_at=created_at,
                 )
                 db_session.add(prospect)
                 logger.debug("Created prospect %s", prospect_id)
-            
+
             if not session:
                 db_session.commit()
-            
+
             return prospect
         except Exception as e:
             if not session:
                 db_session.rollback()
             logger.error("Failed to create/update prospect %s: %s", prospect_id, e)
             return None
-    
-    # def create_prospect_source(
-    #     self,
-    #     prospect_id: str,
-    #     platform: str,
-    #     discovered_at: datetime,
-    #     discovery_method: Optional[str] = None,
-    #     raw_snapshot_id: Optional[str] = None,
-    #     session: Optional[Session] = None
-    # ) -> Optional[ProspectSource]:
-    #     """
-    #     Create a prospect source record
-        
-    #     Args:
-    #         prospect_id: UUID string
-    #         platform: 'linkedin' or 'google_maps'
-    #         discovered_at: Discovery timestamp
-    #         discovery_method: Optional discovery method
-    #         raw_snapshot_id: Optional UUID string of related snapshot
-    #         session: Optional session
-            
-    #     Returns:
-    #         ProspectSource model instance or None if error
-    #     """
-    #     db_session = session or self._get_session()
-        
-    #     try:
-    #         # Validate and convert raw_snapshot_id to UUID if provided
-    #         raw_snapshot_uuid = None
-    #         if raw_snapshot_id:
-    #             try:
-    #                 raw_snapshot_uuid = uuid.UUID(raw_snapshot_id)
-    #             except (ValueError, TypeError):
-    #                 logger.warning("Invalid raw_snapshot_id format: %s", raw_snapshot_id)
-    #                 raw_snapshot_uuid = None
-            
-    #         source = ProspectSource(
-    #             prospect_id=prospect_id,  # String, not UUID
-    #             platform=platform,
-    #             discovered_at=discovered_at,
-    #             discovery_method=discovery_method,
-    #             raw_snapshot_id=raw_snapshot_uuid
-    #         )
-    #         db_session.add(source)
-            
-    #         if not session:
-    #             db_session.commit()
-            
-    #         logger.debug("Created prospect source for %s", prospect_id)
-    #         return source
-    #     except Exception as e:
-    #         if not session:
-    #             db_session.rollback()
-    #         logger.error("Failed to create prospect source for %s: %s", prospect_id, e)
-    #         return None
-    
-    # def create_raw_snapshot(
-    #     self,
-    #     prospect_id: str,
-    #     platform: str,
-    #     snapshot_at: datetime,
-    #     business_context: Optional[str] = None,
-    #     session: Optional[Session] = None
-    # ) -> Optional[RawSnapshot]:
-    #     """
-    #     Create a raw snapshot record
-        
-    #     Args:
-    #         prospect_id: String (canonical prospect_id)
-    #         platform: 'linkedin' or 'google_maps'
-    #         business_context: Optional business context text
-    #         snapshot_at: Snapshot timestamp
-    #         session: Optional session
-            
-    #     Returns:
-    #         RawSnapshot model instance or None if error
-    #     """
-    #     db_session = session or self._get_session()
-        
-    #     try:
-    #         db_session.query(RawSnapshot).filter(
-    #             and_(
-    #                 RawSnapshot.prospect_id == prospect_id,  # String, not UUID
-    #                 RawSnapshot.platform == platform,
-    #                 RawSnapshot.is_latest == True
-    #             )
-    #         ).update({'is_latest': False})
-            
-    #         snapshot = RawSnapshot(
-    #             prospect_id=prospect_id,  # String, not UUID
-    #             platform=platform,
-    #             business_context=business_context,
-    #             snapshot_at=snapshot_at,
-    #             is_latest=True
-    #         )
-    #         db_session.add(snapshot)
-            
-    #         if not session:
-    #             db_session.commit()
-            
-    #         logger.debug("Created raw snapshot for prospect %s", prospect_id)
-    #         return snapshot
-    #     except Exception as e:
-    #         if not session:
-    #             db_session.rollback()
-    #         logger.error("Failed to create raw snapshot for %s: %s", prospect_id, e)
-    #         return None
-    
-    def get_enrichment_queue(
-        self,
-        min_confidence: float = 0.5,
-        session: Optional[Session] = None
-    ) -> List[EnrichmentsQueue]:
+
+    def get_prospects_with_phones(self, limit: Optional[int] = None) -> List[Prospect]:
         """
-        Get prospects for enrichment queue
-        
-        Args:
-            min_confidence: Minimum discovery confidence threshold
-            session: Optional session
-            
-        Returns:
-            List of prospects with linkedin_url, website_url, and discovery_confidence
+        Get prospects with phone numbers and not called
         """
-        db_session = session or self._get_session()
-        
+        db_session = self._get_session()
         try:
-            prospects = db_session.query(Prospect).filter(
-                Prospect.discovery_confidence > min_confidence
-            ).order_by(Prospect.discovery_confidence.desc()).all()
-            
-            results = []
-            for prospect in prospects:
-                linkedin_url = prospect.profile_urls.get('linkedin') if prospect.profile_urls else None
-                website_url = prospect.websites[0] if prospect.websites else None
-                
-                results.append({
-                    'prospect_id': str(prospect.prospect_id),
-                    'linkedin_url': linkedin_url,
-                    'website_url': website_url,
-                    'discovery_confidence': float(prospect.discovery_confidence) if prospect.discovery_confidence else 0.0
-                })
-            
-            return results
+            query = (
+                db_session.query(Prospect)
+                .filter(Prospect.has_phone == True)
+                .filter(Prospect.phones.isnot(None))
+                .filter(Prospect.phones != "")
+                .filter(Prospect.is_called == False)
+            )
+            if limit:
+                query = query.limit(limit)
+            return query.all()
         except Exception as e:
-            logger.error("Failed to get enrichment queue: %s", e)
+            logger.error("Failed to get prospects with phones: %s", e)
             return []
+        finally:
+            db_session.close()
 
-
-    def enrich_prospect(self, prospect_id: str, session: Optional[Session] = None) -> None:
+    def update_prospect_verification_call(
+        self,
+        prospect_id: str,
+        call_summary: Optional[str] = None,
+        recording_url: Optional[str] = None,
+        is_qualified: Optional[bool] = None,
+        is_relevant_industry: Optional[bool] = None,
+    ) -> Optional[Prospect]:
         """
-        Enrich a prospect
-
-        Args:
-            prospect_id: ID of the prospect to enrich
+        Update prospect verification call
         """
-        db_session = session or self._get_session()
+        db_session = self._get_session()
         try:
-            prospect = db_session.query(Prospect).filter(
-                Prospect.prospect_id == prospect_id
-            ).first()
-            if not prospect:
-                logger.error("Prospect not found: %s", prospect_id)
-                return
-            prospect.enriched = True
-            db_session.commit()
-            logger.info("Prospect enriched: %s", prospect_id)
+            prospect = (
+                db_session.query(Prospect)
+                .filter(Prospect.prospect_id == prospect_id)
+                .first()
+            )
+            if prospect:
+                prospect.verification_call_summary = call_summary
+                prospect.verification_recording_url = recording_url
+                prospect.is_qualified = is_qualified
+                prospect.is_relevant_industry = is_relevant_industry
+                prospect.is_called = True
+                db_session.commit()
+                return prospect
+            else:
+                logger.error("Prospect %s not found", prospect_id)
+                return None
         except Exception as e:
-            logger.error("Failed to enrich prospect %s: %s", prospect_id, e)
+            logger.error(
+                "Failed to update prospect verification call %s: %s", prospect_id, e
+            )
             return None
+
+    def get_qualified_prospects(
+        self, limit: Optional[int] = None, is_qualified: bool = True
+    ) -> List[Prospect]:
+        """
+        Get qualified prospects
+        """
+        db_session = self._get_session()
+        try:
+            query = db_session.query(Prospect).filter(
+                Prospect.is_qualified == is_qualified
+            )
+            if limit:
+                query = query.limit(limit)
+            return query.all()
+        except Exception as e:
+            logger.error("Failed to get qualified prospects: %s", e)
+            return []
+        finally:
+            db_session.close()

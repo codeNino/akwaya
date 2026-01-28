@@ -6,13 +6,40 @@ from typing import Optional, List
 EMAIL_REGEX = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 DIGITS_ONLY = re.compile(r"\D+")
 
+# Add more 20 country calling codes here
 COUNTRY_CALLING_CODES = {
-    "GR": "+30",
-    "CY": "+357",
-    "UK": "+44",
-    "US": "+1",
-    "AU": "+61",
+    "AE": "+971",
+    "SA": "+966",
+    "EG": "+20",
+    "LB": "+961",
+    "JO": "+962",
+    "PS": "+970",
+    "QA": "+974",
+    "KW": "+965",
+    "NR": "+674",
     "NZ": "+64",
+    "AU": "+61",
+    "US": "+1",
+    "CA": "+1",
+    "GB": "+44",
+    "DE": "+49",
+    "FR": "+33",
+    "ES": "+34",
+    "NG": "+234",
+    "ZA": "+27",
+    "IN": "+91",
+    "CN": "+86",
+    "JP": "+81",
+    "KR": "+82",
+    "TW": "+886",
+    "HK": "+852",
+    "MO": "+853",
+    "SG": "+65",
+    "MY": "+60",
+    "PH": "+63",
+    "TH": "+66",
+    "VN": "+84",
+    "ID": "+62",
 }
 
 def normalize_url(
@@ -96,24 +123,6 @@ def flatten_list(nested_list: List[List]):
     flat_list = [item for sublist in nested_list for item in sublist]
 
     return flat_list
-
-
-def normalize_phone(phone: str, country_acronym: str) -> Optional[str]:
-    if not phone or not country_acronym:
-        return None
-    digits = DIGITS_ONLY.sub("", phone)
-
-    country_code = COUNTRY_CALLING_CODES.get(country_acronym)
-    if not country_code:
-        return None
-
-    if digits.startswith("0"):
-        digits = digits[1:]
-
-    if digits.startswith(country_code.replace("+", "")):
-        return f"+{digits}"
-
-    return f"{country_code}{digits}"
 
 def normalize_email(email: str) -> Optional[str]:
     if not isinstance(email, str):
