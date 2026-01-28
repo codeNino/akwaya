@@ -40,6 +40,11 @@ class Prospect(Base):
     business_context = Column(String, nullable=True)
     has_phone = Column(Boolean, default=False)
     has_email = Column(Boolean, default=False)
+    is_called = Column(Boolean, default=False)
+    verification_call_summary = Column(String, nullable=True)
+    verification_recording_url = Column(String, nullable=True)
+    is_qualified = Column(Boolean, default=False)
+    is_relevant_industry = Column(Boolean, default=False)
     created_at = Column(DateTime, nullable=False, server_default=func.now(), default=datetime.now())
     updated_at = Column(
         DateTime, nullable=False, server_default=func.now(), onupdate=func.now(), default=datetime.now()
@@ -66,6 +71,11 @@ class Prospect(Base):
             "business_context": self.business_context,
             "has_phone": self.has_phone,
             "has_email": self.has_email,
+            "is_called": self.is_called,
+            "verification_call_summary": self.verification_call_summary,
+            "verification_recording_url": self.verification_recording_url,
+            "is_qualified": self.is_qualified,
+            "is_relevant_industry": self.is_relevant_industry,
             "created_at": self.created_at.isoformat() if self.created_at else None,
             "updated_at": self.updated_at.isoformat() if self.updated_at else None,
         }
