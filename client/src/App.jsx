@@ -12,7 +12,7 @@ function App() {
     setResponse(null);
 
     try {
-      const res = await axios.post("/api/v1/pipeline", {
+      const res = await axios.post("/api/v1/leads/pipeline", {
         query: query,
       });
       console.log(res.data);

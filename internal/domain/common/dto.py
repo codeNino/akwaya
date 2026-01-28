@@ -1,4 +1,4 @@
-from typing import Optional, Literal, List, Optional
+from typing import Optional, Literal, List, Optional, Dict
 from typing_extensions import TypedDict
 from pydantic import BaseModel, Field, field_validator
 
@@ -57,3 +57,11 @@ class WebsiteScrapingOutput(BaseModel):
 
    class Config:
         extra = "forbid"
+
+
+class CustomCallAnalysisData(TypedDict):
+    prospect_id: str
+    call_recording_url: str
+    call_summary: str
+    is_qualified_lead: bool
+    is_relevant_industry: bool
