@@ -1,24 +1,59 @@
-from internal.domain.pipeline.augmentation import trigger_leads_information_augmentation
-from internal.domain.pipeline.ingestion import trigger_leads_sourcing
-from internal.config.secret import validate_environment
-from internal.config.paths_config import (LEADS_SOURCED_PATH, LEADS_AUGMENTED_PATH)
+from internal.config.secret import validate_environment, SecretManager
+from internal.config.paths_config import CLIENT_DIR
+
+from server.controller import router
+
+  
+from contextlib import asynccontextmanager
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+
 
 validate_environment(
     ["SERPER_API_KEY", "GOOGLE_API_KEY", "OPENAI_KEY"]
 )
-    
-def main(): 
 
-    # trigger_leads_sourcing(
-    #     "Find me companies who have attended a Forex Expo in the last 2 years", 
-    #     LEADS_SOURCED_PATH
-    # )    
-    trigger_leads_information_augmentation(
-        LEADS_SOURCED_PATH,
-        LEADS_AUGMENTED_PATH
-    )    
-    
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+  
+    yield
 
+
+app = FastAPI(title="Akwaya - Your Lead Generation Engine", lifespan=lifespan)
+
+app.include_router(router=router)
+
+app.mount(
+    "/assets",
+    StaticFiles(directory=CLIENT_DIR / "assets"),
+    name="assets",
+)
+
+@app.get("/{full_path:path}")
+async def serve_react_app(full_path: str):
+    return FileResponse(CLIENT_DIR / "index.html")
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=SecretManager.ALLOWED_ORIGINS,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 if __name__ == "__main__":
-    main()
+    import uvicorn
+    uvicorn.run(
+        "main:app",
+        host="0.0.0.0",
+        port=int(SecretManager.PORT),
+        log_level="debug",
+        reload=SecretManager.ENV.is_local,
+        timeout_graceful_shutdown=30
+        
+    )
+    
+

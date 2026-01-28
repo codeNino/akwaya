@@ -10,8 +10,8 @@ def validate_environment(vars_list: List):
     missing_vars = [var for var in vars_list if var not in os.environ]
 
     if missing_vars:
-        exit(
-            f"Error: The following required environment variables are missing: {', '.join(missing_vars)}"  # noqa: E501
+        raise RuntimeError(
+            f"Missing required environment variables: {', '.join(missing_vars)}"
         )
 
 
