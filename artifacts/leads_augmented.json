@@ -1,34 +1,218 @@
 [
     {
         "source_platform": "google_places",
-        "name": "TNFX",
+        "name": "Instaforex Nigeria",
+        "about": "Open an InstaForex Live Trading account and trade in MetaTrader 4 and MetaTrader 5 , the industry-leading trading platforms. The company provides services for online FX trading and is recognized as one of the world's leading brokers.",
         "contact": {
-            "phone": "04 552 6527",
-            "website": "http://tnfx.co/",
-            "email": "[email\u00a0protected]"
+            "email": null,
+            "phone": "0813 345 0038",
+            "website": "https://instaforex.com.ng/"
         },
         "location": {
-            "address": "Opal Tower",
-            "country_code": "AE",
-            "country": "United Arab Emirates"
+            "country": "Nigeria",
+            "country_acronym": "NG",
+            "address": "First Floor, 31 Wetheral Rd, Owerri"
         },
-        "business_context": "finance",
-        "about": "TNFX aims to be one of the world\u2019s leading trading service providers by delivering exceptional support to investors worldwide."
+        "business_context": "finance"
     },
     {
         "source_platform": "google_places",
-        "name": "Dubai World Trade Centre",
+        "name": "Dealmakers Bureau De Change",
+        "about": "We are a leading foreign exchange service provider, ensuring customer satisfaction through speed, reliability, and convenience At Dealmakers BDC, we take pride in exceeding our clients\u2019 expectations! We are a financial service solutions chain that specializes in providing currency exchange services to individuals and corporate bodies.",
         "contact": {
-            "phone": "04 389 3999",
-            "website": "https://www.dwtc.com/",
-            "email": "[email\u00a0protected]"
+            "email": "info@dealmakersbdc.com",
+            "phone": "0808 181 0550",
+            "website": "http://www.dealmakersbdc.com/"
         },
         "location": {
-            "address": "Sheikh Zayed Rd",
+            "country": "Nigeria",
+            "country_acronym": "NG",
+            "address": "38b Adebayo Doherty Rd, Lagos"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "TeamFx",
+        "about": "WhatsApp is a messaging app started as an alternative to SMS, offering features for calling, messaging, groups, status, and channels. The site provides downloads for various platforms, security information, and business solutions.",
+        "contact": {
+            "email": null,
+            "phone": "0701 917 0067",
+            "website": "https://wa.me/2347019170067"
+        },
+        "location": {
+            "country": "Nigeria",
+            "country_acronym": "NG",
+            "address": "TeamFx Academy, Ikeja"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "RespectedFX Bureau de Change in Lagos",
+        "contact": {
+            "phone": "0803 784 6535",
+            "website": "https://www.respectedfx.com/"
+        },
+        "location": {
+            "address": "suite c2, vgc, Ikota Shopping Complex, Niyi Okunubi St, Lagos",
+            "country_code": "NG",
+            "country": "Nigeria"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "HFM Nigeria",
+        "contact": {
+            "phone": "0706 370 5519",
+            "website": "https://www.hfm.com/int/en-ng/?mcid=17415"
+        },
+        "location": {
+            "address": "3rd floor, Wuraola House, 90 Allen Avenue, Ikeja, Lagos",
+            "country_code": "NG",
+            "country": "Nigeria"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXBrokers NG",
+        "contact": {
+            "phone": "0703 239 6660",
+            "website": "https://forexbroker.ng/"
+        },
+        "location": {
+            "address": "9 Royal Estate, Royal St, Lagos",
+            "country_code": "NG",
+            "country": "Nigeria"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Tradelandmark FX",
+        "contact": {
+            "phone": "0908 785 5856",
+            "website": null
+        },
+        "location": {
+            "address": "Pentagon Plaza Wasimi, Lagos",
+            "country_code": "NG",
+            "country": "Nigeria"
+        },
+        "business_context": "consultant"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Forex Trading Company",
+        "contact": {
+            "phone": "0805 158 1633",
+            "website": null
+        },
+        "location": {
+            "address": "11A Allen Ave, Lagos",
+            "country_code": "NG",
+            "country": "Nigeria"
+        },
+        "business_context": "consultant"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "MBA FOREX Limited",
+        "contact": {
+            "phone": "0705 461 3070",
+            "website": null
+        },
+        "location": {
+            "address": "2 Allen Ave, Lagos",
+            "country_code": "NG",
+            "country": "Nigeria"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "HFM Nigeria",
+        "contact": {
+            "phone": "0706 370 5519",
+            "website": "https://www.hfm.com/int/en-ng/?mcid=17415"
+        },
+        "location": {
+            "address": "3rd floor, Wuraola House, 90 Allen Avenue, Ikeja, Lagos",
+            "country_code": "NG",
+            "country": "Nigeria"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Oasis International Forex School Lagos",
+        "contact": {
+            "phone": "0915 541 3085",
+            "website": "https://web.facebook.com/Oasisforexschool"
+        },
+        "location": {
+            "address": "1st Floor, close to Oluyole bus stop, 64 Kudirat Abiola Way, Fidelity bank, Ikeja",
+            "country_code": "NG",
+            "country": "Nigeria"
+        },
+        "business_context": null
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXBrokers NG",
+        "contact": {
+            "phone": "0703 239 6660",
+            "website": "https://forexbroker.ng/"
+        },
+        "location": {
+            "address": "9 Royal Estate, Royal St, Lagos",
+            "country_code": "NG",
+            "country": "Nigeria"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "7B Forex Ltd",
+        "contact": {
+            "phone": "0903 812 9463",
+            "website": "http://7bforex.ng/"
+        },
+        "location": {
+            "address": "Block A3, Suite 508/509, HFP Eastline Shopping Complex, Lekki - Epe Expy, Abraham Adesanya Roundabout, Lagos",
+            "country_code": "NG",
+            "country": "Nigeria"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Forex Trading And Investments",
+        "contact": {
+            "phone": "0802 330 6206",
+            "website": null
+        },
+        "location": {
+            "address": "No. 12 Kemberi Road, Lagos",
+            "country_code": "NG",
+            "country": "Nigeria"
+        },
+        "business_context": "bank"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXLeaders",
+        "contact": {
+            "phone": "055 508 1130",
+            "website": "https://www.fxleaders.com/"
+        },
+        "location": {
+            "address": "Arabella 3 - Mudon - Villa 444 - 22A St",
             "country_code": "AE",
             "country": "United Arab Emirates"
         },
-        "business_context": "event_venue",
-        "about": "As the region\u2019s leading purpose-built complex for events and exhibitions, Dubai World Trade Centre provides a platform for unparalleled business and networking opportunities. Their vision is to advance Dubai as the world\u2019s leading business destination and the centre of tomorrow\u2019s potential."
+        "business_context": "finance"
     }
 ]

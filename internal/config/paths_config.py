@@ -22,3 +22,5 @@ DB_MODELS_TEMP_DIR = ARTIFACTS_DIR / "db_models_temp"
 FUNNEL_CONFIG_PATH = APP_BASE_DIR / "internal/config/funnel_config.yaml"
 LEADS_SOURCED_PATH = ARTIFACTS_DIR / "leads_sourced.json"
 LEADS_AUGMENTED_PATH = ARTIFACTS_DIR / "leads_augmented.json"
+
+CLIENT_DIR = APP_BASE_DIR / "client" / "dist"
