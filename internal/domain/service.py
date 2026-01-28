@@ -1,8 +1,7 @@
 from typing import Dict, List
 from internal.domain.common.dto import CustomCallAnalysisData
 
-from internal.config.paths_config import ARTIFACTS_DIR
-from internal.utils.loader import export_to_json
+from internal.utils.database.manager import DatabaseManager
 
 from internal.domain.pipeline.augmentation import trigger_leads_information_augmentation
 from internal.domain.pipeline.ingestion import trigger_leads_sourcing
@@ -23,7 +22,12 @@ def run_leads_acquisition_pipeline(query: str):
 
 
 
-def update_leads_with_feedback(user_id: str, data: CustomCallAnalysisData):
-    # export_to_json(data, ARTIFACTS_DIR / f"feedback_about_lead_{user_id}.json")
-    pass
+def update_leads_with_feedback(db_manager: DatabaseManager, data: CustomCallAnalysisData):
+    return db_manager.update_prospect_verification_call(
+        data.get("prospect_id"),
+        data.get("call_summary"),
+        data.get("call_recording_url"),
+        data.get("is_qualified"),
+        data.get("is_relevant_industry"),
+    )
     

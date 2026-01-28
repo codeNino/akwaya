@@ -7,11 +7,9 @@ from typing import List, Dict, Optional, Any, TypedDict
 from datetime import datetime
 
 from sqlalchemy.orm import Session
-from sqlalchemy import and_
 
 from internal.utils.logger import AppLogger
 from internal.utils.database.models import Prospect
-from internal.utils.database.session import get_session
 
 logger = AppLogger("utils.database.manager")()
 

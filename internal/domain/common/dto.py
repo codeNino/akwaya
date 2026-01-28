@@ -60,6 +60,7 @@ class WebsiteScrapingOutput(BaseModel):
 
 
 class CustomCallAnalysisData(TypedDict):
+    prospect_id: str
     call_recording_url: str
     call_summary: str
     is_qualified_lead: bool

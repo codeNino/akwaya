@@ -2,7 +2,7 @@
 Database session management
 """
 
-from contextlib import contextmanager
+from contextlib import contextmanager, asynccontextmanager
 from typing import Generator
 
 from sqlalchemy import create_engine, event
@@ -54,6 +54,19 @@ def get_session_factory():
         logger.info("Session factory created")
     
     return _SessionLocal
+
+
+def inject_session() -> Generator[Session, None, None]:
+    SessionLocal = get_session_factory()
+    session = SessionLocal()
+    try:
+        yield session
+        session.commit()
+    except Exception:
+        session.rollback()
+        raise
+    finally:
+        session.close()
 
 
 @contextmanager
