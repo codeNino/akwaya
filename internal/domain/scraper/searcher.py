@@ -13,10 +13,12 @@ logger = AppLogger("internal.domain.scraper.crawler")()
 class WebSearcher:
 
     def __init__(self, max_concurrent_requests: int = 5):
-        # Semaphore limits concurrent requests to avoid rate limiting
-        self.semaphore = asyncio.Semaphore(max_concurrent_requests)
+        self._max_concurrent_requests = max_concurrent_requests
+        self._semaphore = None
 
     async def search_for_prospects(self, query: str, batch_size: int):
+        # Create semaphore in the current event loop to avoid "bound to a different event loop"
+        self._semaphore = asyncio.Semaphore(self._max_concurrent_requests)
         tasks: list[asyncio.Task] = []
 
         keywords = generate_keywords(query)
@@ -32,7 +34,9 @@ class WebSearcher:
         
 
     async def _safe_scrape(self, keyword: str, batch_size: int, func):
-        async with self.semaphore:
+        if self._semaphore is None:
+            self._semaphore = asyncio.Semaphore(self._max_concurrent_requests)
+        async with self._semaphore:
             return await func(keyword, batch_size)
 
     async def source_from_google_search (self, batch_size: int, keywords: List[str]):

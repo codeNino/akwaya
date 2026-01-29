@@ -40,6 +40,7 @@ COUNTRY_CALLING_CODES = {
     "TH": "+66",
     "VN": "+84",
     "ID": "+62",
+    "TR": "+90",
 }
 
 def normalize_url(
