@@ -1,6 +1,8 @@
 from typing import List
 from internal.domain.common.dto import Prospect, WebsiteInfo
 from internal.utils.normalizer import normalize_url, normalize_phone, normalize_email, EMAIL_REGEX
+from internal.utils.logger import AppLogger
+logger = AppLogger("domain.pipeline.helper")()
 
 def merge_prospects_info(
     prospects: List[Prospect],
@@ -48,7 +50,8 @@ def filter_and_prepare_leads(lead: Prospect) -> Prospect:
 
     raw_email = contact.get("email")
     raw_phone = contact.get("phone")
-    country = location.get("country_acronym")
+    # Support both country_acronym and country_code (e.g. leads_augmented.json)
+    country = location.get("country_acronym") or location.get("country_code")
 
     email = normalize_email(raw_email)
     phone = normalize_phone(raw_phone, country)
