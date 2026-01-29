@@ -318,7 +318,8 @@ if __name__ == "__main__":
     import json
 
     # Get prospects with phones
-    prospects = get_prospects_with_phones_from_files(limit=5)
+    # prospects = get_prospects_with_phones_from_files(limit=5)
+    prospects = get_prospects_with_phones(limit=5)
     print(f"\nFound {len(prospects)} prospects with phone numbers")
 
     # Make calls (uncomment to actually make calls)

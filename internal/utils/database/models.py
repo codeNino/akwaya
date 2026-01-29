@@ -18,8 +18,6 @@ from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import declarative_base
 
 Base = declarative_base()
-
-
 class Prospect(Base):
     """
     Single source of truth for each unique prospect
