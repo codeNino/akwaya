@@ -27,7 +27,10 @@ def update_leads_with_feedback(db_manager: DatabaseManager, data: CustomCallAnal
         data.get("prospect_id"),
         data.get("call_summary"),
         data.get("call_recording_url"),
-        data.get("is_qualified"),
+        data.get("is_qualified_lead"),
         data.get("is_relevant_industry"),
     )
     
+
+def retrieve_qualified_leads(db_manager: DatabaseManager):
+    return db_manager.get_qualified_prospects()
