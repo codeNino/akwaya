@@ -215,3 +215,16 @@ class DatabaseManager:
             return []
         finally:
             db_session.close()
+
+    def get_prospect_by_id(self, prospect_id: str) -> Optional[Prospect]:
+        """
+        Get prospect by ID
+        """
+        db_session = self._get_session()
+        try:
+            return db_session.query(Prospect).filter(Prospect.prospect_id == prospect_id).first()
+        except Exception as e:
+            logger.error("Failed to get prospect by ID %s: %s", prospect_id, e)
+            return None
+        finally:
+            db_session.close()

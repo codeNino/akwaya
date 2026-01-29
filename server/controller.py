@@ -1,6 +1,7 @@
 from fastapi import (APIRouter, BackgroundTasks, Depends, Request)
+from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
-from .dto import PipelineRequest
+from .dto import PipelineRequest, CallRequest
 from sqlalchemy.orm import Session
 
 
@@ -9,7 +10,9 @@ from internal.utils.database.manager import DatabaseManager
 
 from internal.domain.service import (
     run_leads_acquisition_pipeline,
-    update_leads_with_feedback
+    update_leads_with_feedback,
+    retrieve_qualified_leads,
+    call_prospect
 )
 from internal.utils.logger import AppLogger
 
@@ -21,6 +24,26 @@ router = APIRouter(prefix="/api/v1")
 def acquisition_pipeline(request: PipelineRequest, background_tasks: BackgroundTasks):
     background_tasks.add_task(run_leads_acquisition_pipeline, request.query)
     return JSONResponse({"message": "Pipeline triggered successfully"})
+
+
+@router.get("/prospects")
+def fetch_prospects_with_phones(db: Session = Depends(inject_session)):
+    try:
+        prospects = DatabaseManager(db).get_prospects_with_phones()
+        return JSONResponse({"prospects": jsonable_encoder(prospects)})
+    except Exception as e:
+        controller_logger.error(f"Error fetching qualified leads: {e}")
+        return JSONResponse({"message": "Error fetching qualified leads"})
+
+
+@router.get("/leads")
+def fetch_qualified_leads(db: Session = Depends(inject_session)):
+    try:
+        leads = retrieve_qualified_leads(DatabaseManager(db))
+        return JSONResponse({"leads": jsonable_encoder(leads)})
+    except Exception as e:
+        controller_logger.error(f"Error fetching qualified leads: {e}")
+        return JSONResponse({"message": "Error fetching qualified leads"})
 
 @router.post("/webhook/retell_feedback")
 async def retell_cold_call_feedback(request: Request, background_tasks: BackgroundTasks, db: Session = Depends(inject_session)):
@@ -34,7 +57,7 @@ async def retell_cold_call_feedback(request: Request, background_tasks: Backgrou
                 return JSONResponse({"message": "No prospect_id found in call metadata"})
             call_summary = payload.get("call", {}).get("call_analysis", {}).get("call_summary", "")
             call_recording_url = payload.get("call", {}).get("recording_url", "")
-            custom_analysis_data = payload.get("call", {}).get("call_analysis", {}).get("custom_analysis", {})
+            custom_analysis_data = payload.get("call", {}).get("call_analysis", {}).get("custom_analysis_data", {})
             background_tasks.add_task(update_leads_with_feedback,
             DatabaseManager(db),
             {
@@ -48,3 +71,13 @@ async def retell_cold_call_feedback(request: Request, background_tasks: Backgrou
     except Exception as e:
         controller_logger.error(f"Error processing feedback from cold call: {e}")
         return JSONResponse({"message": "Error processing feedback from cold call"})
+
+
+@router.post("/call")
+def make_call(request: CallRequest, background_tasks: BackgroundTasks, db: Session = Depends(inject_session)):
+    try:
+        background_tasks.add_task(call_prospect, DatabaseManager(db), request.prospect_id)
+        return JSONResponse({"message": "Call triggered successfully"})
+    except Exception as e:
+        controller_logger.error(f"Error making call: {e}")
+        return JSONResponse({"message": "Error making call"})
