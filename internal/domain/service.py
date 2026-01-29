@@ -5,6 +5,7 @@ from internal.utils.database.manager import DatabaseManager
 
 from internal.domain.pipeline.augmentation import trigger_leads_information_augmentation
 from internal.domain.pipeline.ingestion import trigger_leads_sourcing
+from internal.domain.pipeline.loader import persist_enriched_leads_to_database
 from internal.config.paths_config import (LEADS_SOURCED_PATH, LEADS_AUGMENTED_PATH)
 
 
@@ -19,6 +20,10 @@ def run_leads_acquisition_pipeline(query: str):
         LEADS_SOURCED_PATH,
         LEADS_AUGMENTED_PATH
     )    
+
+    persist_enriched_leads_to_database(
+        LEADS_AUGMENTED_PATH
+    )
 
 
 

@@ -173,24 +173,22 @@ def find_existing_prospect(
         return query(sess)
 
 def persist_enriched_leads_to_database(
-    results_file_path: str, raw_prospects_path: str = None
+leads_file_path: str 
 ) -> Dict:
     """
     Load enriched leads from a results file and insert them into the database.
     Uses the same data preparation as export_enriched_leads_to_json.
     """
-
-    if raw_prospects_path is None:
-        raw_prospects_path = str(LEADS_AUGMENTED_PATH)
+    if leads_file_path is None:
+        leads_file_path = str(LEADS_AUGMENTED_PATH)
 
     logger.info("Initializing database tables...")
     init_db(drop_existing=False)
 
-    logger.info("Loading enrichment results from %s", results_file_path)
-    with open(results_file_path, "r", encoding="utf-8") as f:
-        results = json.load(f)
+    logger.info("Loading enrichment results from %s", leads_file_path)
+    with open(leads_file_path, "r", encoding="utf-8") as f:
+        prospects = json.load(f)
 
-    prospects: List[Dict] = results
     logger.info("Processing %d prospects for database insertion", len(prospects))
 
     stats: Dict = {
