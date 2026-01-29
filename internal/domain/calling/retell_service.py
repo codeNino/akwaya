@@ -132,7 +132,6 @@ def format_phone_number(phone: str) -> str:
 def make_retell_call(
     prospect: Dict[str, Any],
     from_number: Optional[str] = None,
-    agent_id: Optional[str] = None,
 ) -> Dict[str, Any]:
     """
     Make a Retell phone call to a prospect
@@ -150,23 +149,6 @@ def make_retell_call(
 
     if not from_number:
         error_msg = "No from_number provided and RETELL_FROM_NUMBER not set"
-        logger.error(error_msg)
-        return {
-            "success": False,
-            "error": error_msg,
-            "prospect_id": prospect.get("prospect_id"),
-        }
-    
-    # Agent ID is required for outbound calls
-    if not agent_id:
-        agent_id = SecretManager.RETELL_AGENT_ID
-    
-    if not agent_id:
-        error_msg = (
-            "No agent_id provided and RETELL_AGENT_ID not set. "
-            "Agent ID is required for outbound calls. "
-            "Please set RETELL_AGENT_ID in your environment variables or pass agent_id parameter."
-        )
         logger.error(error_msg)
         return {
             "success": False,
