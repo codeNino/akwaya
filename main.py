@@ -31,8 +31,16 @@ app.mount(
     name="assets",
 )
 
+
+@app.get("/")
+def homepage():
+    """Serve the React app homepage (SPA entry)."""
+    return FileResponse(CLIENT_DIR / "index.html")
+
+
 @app.get("/{full_path:path}")
 async def serve_react_app(full_path: str):
+    """SPA fallback: serve index.html for client-side routes."""
     return FileResponse(CLIENT_DIR / "index.html")
 
 

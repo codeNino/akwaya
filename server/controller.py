@@ -1,7 +1,6 @@
 from fastapi import (APIRouter, BackgroundTasks, Depends, Request)
-from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
-from .dto import PipelineRequest, CallRequest
+from .dto import PipelineRequest, CallRequest, ColdCallCampaignRequest
 from sqlalchemy.orm import Session
 
 
@@ -12,7 +11,8 @@ from internal.domain.service import (
     run_leads_acquisition_pipeline,
     update_leads_with_feedback,
     retrieve_qualified_leads,
-    call_prospect
+    call_prospect,
+    run_cold_call_campaign,
 )
 from internal.utils.logger import AppLogger
 
@@ -30,17 +30,29 @@ def acquisition_pipeline(request: PipelineRequest, background_tasks: BackgroundT
 def fetch_prospects_with_phones(db: Session = Depends(inject_session)):
     try:
         prospects = DatabaseManager(db).get_prospects_with_phones()
-        return JSONResponse({"prospects": jsonable_encoder(prospects)})
+        return JSONResponse({"prospects": [p.to_dict() for p in prospects]})
     except Exception as e:
         controller_logger.error(f"Error fetching qualified leads: {e}")
         return JSONResponse({"message": "Error fetching qualified leads"})
+
+
+@router.delete("/prospects/{prospect_id}")
+def delete_prospect(prospect_id: str, db: Session = Depends(inject_session)):
+    try:
+        deleted = DatabaseManager(db).delete_prospect(prospect_id)
+        if deleted:
+            return JSONResponse({"message": "Prospect deleted"})
+        return JSONResponse({"message": "Prospect not found"}, status_code=404)
+    except Exception as e:
+        controller_logger.error(f"Error deleting prospect: {e}")
+        return JSONResponse({"message": "Error deleting prospect"}, status_code=500)
 
 
 @router.get("/leads")
 def fetch_qualified_leads(db: Session = Depends(inject_session)):
     try:
         leads = retrieve_qualified_leads(DatabaseManager(db))
-        return JSONResponse({"leads": jsonable_encoder(leads)})
+        return JSONResponse({"leads": [p.to_dict() for p in leads]})
     except Exception as e:
         controller_logger.error(f"Error fetching qualified leads: {e}")
         return JSONResponse({"message": "Error fetching qualified leads"})
@@ -81,3 +93,16 @@ def make_call(request: CallRequest, background_tasks: BackgroundTasks, db: Sessi
     except Exception as e:
         controller_logger.error(f"Error making call: {e}")
         return JSONResponse({"message": "Error making call"})
+
+@router.post("/cold_call/campaign")
+def start_cold_call_campaign(
+    request: ColdCallCampaignRequest,
+    background_tasks: BackgroundTasks,
+):
+    try:
+        background_tasks.add_task(run_cold_call_campaign, request.limit)
+        return JSONResponse({"message": "Cold call campaign started successfully"})
+    except Exception as e:
+        controller_logger.error(f"Error starting cold call campaign: {e}")
+        return JSONResponse({"message": "Error starting cold call campaign"})
+
