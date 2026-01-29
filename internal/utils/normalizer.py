@@ -124,13 +124,6 @@ def flatten_list(nested_list: List[List]):
 
     return flat_list
 
-def normalize_email(email: str) -> Optional[str]:
-    if not isinstance(email, str):
-        return None
-
-    email = email.strip().lower()
-
-    return email if EMAIL_REGEX.match(email) else None
 
 def flatten_list(nested_list: List[List]):
     if not nested_list:
