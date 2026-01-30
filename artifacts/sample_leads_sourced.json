@@ -3,17 +3,17 @@
     "businesses": [
         {
             "source_platform": "google_places",
-            "name": "FXBrokers NG",
+            "name": "Vistabrokers CIF Ltd",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0703 239 6660",
-                "website": "https://forexbroker.ng/"
+                "phone": "22 000787",
+                "website": null
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "9 Royal Estate, Royal St, Lagos"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "8 John Kennedy Str. IRIS House, 540AB 5th Floor,, Lemesos"
             },
             "business_context": "finance"
         },
@@ -127,7 +127,11 @@
                 "country_acronym": "NG",
                 "address": "Pentagon Plaza Wasimi, Lagos"
             },
+<<<<<<< HEAD:artifacts/leads_sourced.json
             "business_context": "consultant"
+=======
+            "business_context": "finance"
+>>>>>>> 5a3edda6c2d4b5ec2e1849d02585ec6ecf84b054:artifacts/sample_leads_sourced.json
         },
         {
             "source_platform": "google_places",

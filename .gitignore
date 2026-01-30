@@ -13,3 +13,7 @@ wheels/
 # Client build
 client/dist
 client/node_modules
+
+artifacts/*
+!artifacts/sample_leads_augmented.json
+!artifacts/sample_leads_sourced.json
