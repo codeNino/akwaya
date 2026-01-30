@@ -157,17 +157,17 @@
     },
     {
         "source_platform": "google_places",
-        "name": "Forex Trading Company",
+        "name": "FXORO",
         "contact": {
-            "phone": "0805 158 1633",
-            "website": null
+            "phone": "25 205555",
+            "website": "http://fxoro.com/"
         },
         "location": {
-            "address": "11A Allen Ave, Lagos",
-            "country_code": "NG",
-            "country": "Nigeria"
+            "address": "Petrou Tsirou 82, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
         },
-        "business_context": "consultant"
+        "business_context": "finance"
     },
     {
         "source_platform": "google_places",
@@ -185,15 +185,15 @@
     },
     {
         "source_platform": "google_places",
-        "name": "FXBrokers NG",
+        "name": "eToro (UK) Ltd",
         "contact": {
-            "phone": "0703 239 6660",
-            "website": "https://forexbroker.ng/"
+            "phone": "020 3002 0655",
+            "website": "https://www.etoro.com/"
         },
         "location": {
-            "address": "9 Royal Estate, Royal St, Lagos",
-            "country_code": "NG",
-            "country": "Nigeria"
+            "address": "24th floor, One Canada Square, Cabot Square, Canada Square, London",
+            "country_code": "GB",
+            "country": "United Kingdom"
         },
         "business_context": "finance"
     },
@@ -255,17 +255,31 @@
     },
     {
         "source_platform": "google_places",
-        "name": "Forex Trading And Investments",
+        "name": "Trading.de",
         "contact": {
-            "phone": "0802 330 6206",
-            "website": null
+            "phone": "0174 9777071",
+            "website": "https://trading.de/"
         },
         "location": {
-            "address": "No. 12 Kemberi Road, Lagos",
+            "address": "RF5R+4MH, Mazotos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "consultant"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Trade With Tickmill",
+        "contact": {
+            "phone": "0916 319 7174",
+            "website": "https://www.tickmill.com/"
+        },
+        "location": {
+            "address": "Berger, River valley estate, 6B Uduma Kalu Dr, Lagos",
             "country_code": "NG",
             "country": "Nigeria"
         },
-        "business_context": "bank"
+        "business_context": "finance"
     },
     {
         "source_platform": "google_places",

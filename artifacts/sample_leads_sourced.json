@@ -3,17 +3,17 @@
     "businesses": [
         {
             "source_platform": "google_places",
-            "name": "FXBrokers NG",
+            "name": "Vistabrokers CIF Ltd",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0703 239 6660",
-                "website": "https://forexbroker.ng/"
+                "phone": "22 000787",
+                "website": null
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "9 Royal Estate, Royal St, Lagos"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "8 John Kennedy Str. IRIS House, 540AB 5th Floor,, Lemesos"
             },
             "business_context": "finance"
         },
@@ -147,19 +147,19 @@
         },
         {
             "source_platform": "google_places",
-            "name": "Forex Trading Company",
+            "name": "GBE brokers \u2013 Cyprus \u2013 Headquarters",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0805 158 1633",
-                "website": null
+                "phone": "25 281736",
+                "website": "https://www.gbebrokers.com/"
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "11A Allen Ave, Lagos"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Thesalonikis 11, Lemesos"
             },
-            "business_context": "consultant"
+            "business_context": "finance"
         },
         {
             "source_platform": "google_places",
@@ -415,21 +415,21 @@
                 "country_acronym": "NG",
                 "address": "2 Olu Koleosho Street, Off Simbiat Abiola Way, Lagos"
             },
-            "business_context": "finance"
+            "business_context": "corporate_office"
         },
         {
             "source_platform": "google_places",
-            "name": "Forward Marketing Bureau De Change",
+            "name": "Trading on the Markets",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0802 300 0030",
-                "website": null
+                "phone": "0330 445 0165",
+                "website": "https://tradingonthemarkets.com/"
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "Silverado Mall, 23b Admiralty Wy, Lekki"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Leontiou Machaira, 75, Indigo Center, 203, Lemesos"
             },
             "business_context": "finance"
         },
@@ -511,7 +511,7 @@
                 "country_acronym": "NG",
                 "address": "4th Floor, 5 Allen Ave, Ikeja"
             },
-            "business_context": "corporate_office"
+            "business_context": "finance"
         },
         {
             "source_platform": "google_places",
