@@ -57,6 +57,18 @@ def fetch_qualified_leads(db: Session = Depends(inject_session)):
         controller_logger.error(f"Error fetching qualified leads: {e}")
         return JSONResponse({"message": "Error fetching qualified leads"})
 
+
+@router.get("/leads/called")
+def fetch_called_leads(db: Session = Depends(inject_session)):
+    """All prospects that have been called (for tracking and re-calling, including incomplete calls)."""
+    try:
+        prospects = DatabaseManager(db).get_called_prospects()
+        return JSONResponse({"leads": [p.to_dict() for p in prospects]})
+    except Exception as e:
+        controller_logger.error(f"Error fetching called leads: {e}")
+        return JSONResponse({"message": "Error fetching called leads"}, status_code=500)
+
+
 @router.post("/webhook/retell_feedback")
 async def retell_cold_call_feedback(request: Request, background_tasks: BackgroundTasks, db: Session = Depends(inject_session)):
     try:
@@ -67,6 +79,7 @@ async def retell_cold_call_feedback(request: Request, background_tasks: Backgrou
             if not prospect_id:
                 controller_logger.info("No prospect_id found in payload")
                 return JSONResponse({"message": "No prospect_id found in call metadata"})
+
             call_summary = payload.get("call", {}).get("call_analysis", {}).get("call_summary", "")
             call_recording_url = payload.get("call", {}).get("recording_url", "")
             custom_analysis_data = payload.get("call", {}).get("call_analysis", {}).get("custom_analysis_data", {})

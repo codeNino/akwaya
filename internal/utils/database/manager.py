@@ -216,6 +216,27 @@ class DatabaseManager:
         finally:
             db_session.close()
 
+    def get_called_prospects(self, limit: Optional[int] = None) -> List[Prospect]:
+        """
+        Get all prospects that have been called (is_called=True), for tracking and re-calling.
+        Ordered by updated_at descending (most recent first).
+        """
+        db_session = self._get_session()
+        try:
+            query = (
+                db_session.query(Prospect)
+                .filter(Prospect.is_called == True)
+                .order_by(Prospect.updated_at.desc())
+            )
+            if limit:
+                query = query.limit(limit)
+            return query.all()
+        except Exception as e:
+            logger.error("Failed to get called prospects: %s", e)
+            return []
+        finally:
+            db_session.close()
+
     def get_prospect_by_id(self, prospect_id: str) -> Optional[Prospect]:
         """
         Get prospect by ID

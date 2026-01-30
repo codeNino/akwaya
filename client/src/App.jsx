@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
 const API = "/api/v1";
@@ -8,6 +8,7 @@ const SECTIONS = {
   pipeline: "Lead search",
   prospects: "Prospects (callable)",
   leads: "Qualified leads",
+  called: "Called leads",
   campaign: "Cold call campaign",
 };
 
@@ -15,7 +16,8 @@ function App() {
   const [section, setSection] = useState("overview");
   const [prospects, setProspects] = useState([]);
   const [leads, setLeads] = useState([]);
-  const [loading, setLoading] = useState({ prospects: false, leads: false });
+  const [calledLeads, setCalledLeads] = useState([]);
+  const [loading, setLoading] = useState({ prospects: false, leads: false, called: false });
   const [message, setMessage] = useState(null);
   const [query, setQuery] = useState("");
   const [pipelineRunning, setPipelineRunning] = useState(false);
@@ -25,9 +27,25 @@ function App() {
   const [deletingId, setDeletingId] = useState(null);
   const [selectedProspectIds, setSelectedProspectIds] = useState([]);
   const [selectedLeadIds, setSelectedLeadIds] = useState([]);
+  const [selectedCalledIds, setSelectedCalledIds] = useState([]);
   const [bulkActionRunning, setBulkActionRunning] = useState(false);
+  const [expandedCallId, setExpandedCallId] = useState(null);
   const [isPolling, setIsPolling] = useState(false);
   const pollingRef = useRef(null);
+
+  const toggleCallDetails = (prospectId) => {
+    setExpandedCallId((prev) => (prev === prospectId ? null : prospectId));
+  };
+
+  const [expandedDetailsId, setExpandedDetailsId] = useState(null);
+  const toggleLeadDetails = (prospectId) => {
+    setExpandedDetailsId((prev) => (prev === prospectId ? null : prospectId));
+  };
+
+  const truncate = (str, maxLen = 50) => {
+    if (!str || typeof str !== "string") return "—";
+    return str.length <= maxLen ? str : `${str.slice(0, maxLen)}…`;
+  };
 
   const showMessage = (text, type = "info") => {
     setMessage({ text, type });
@@ -62,14 +80,30 @@ function App() {
     }
   };
 
+  const fetchCalledLeads = async () => {
+    setLoading((l) => ({ ...l, called: true }));
+    try {
+      const res = await axios.get(`${API}/leads/called`);
+      setCalledLeads(res.data.leads || []);
+    } catch (err) {
+      console.error(err);
+      showMessage("Failed to load called leads", "error");
+      setCalledLeads([]);
+    } finally {
+      setLoading((l) => ({ ...l, called: false }));
+    }
+  };
+
   useEffect(() => {
     if (section === "prospects") fetchProspects();
     if (section === "leads") fetchLeads();
+    if (section === "called") fetchCalledLeads();
   }, [section]);
 
   useEffect(() => {
     fetchProspects();
     fetchLeads();
+    fetchCalledLeads();
   }, []);
 
   const startPipeline = async (e) => {
@@ -112,6 +146,7 @@ function App() {
       await axios.post(`${API}/call`, { prospect_id: prospectId });
       showMessage("Call triggered successfully.", "success");
       fetchProspects();
+      fetchCalledLeads();
     } catch (err) {
       showMessage(err.response?.data?.message || "Failed to trigger call", "error");
     } finally {
@@ -127,8 +162,10 @@ function App() {
       showMessage(res.data?.message || "Prospect deleted.", "success");
       setSelectedProspectIds((prev) => prev.filter((id) => id !== prospectId));
       setSelectedLeadIds((prev) => prev.filter((id) => id !== prospectId));
+      setSelectedCalledIds((prev) => prev.filter((id) => id !== prospectId));
       fetchProspects();
       fetchLeads();
+      fetchCalledLeads();
     } catch (err) {
       showMessage(err.response?.data?.message || "Failed to delete prospect", "error");
     } finally {
@@ -156,6 +193,16 @@ function App() {
     setSelectedLeadIds(checked ? leads.map((p) => p.prospect_id) : []);
   };
 
+  const toggleCalledSelection = (id) => {
+    setSelectedCalledIds((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
+    );
+  };
+
+  const selectAllCalled = (checked) => {
+    setSelectedCalledIds(checked ? calledLeads.map((p) => p.prospect_id) : []);
+  };
+
   const callSelected = async (ids) => {
     if (!ids || !ids.length) {
       showMessage("Select one or more prospects first.", "error");
@@ -169,8 +216,10 @@ function App() {
       showMessage(`Call triggered for ${ids.length} prospect(s).`, "success");
       setSelectedProspectIds([]);
       setSelectedLeadIds([]);
+      setSelectedCalledIds([]);
       fetchProspects();
       fetchLeads();
+      fetchCalledLeads();
     } catch (err) {
       showMessage(err.response?.data?.message || "Failed to trigger call(s)", "error");
     } finally {
@@ -192,8 +241,10 @@ function App() {
       showMessage(`${ids.length} prospect(s) deleted.`, "success");
       setSelectedProspectIds([]);
       setSelectedLeadIds([]);
+      setSelectedCalledIds([]);
       fetchProspects();
       fetchLeads();
+      fetchCalledLeads();
     } catch (err) {
       showMessage(err.response?.data?.message || "Failed to delete prospect(s)", "error");
     } finally {
@@ -263,6 +314,10 @@ function App() {
                 <div className="value">{leads.length}</div>
                 <div className="label">Qualified leads</div>
               </div>
+              <div className="stat-card">
+                <div className="value">{calledLeads.length}</div>
+                <div className="label">Called leads (all calls)</div>
+              </div>
             </div>
             <div className="card">
               <div className="card-title">Quick actions</div>
@@ -275,6 +330,9 @@ function App() {
                 </button>
                 <button type="button" className="btn btn-secondary" onClick={() => setSection("leads")}>
                   View qualified leads
+                </button>
+                <button type="button" className="btn btn-secondary" onClick={() => setSection("called")}>
+                  View called leads
                 </button>
                 <button type="button" className="btn btn-success" onClick={() => setSection("campaign")}>
                   Run cold call campaign
@@ -358,6 +416,7 @@ function App() {
                           />
                         </th>
                         <th>Name</th>
+                        <th>About</th>
                         <th>Phone</th>
                         <th>Email</th>
                         <th>Country</th>
@@ -367,7 +426,8 @@ function App() {
                     </thead>
                     <tbody>
                       {prospects.map((p) => (
-                        <tr key={p.prospect_id}>
+                        <React.Fragment key={p.prospect_id}>
+                        <tr>
                           <td>
                             <input
                               type="checkbox"
@@ -376,11 +436,20 @@ function App() {
                             />
                           </td>
                           <td>{p.name || "—"}</td>
+                          <td title={p.about || ""}>{truncate(p.about, 45)}</td>
                           <td>{p.phones || "—"}</td>
                           <td>{p.emails || "—"}</td>
                           <td>{p.country_acronym || p.country || "—"}</td>
-                          <td>{p.business_context || "—"}</td>
+                          <td>{truncate(p.business_context, 30)}</td>
                           <td style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+                            <button
+                              type="button"
+                              className="btn btn-secondary btn-sm"
+                              onClick={() => toggleLeadDetails(p.prospect_id)}
+                              title="View full lead details"
+                            >
+                              {expandedDetailsId === p.prospect_id ? "Hide details" : "View details"}
+                            </button>
                             <button
                               type="button"
                               className="btn btn-success btn-sm"
@@ -399,6 +468,54 @@ function App() {
                             </button>
                           </td>
                         </tr>
+                        {expandedDetailsId === p.prospect_id && (
+                          <tr className="call-details-row">
+                            <td colSpan={8} style={{ padding: 0, verticalAlign: "top", borderBottom: "1px solid var(--card-border)" }}>
+                              <div className="call-detail-card lead-detail-card">
+                                <div className="call-detail-header">
+                                  <span className="call-detail-title">Lead details — {p.name || "Prospect"}</span>
+                                  <button
+                                    type="button"
+                                    className="btn btn-secondary btn-sm"
+                                    onClick={() => setExpandedDetailsId(null)}
+                                    aria-label="Close"
+                                  >
+                                    Close
+                                  </button>
+                                </div>
+                                <div className="call-detail-body">
+                                  <div className="call-detail-section">
+                                    <label className="call-detail-label">About</label>
+                                    <p className="call-detail-summary">{p.about || "—"}</p>
+                                  </div>
+                                  <div className="call-detail-section">
+                                    <label className="call-detail-label">Contact</label>
+                                    <p className="call-detail-summary" style={{ margin: 0 }}>
+                                      Phone: {p.phones || "—"} · Email: {p.emails || "—"} · Website: {p.websites || "—"}
+                                    </p>
+                                  </div>
+                                  <div className="call-detail-section">
+                                    <label className="call-detail-label">Location</label>
+                                    <p className="call-detail-summary" style={{ margin: 0 }}>
+                                      {[p.country, p.address].filter(Boolean).join(" · ") || "—"}
+                                    </p>
+                                  </div>
+                                  <div className="call-detail-section">
+                                    <label className="call-detail-label">Business context</label>
+                                    <p className="call-detail-summary" style={{ margin: 0 }}>{p.business_context || "—"}</p>
+                                  </div>
+                                  {p.platforms && (
+                                    <div className="call-detail-section">
+                                      <label className="call-detail-label">Platforms</label>
+                                      <p className="call-detail-summary" style={{ margin: 0 }}>{p.platforms}</p>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        )}
+                        </React.Fragment>
                       ))}
                     </tbody>
                   </table>
@@ -454,6 +571,7 @@ function App() {
                           />
                         </th>
                         <th>Name</th>
+                        <th>About</th>
                         <th>Phone</th>
                         <th>Email</th>
                         <th>Country</th>
@@ -465,7 +583,8 @@ function App() {
                     </thead>
                     <tbody>
                       {leads.map((p) => (
-                        <tr key={p.prospect_id}>
+                        <React.Fragment key={p.prospect_id}>
+                        <tr>
                           <td>
                             <input
                               type="checkbox"
@@ -474,6 +593,7 @@ function App() {
                             />
                           </td>
                           <td>{p.name || "—"}</td>
+                          <td title={p.about || ""}>{truncate(p.about, 45)}</td>
                           <td>{p.phones || "—"}</td>
                           <td>{p.emails || "—"}</td>
                           <td>{p.country_acronym || p.country || "—"}</td>
@@ -489,6 +609,14 @@ function App() {
                           </td>
                           <td>{formatDate(p.updated_at)}</td>
                           <td style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+                            <button
+                              type="button"
+                              className="btn btn-secondary btn-sm"
+                              onClick={() => toggleCallDetails(p.prospect_id)}
+                              title="View call summary and recording"
+                            >
+                              {expandedCallId === p.prospect_id ? "Hide call" : "View call"}
+                            </button>
                             <button
                               type="button"
                               className="btn btn-success btn-sm"
@@ -507,6 +635,233 @@ function App() {
                             </button>
                           </td>
                         </tr>
+                        {expandedCallId === p.prospect_id && (
+                          <tr key={`${p.prospect_id}-call-details`} className="call-details-row">
+                            <td colSpan={10} style={{ padding: 0, verticalAlign: "top", borderBottom: "1px solid var(--card-border)" }}>
+                              <div className="call-detail-card">
+                                <div className="call-detail-header">
+                                  <span className="call-detail-title">Call details — {p.name || "Lead"}</span>
+                                  <button
+                                    type="button"
+                                    className="btn btn-secondary btn-sm"
+                                    onClick={() => setExpandedCallId(null)}
+                                    aria-label="Close"
+                                  >
+                                    Close
+                                  </button>
+                                </div>
+                                <div className="call-detail-body">
+                                  {p.about && (
+                                    <div className="call-detail-section">
+                                      <label className="call-detail-label">About</label>
+                                      <p className="call-detail-summary">{p.about}</p>
+                                    </div>
+                                  )}
+                                  <div className="call-detail-section">
+                                    <label className="call-detail-label">Summary</label>
+                                    <p className="call-detail-summary">
+                                      {p.verification_call_summary || "No summary available."}
+                                    </p>
+                                  </div>
+                                  <div className="call-detail-section">
+                                    <label className="call-detail-label">Recording</label>
+                                    {p.verification_recording_url ? (
+                                      <div className="call-detail-recording">
+                                        <audio controls src={p.verification_recording_url} preload="metadata" style={{ maxWidth: "100%" }}>
+                                          Your browser does not support the audio element.
+                                        </audio>
+                                        <a
+                                          href={p.verification_recording_url}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          className="call-detail-link"
+                                        >
+                                          Open recording in new tab
+                                        </a>
+                                      </div>
+                                    ) : (
+                                      <p className="call-detail-muted">No recording available.</p>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        )}
+                        </React.Fragment>
+                      ))}
+                    </tbody>
+                  </table>
+                )}
+              </div>
+            </div>
+          </>
+        )}
+
+        {section === "called" && (
+          <>
+            <div className="page-header">
+              <h1>Called leads</h1>
+              <p>All prospects that have been called (including incomplete or not yet qualified). Re-call or view summary and recording.</p>
+            </div>
+            <div className="card">
+              <div className="form-row" style={{ marginBottom: "1rem", flexWrap: "wrap", gap: "0.5rem" }}>
+                <button type="button" className="btn btn-secondary btn-sm" onClick={fetchCalledLeads} disabled={loading.called}>
+                  {loading.called ? "Loading…" : "Refresh"}
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-success btn-sm"
+                  onClick={() => callSelected(selectedCalledIds)}
+                  disabled={!selectedCalledIds.length || bulkActionRunning}
+                >
+                  {bulkActionRunning ? "Calling…" : `Call selected (${selectedCalledIds.length})`}
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-danger btn-sm"
+                  onClick={() => deleteSelected(selectedCalledIds)}
+                  disabled={!selectedCalledIds.length || bulkActionRunning}
+                >
+                  {bulkActionRunning ? "Deleting…" : `Delete selected (${selectedCalledIds.length})`}
+                </button>
+              </div>
+              <div className="table-wrap">
+                {loading.called && calledLeads.length === 0 ? (
+                  <div className="empty-state">Loading called leads…</div>
+                ) : calledLeads.length === 0 ? (
+                  <div className="empty-state">No called leads yet. Calls will appear here after you run a campaign or trigger a call.</div>
+                ) : (
+                  <table className="data-table">
+                    <thead>
+                      <tr>
+                        <th style={{ width: "2.5rem" }}>
+                          <input
+                            type="checkbox"
+                            checked={calledLeads.length > 0 && selectedCalledIds.length === calledLeads.length}
+                            onChange={(e) => selectAllCalled(e.target.checked)}
+                            title="Select all"
+                          />
+                        </th>
+                        <th>Name</th>
+                        <th>About</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Country</th>
+                        <th>Qualified</th>
+                        <th>Relevant industry</th>
+                        <th>Called at</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {calledLeads.map((p) => (
+                        <React.Fragment key={p.prospect_id}>
+                        <tr>
+                          <td>
+                            <input
+                              type="checkbox"
+                              checked={selectedCalledIds.includes(p.prospect_id)}
+                              onChange={() => toggleCalledSelection(p.prospect_id)}
+                            />
+                          </td>
+                          <td>{p.name || "—"}</td>
+                          <td title={p.about || ""}>{truncate(p.about, 45)}</td>
+                          <td>{p.phones || "—"}</td>
+                          <td>{p.emails || "—"}</td>
+                          <td>{p.country_acronym || p.country || "—"}</td>
+                          <td>
+                            <span className={`badge ${p.is_qualified ? "badge-success" : "badge-muted"}`}>
+                              {p.is_qualified ? "Yes" : "No"}
+                            </span>
+                          </td>
+                          <td>
+                            <span className={`badge ${p.is_relevant_industry ? "badge-success" : "badge-muted"}`}>
+                              {p.is_relevant_industry ? "Yes" : "No"}
+                            </span>
+                          </td>
+                          <td>{formatDate(p.updated_at)}</td>
+                          <td style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+                            <button
+                              type="button"
+                              className="btn btn-secondary btn-sm"
+                              onClick={() => toggleCallDetails(p.prospect_id)}
+                              title="View call summary and recording"
+                            >
+                              {expandedCallId === p.prospect_id ? "Hide call" : "View call"}
+                            </button>
+                            <button
+                              type="button"
+                              className="btn btn-success btn-sm"
+                              onClick={() => makeCall(p.prospect_id)}
+                              disabled={callingId === p.prospect_id}
+                            >
+                              {callingId === p.prospect_id ? "Calling…" : "Call again"}
+                            </button>
+                            <button
+                              type="button"
+                              className="btn btn-danger btn-sm"
+                              onClick={() => deleteProspect(p.prospect_id)}
+                              disabled={deletingId === p.prospect_id}
+                            >
+                              {deletingId === p.prospect_id ? "Deleting…" : "Delete"}
+                            </button>
+                          </td>
+                        </tr>
+                        {expandedCallId === p.prospect_id && (
+                          <tr className="call-details-row">
+                            <td colSpan={10} style={{ padding: 0, verticalAlign: "top", borderBottom: "1px solid var(--card-border)" }}>
+                              <div className="call-detail-card">
+                                <div className="call-detail-header">
+                                  <span className="call-detail-title">Call details — {p.name || "Lead"}</span>
+                                  <button
+                                    type="button"
+                                    className="btn btn-secondary btn-sm"
+                                    onClick={() => setExpandedCallId(null)}
+                                    aria-label="Close"
+                                  >
+                                    Close
+                                  </button>
+                                </div>
+                                <div className="call-detail-body">
+                                  {p.about && (
+                                    <div className="call-detail-section">
+                                      <label className="call-detail-label">About</label>
+                                      <p className="call-detail-summary">{p.about}</p>
+                                    </div>
+                                  )}
+                                  <div className="call-detail-section">
+                                    <label className="call-detail-label">Summary</label>
+                                    <p className="call-detail-summary">
+                                      {p.verification_call_summary || "No summary available."}
+                                    </p>
+                                  </div>
+                                  <div className="call-detail-section">
+                                    <label className="call-detail-label">Recording</label>
+                                    {p.verification_recording_url ? (
+                                      <div className="call-detail-recording">
+                                        <audio controls src={p.verification_recording_url} preload="metadata" style={{ maxWidth: "100%" }}>
+                                          Your browser does not support the audio element.
+                                        </audio>
+                                        <a
+                                          href={p.verification_recording_url}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          className="call-detail-link"
+                                        >
+                                          Open recording in new tab
+                                        </a>
+                                      </div>
+                                    ) : (
+                                      <p className="call-detail-muted">No recording available.</p>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        )}
+                        </React.Fragment>
                       ))}
                     </tbody>
                   </table>
