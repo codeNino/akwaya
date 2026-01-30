@@ -304,7 +304,6 @@ if __name__ == "__main__":
     prospects = get_prospects_with_phones(limit=5)
     print(f"\nFound {len(prospects)} prospects with phone numbers")
 
-    # Make calls (uncomment to actually make calls)
     results = call_prospects_with_phones(
         limit=5,
         from_number=SecretManager.RETELL_FROM_NUMBER,

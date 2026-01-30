@@ -228,3 +228,23 @@ class DatabaseManager:
             return None
         finally:
             db_session.close()
+
+    def delete_prospect(self, prospect_id: str) -> bool:
+        """
+        Delete a prospect by ID. Returns True if deleted, False if not found or error.
+        """
+        db_session = self._get_session()
+        try:
+            prospect = db_session.query(Prospect).filter(Prospect.prospect_id == prospect_id).first()
+            if prospect:
+                db_session.delete(prospect)
+                db_session.commit()
+                logger.info("Deleted prospect %s", prospect_id)
+                return True
+            return False
+        except Exception as e:
+            db_session.rollback()
+            logger.error("Failed to delete prospect %s: %s", prospect_id, e)
+            return False
+        finally:
+            db_session.close()
