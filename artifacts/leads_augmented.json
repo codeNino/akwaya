@@ -1,166 +1,692 @@
 [
     {
         "source_platform": "google_places",
-        "name": "Instaforex Nigeria",
-        "about": "Open an InstaForex Live Trading account and trade in MetaTrader 4 and MetaTrader 5 , the industry-leading trading platforms. The company provides services for online FX trading and is recognized as one of the world's leading brokers.",
+        "name": "Vistabrokers CIF Ltd",
+        "about": null,
         "contact": {
             "email": null,
-            "phone": "0813 345 0038",
-            "website": "https://instaforex.com.ng/"
+            "phone": "22 000787",
+            "website": null
         },
         "location": {
-            "country": "Nigeria",
-            "country_acronym": "NG",
-            "address": "First Floor, 31 Wetheral Rd, Owerri"
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "8 John Kennedy Str. IRIS House, 540AB 5th Floor,, Lemesos"
         },
         "business_context": "finance"
     },
     {
         "source_platform": "google_places",
-        "name": "Dealmakers Bureau De Change",
-        "about": "We are a leading foreign exchange service provider, ensuring customer satisfaction through speed, reliability, and convenience At Dealmakers BDC, we take pride in exceeding our clients\u2019 expectations! We are a financial service solutions chain that specializes in providing currency exchange services to individuals and corporate bodies.",
-        "contact": {
-            "email": "info@dealmakersbdc.com",
-            "phone": "0808 181 0550",
-            "website": "http://www.dealmakersbdc.com/"
-        },
-        "location": {
-            "country": "Nigeria",
-            "country_acronym": "NG",
-            "address": "38b Adebayo Doherty Rd, Lagos"
-        },
-        "business_context": "finance"
-    },
-    {
-        "source_platform": "google_places",
-        "name": "TeamFx",
-        "about": "WhatsApp is a messaging app started as an alternative to SMS, offering features for calling, messaging, groups, status, and channels. The site provides downloads for various platforms, security information, and business solutions.",
+        "name": "FXGlobe Limited",
+        "about": null,
         "contact": {
             "email": null,
-            "phone": "0701 917 0067",
-            "website": "https://wa.me/2347019170067"
+            "phone": "22 222694",
+            "website": "https://fxglobe.eu/?utm_source=gmb&utm_medium=Google_Business_Profile"
         },
         "location": {
-            "country": "Nigeria",
-            "country_acronym": "NG",
-            "address": "TeamFx Academy, Ikeja"
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Louki Akrita 2, Lemesos"
         },
         "business_context": "finance"
     },
     {
         "source_platform": "google_places",
-        "name": "RespectedFX Bureau de Change in Lagos",
+        "name": "GBE brokers \u2013 Cyprus \u2013 Headquarters",
+        "about": null,
         "contact": {
-            "phone": "0803 784 6535",
-            "website": "https://www.respectedfx.com/"
+            "email": null,
+            "phone": "25 281736",
+            "website": "https://www.gbebrokers.com/"
         },
         "location": {
-            "address": "suite c2, vgc, Ikota Shopping Complex, Niyi Okunubi St, Lagos",
-            "country_code": "NG",
-            "country": "Nigeria"
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Thesalonikis 11, Lemesos"
         },
         "business_context": "finance"
     },
     {
         "source_platform": "google_places",
-        "name": "HFM Nigeria",
+        "name": "Royal Financial Trading (Cy) Ltd. (oneroyal.eu)",
+        "about": null,
         "contact": {
-            "phone": "0706 370 5519",
-            "website": "https://www.hfm.com/int/en-ng/?mcid=17415"
+            "email": null,
+            "phone": "25 080880",
+            "website": "https://www.oneroyal.eu/en/"
         },
         "location": {
-            "address": "3rd floor, Wuraola House, 90 Allen Avenue, Ikeja, Lagos",
-            "country_code": "NG",
-            "country": "Nigeria"
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Franklin Roosevelt 152, Lemesos"
         },
         "business_context": "finance"
     },
     {
         "source_platform": "google_places",
-        "name": "FXBrokers NG",
+        "name": "FxPro Group Ltd",
+        "about": null,
         "contact": {
-            "phone": "0703 239 6660",
-            "website": "https://forexbroker.ng/"
+            "email": null,
+            "phone": "25 969200",
+            "website": "https://www.fxpro.com/"
         },
         "location": {
-            "address": "9 Royal Estate, Royal St, Lagos",
-            "country_code": "NG",
-            "country": "Nigeria"
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Karyatidon 1, Ypsonas"
         },
         "business_context": "finance"
     },
     {
         "source_platform": "google_places",
-        "name": "Tradelandmark FX",
+        "name": "Orbex",
+        "about": null,
         "contact": {
-            "phone": "0908 785 5856",
+            "email": null,
+            "phone": "25 588855",
+            "website": "https://www.orbex.com/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "82nd Street-No.6 Ground Floor, Kato Polemidia"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "XM Group",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "25 029900",
+            "website": "https://www.xm.com/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Richard I & Berengaria Of Navarre, Lemesos"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Windsor Brokers",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "25 500700",
+            "website": "https://en.windsorbrokers.com/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Spyrou Kyprianou Ave 53-4003, Mesa Geitonia"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXORO",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "25 205555",
+            "website": "http://fxoro.com/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Petrou Tsirou 82, Lemesos"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "HF Markets Group",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "020 3318 8569",
+            "website": "https://www.hfeu.com/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Spyrou Kyprianou 50, Irida 3 Tower, 10th Floor, Larnaka"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXCC",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "25 870750",
+            "website": "https://www.fxcc.com/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Samou 2, Germasogeia"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "LYDYA FINANCIAL LTD (Forex24)",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "25 252299",
             "website": null
         },
         "location": {
-            "address": "Pentagon Plaza Wasimi, Lagos",
-            "country_code": "NG",
-            "country": "Nigeria"
-        },
-        "business_context": "consultant"
-    },
-    {
-        "source_platform": "google_places",
-        "name": "Forex Trading Company",
-        "contact": {
-            "phone": "0805 158 1633",
-            "website": null
-        },
-        "location": {
-            "address": "11A Allen Ave, Lagos",
-            "country_code": "NG",
-            "country": "Nigeria"
-        },
-        "business_context": "consultant"
-    },
-    {
-        "source_platform": "google_places",
-        "name": "MBA FOREX Limited",
-        "contact": {
-            "phone": "0705 461 3070",
-            "website": null
-        },
-        "location": {
-            "address": "2 Allen Ave, Lagos",
-            "country_code": "NG",
-            "country": "Nigeria"
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "5 Nikou Kazantzaki George Court 1st Floor, Agios Theodoros, 8035, Pafos"
         },
         "business_context": "finance"
     },
     {
         "source_platform": "google_places",
-        "name": "HFM Nigeria",
+        "name": "TopFX",
+        "about": null,
         "contact": {
-            "phone": "0706 370 5519",
-            "website": "https://www.hfm.com/int/en-ng/?mcid=17415"
+            "email": null,
+            "phone": "25 352244",
+            "website": "http://topfx.com/"
         },
         "location": {
-            "address": "3rd floor, Wuraola House, 90 Allen Avenue, Ikeja, Lagos",
-            "country_code": "NG",
-            "country": "Nigeria"
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "KSenos Building, Troodous 2-Office No.502, Agios Athanasios"
         },
         "business_context": "finance"
     },
     {
         "source_platform": "google_places",
-        "name": "Oasis International Forex School Lagos",
+        "name": "Trust Capital",
+        "about": null,
         "contact": {
-            "phone": "0915 541 3085",
-            "website": "https://web.facebook.com/Oasisforexschool"
+            "email": null,
+            "phone": "25 378899",
+            "website": "https://trustcapitaltc.eu/"
         },
         "location": {
-            "address": "1st Floor, close to Oluyole bus stop, 64 Kudirat Abiola Way, Fidelity bank, Ikeja",
-            "country_code": "NG",
-            "country": "Nigeria"
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Libra Tower, Olympion 23, Lemesos"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Traders Trust",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "25 207000",
+            "website": "https://traders-trust.com/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Dilou 6-1st Floor, Lemesos"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "OEXN Limited",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "24 242499",
+            "website": "https://www.oexn.com/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Poullaides Tower, Kalimnou 1-Suite 602, Larnaka"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Instaforex",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "25 654112",
+            "website": "https://www.instaforex.eu/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Spetson 23A, Leda Court, Block B, Office B203, 4000 Mesa, Limassol, Cyprus Limassol"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FxGrow",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "25 211707",
+            "website": "https://fxgrow.com/en"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Arc. Makariou C 59, Steratzias Court Block A, Office 14, Lemesos"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "IUX",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "0482 084 221",
+            "website": "http://www.iux.com/en"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Foti Kolakidi 16-1st Floor, Office A 3031, Lemesos"
+        },
+        "business_context": "corporate_office"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Trading on the Markets",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "0330 445 0165",
+            "website": "https://tradingonthemarkets.com/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Leontiou Machaira, 75, Indigo Center, 203, Lemesos"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "GWG (Cyprus) Ltd",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "22 008100",
+            "website": null
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Victory Tower, Achillion 3, Kyriakou Matsi 18-office 302, Nicosia"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXGT Limassol",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": null,
+            "website": "https://fxgtcareers.com/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Agios Athanasios Industrial Zone, Iapetou 17, Agios Athanasios"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Just2Trade",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "25 344563",
+            "website": "https://j2t.com/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Magnum Business Center, Spyrou Kyprianou Ave 78-Office 4B, Lemesos"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "EXANTE",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "25 342627",
+            "website": "https://exante.eu/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "28 October Ave 365, Lemesos"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "GWG (Cyprus) Ltd",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "22 008100",
+            "website": null
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Victory Tower, Achillion 3, Kyriakou Matsi 18-office 302, Nicosia"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "IFCM Cyprus Limited",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "25 760925",
+            "website": "https://www.icmetrica.com/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "38, Spyrou Kyprianou 102-2nd Floor Office 101, Germasogeia"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "RoboMarkets Ltd",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "25 123275",
+            "website": "https://www.robomarkets.com.cy/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Arch. Makarios III Avenue 169-171, Lemesos"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Tec FX Back Office",
+        "about": null,
+        "contact": {
+            "email": null,
+            "phone": "25 250675",
+            "website": "https://fxbackoffice.com/"
+        },
+        "location": {
+            "country": "Cyprus",
+            "country_acronym": "CY",
+            "address": "Labyrinthou 8, Lemesos"
         },
         "business_context": null
     },
     {
         "source_platform": "google_places",
+        "name": "IronFX",
+        "contact": {
+            "phone": null,
+            "website": "https://www.ironfx.eu/"
+        },
+        "location": {
+            "address": "Agios Athanasios Industrial Zone, Iapetou 2, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Traders Trust",
+        "contact": {
+            "phone": "25 207000",
+            "website": "https://traders-trust.com/"
+        },
+        "location": {
+            "address": "Dilou 6-1st Floor, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Trust Capital",
+        "contact": {
+            "phone": "25 378899",
+            "website": "https://trustcapitaltc.eu/"
+        },
+        "location": {
+            "address": "Libra Tower, Olympion 23, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Trading.de",
+        "contact": {
+            "phone": "0174 9777071",
+            "website": "https://trading.de/"
+        },
+        "location": {
+            "address": "RF5R+4MH, Mazotos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "consultant"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Royal Financial Trading (Cy) Ltd. (oneroyal.eu)",
+        "contact": {
+            "phone": "25 080880",
+            "website": "https://www.oneroyal.eu/en/"
+        },
+        "location": {
+            "address": "Franklin Roosevelt 152, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Eurotrader",
+        "contact": {
+            "phone": "020 8004 7430",
+            "website": "https://www.eurotrader.com/"
+        },
+        "location": {
+            "address": "Kakos Premier, Kakos Court, Kyrillou Loukareos 70-Tower, 1st Floor, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXGlobe Limited",
+        "contact": {
+            "phone": "22 222694",
+            "website": "https://fxglobe.eu/?utm_source=gmb&utm_medium=Google_Business_Profile"
+        },
+        "location": {
+            "address": "Louki Akrita 2, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Just2Trade",
+        "contact": {
+            "phone": "25 344563",
+            "website": "https://j2t.com/"
+        },
+        "location": {
+            "address": "Magnum Business Center, Spyrou Kyprianou Ave 78-Office 4B, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXCC",
+        "contact": {
+            "phone": "25 870750",
+            "website": "https://www.fxcc.com/"
+        },
+        "location": {
+            "address": "Samou 2, Germasogeia",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "easyMarkets",
+        "contact": {
+            "phone": "25 828899",
+            "website": "https://www.easy-markets.com/"
+        },
+        "location": {
+            "address": "Kolonakiou 25-Block B, Office 101, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXTM",
+        "contact": {
+            "phone": "020 3734 2255",
+            "website": "https://www.fxtm.com/"
+        },
+        "location": {
+            "address": "8-10 Old Jewry, London",
+            "country_code": "GB",
+            "country": "United Kingdom"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXCC",
+        "contact": {
+            "phone": "25 870750",
+            "website": "https://www.fxcc.com/"
+        },
+        "location": {
+            "address": "Samou 2, Germasogeia",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXGlobe Limited",
+        "contact": {
+            "phone": "22 222694",
+            "website": "https://fxglobe.eu/?utm_source=gmb&utm_medium=Google_Business_Profile"
+        },
+        "location": {
+            "address": "Louki Akrita 2, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "XM Group",
+        "contact": {
+            "phone": "25 029900",
+            "website": "https://www.xm.com/"
+        },
+        "location": {
+            "address": "Richard I & Berengaria Of Navarre, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXGT Limassol",
+        "contact": {
+            "phone": null,
+            "website": "https://fxgtcareers.com/"
+        },
+        "location": {
+            "address": "Agios Athanasios Industrial Zone, Iapetou 17, Agios Athanasios",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXTM",
+        "contact": {
+            "phone": "020 3734 1025",
+            "website": null
+        },
+        "location": {
+            "address": "Exinity Limited, 5th Floor, 355 NEX Tower, Rue du Savoir, Cybercity, Ebene 72201",
+            "country_code": "MU",
+            "country": "Mauritius"
+        },
+        "business_context": null
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FxNet Ltd",
+        "contact": {
+            "phone": "25 108111",
+            "website": "http://www.fxnet.com/"
+        },
+        "location": {
+            "address": "4 Theklas Lysioti St, Harmony House, Office 31, 3rd Floor, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
         "name": "FXBrokers NG",
         "contact": {
             "phone": "0703 239 6660",
@@ -175,44 +701,254 @@
     },
     {
         "source_platform": "google_places",
-        "name": "7B Forex Ltd",
+        "name": "FxPro Group Ltd",
         "contact": {
-            "phone": "0903 812 9463",
-            "website": "http://7bforex.ng/"
+            "phone": "25 969200",
+            "website": "https://www.fxpro.com/"
         },
         "location": {
-            "address": "Block A3, Suite 508/509, HFP Eastline Shopping Complex, Lekki - Epe Expy, Abraham Adesanya Roundabout, Lagos",
-            "country_code": "NG",
-            "country": "Nigeria"
+            "address": "Karyatidon 1, Ypsonas",
+            "country_code": "CY",
+            "country": "Cyprus"
         },
         "business_context": "finance"
     },
     {
         "source_platform": "google_places",
-        "name": "Forex Trading And Investments",
+        "name": "FXORO",
         "contact": {
-            "phone": "0802 330 6206",
+            "phone": "25 205555",
+            "website": "http://fxoro.com/"
+        },
+        "location": {
+            "address": "Petrou Tsirou 82, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXGlobe Limited",
+        "contact": {
+            "phone": "22 222694",
+            "website": "https://fxglobe.eu/?utm_source=gmb&utm_medium=Google_Business_Profile"
+        },
+        "location": {
+            "address": "Louki Akrita 2, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "TopFX",
+        "contact": {
+            "phone": "25 352244",
+            "website": "http://topfx.com/"
+        },
+        "location": {
+            "address": "KSenos Building, Troodous 2-Office No.502, Agios Athanasios",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXCC",
+        "contact": {
+            "phone": "25 870750",
+            "website": "https://www.fxcc.com/"
+        },
+        "location": {
+            "address": "Samou 2, Germasogeia",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "HF Markets Group",
+        "contact": {
+            "phone": "020 3318 8569",
+            "website": "https://www.hfeu.com/"
+        },
+        "location": {
+            "address": "Spyrou Kyprianou 50, Irida 3 Tower, 10th Floor, Larnaka",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "XM Group",
+        "contact": {
+            "phone": "25 029900",
+            "website": "https://www.xm.com/"
+        },
+        "location": {
+            "address": "Richard I & Berengaria Of Navarre, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXPN",
+        "contact": {
+            "phone": "25 254912",
             "website": null
         },
         "location": {
-            "address": "No. 12 Kemberi Road, Lagos",
-            "country_code": "NG",
-            "country": "Nigeria"
+            "address": "Agias Filaxeos 88, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
         },
-        "business_context": "bank"
+        "business_context": "finance"
     },
     {
         "source_platform": "google_places",
-        "name": "FXLeaders",
+        "name": "eToro (Cyprus) LTD",
         "contact": {
-            "phone": "055 508 1130",
-            "website": "https://www.fxleaders.com/"
+            "phone": null,
+            "website": "https://www.etoro.com/"
         },
         "location": {
-            "address": "Arabella 3 - Mudon - Villa 444 - 22A St",
-            "country_code": "AE",
-            "country": "United Arab Emirates"
+            "address": "Kanika International Business Center, 7th floor 4 Profiti Ilia Street Germasogeia Limassol CY 4046, Profiti Ilias 4, Germasogeia",
+            "country_code": "CY",
+            "country": "Cyprus"
         },
         "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXORO",
+        "contact": {
+            "phone": "25 205555",
+            "website": "http://fxoro.com/"
+        },
+        "location": {
+            "address": "Petrou Tsirou 82, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Eurotrader",
+        "contact": {
+            "phone": "020 8004 7430",
+            "website": "https://www.eurotrader.com/"
+        },
+        "location": {
+            "address": "Kakos Premier, Kakos Court, Kyrillou Loukareos 70-Tower, 1st Floor, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "eToro Money UK Limited",
+        "contact": {
+            "phone": null,
+            "website": "http://www.etoro.com/money"
+        },
+        "location": {
+            "address": "The Lancastrian Office Centre, Maclaren 3b, Talbot Rd, Stretford, Manchester",
+            "country_code": "GB",
+            "country": "United Kingdom"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "GBE brokers \u2013 Cyprus \u2013 Headquarters",
+        "contact": {
+            "phone": "25 281736",
+            "website": "https://www.gbebrokers.com/"
+        },
+        "location": {
+            "address": "Thesalonikis 11, Lemesos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "eToro (UK) Ltd",
+        "contact": {
+            "phone": "020 3002 0655",
+            "website": "https://www.etoro.com/"
+        },
+        "location": {
+            "address": "24th floor, One Canada Square, Cabot Square, Canada Square, London",
+            "country_code": "GB",
+            "country": "United Kingdom"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "FXCC",
+        "contact": {
+            "phone": "25 870750",
+            "website": "https://www.fxcc.com/"
+        },
+        "location": {
+            "address": "Samou 2, Germasogeia",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Trading.de",
+        "contact": {
+            "phone": "0174 9777071",
+            "website": "https://trading.de/"
+        },
+        "location": {
+            "address": "RF5R+4MH, Mazotos",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "consultant"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Trade With Tickmill",
+        "contact": {
+            "phone": "0916 319 7174",
+            "website": "https://www.tickmill.com/"
+        },
+        "location": {
+            "address": "Berger, River valley estate, 6B Uduma Kalu Dr, Lagos",
+            "country_code": "NG",
+            "country": "Nigeria"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Cyprus Securities and Exchange Commission (CySEC)",
+        "contact": {
+            "phone": "22 506600",
+            "website": "https://www.cysec.gov.cy/"
+        },
+        "location": {
+            "address": "19 Diagorou Str. CY-1097, Nicosia",
+            "country_code": "CY",
+            "country": "Cyprus"
+        },
+        "business_context": "government_office"
     }
 ]

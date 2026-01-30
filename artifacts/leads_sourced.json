@@ -3,561 +3,449 @@
     "businesses": [
         {
             "source_platform": "google_places",
-            "name": "FXBrokers NG",
+            "name": "Vistabrokers CIF Ltd",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0703 239 6660",
-                "website": "https://forexbroker.ng/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "9 Royal Estate, Royal St, Lagos"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Tradelandmark FX",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0908 785 5856",
+                "phone": "22 000787",
                 "website": null
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "Pentagon Plaza Wasimi, Lagos"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "8 John Kennedy Str. IRIS House, 540AB 5th Floor,, Lemesos"
             },
-            "business_context": "consultant"
+            "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "Forex Trading Company",
+            "name": "FXGlobe Limited",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0805 158 1633",
+                "phone": "22 222694",
+                "website": "https://fxglobe.eu/?utm_source=gmb&utm_medium=Google_Business_Profile"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Louki Akrita 2, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "GBE brokers \u2013 Cyprus \u2013 Headquarters",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 281736",
+                "website": "https://www.gbebrokers.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Thesalonikis 11, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Royal Financial Trading (Cy) Ltd. (oneroyal.eu)",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 080880",
+                "website": "https://www.oneroyal.eu/en/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Franklin Roosevelt 152, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "FxPro Group Ltd",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 969200",
+                "website": "https://www.fxpro.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Karyatidon 1, Ypsonas"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Orbex",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 588855",
+                "website": "https://www.orbex.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "82nd Street-No.6 Ground Floor, Kato Polemidia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "XM Group",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 029900",
+                "website": "https://www.xm.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Richard I & Berengaria Of Navarre, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Windsor Brokers",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 500700",
+                "website": "https://en.windsorbrokers.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Spyrou Kyprianou Ave 53-4003, Mesa Geitonia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "FXORO",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 205555",
+                "website": "http://fxoro.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Petrou Tsirou 82, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "HF Markets Group",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "020 3318 8569",
+                "website": "https://www.hfeu.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Spyrou Kyprianou 50, Irida 3 Tower, 10th Floor, Larnaka"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "FXCC",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 870750",
+                "website": "https://www.fxcc.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Samou 2, Germasogeia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "LYDYA FINANCIAL LTD (Forex24)",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 252299",
                 "website": null
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "11A Allen Ave, Lagos"
-            },
-            "business_context": "consultant"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "HFM Nigeria",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0706 370 5519",
-                "website": "https://www.hfm.com/int/en-ng/?mcid=17415"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "3rd floor, Wuraola House, 90 Allen Avenue, Ikeja, Lagos"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "5 Nikou Kazantzaki George Court 1st Floor, Agios Theodoros, 8035, Pafos"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "Oasis International Forex School Lagos",
+            "name": "TopFX",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0915 541 3085",
-                "website": "https://web.facebook.com/Oasisforexschool"
+                "phone": "25 352244",
+                "website": "http://topfx.com/"
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "1st Floor, close to Oluyole bus stop, 64 Kudirat Abiola Way, Fidelity bank, Ikeja"
-            },
-            "business_context": null
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Profit Arcade - FOREX Trading Secrets Exposed",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0806 926 9863",
-                "website": null
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "30A Agoro St, Ikeja"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "KSenos Building, Troodous 2-Office No.502, Agios Athanasios"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "Rolifx Trades (RFT Academy) | Best Forex Mentorship Academy, Lagos",
+            "name": "Trust Capital",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0805 400 3006",
-                "website": "https://www.rolifxtrades.com/"
+                "phone": "25 378899",
+                "website": "https://trustcapitaltc.eu/"
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "Jakande Gate, 16/18 Egbe Rd, LGA, Oke-Afa/Ejigbo"
-            },
-            "business_context": "consultant"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "MBA FOREX Limited",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0705 461 3070",
-                "website": null
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "2 Allen Ave, Lagos"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Libra Tower, Olympion 23, Lemesos"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "Flotrade Investments",
+            "name": "Traders Trust",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0708 114 1535",
-                "website": null
+                "phone": "25 207000",
+                "website": "https://traders-trust.com/"
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "4, Oyetubo Street, Off Obafemi Awolowo Wy, Lagos"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Dilou 6-1st Floor, Lemesos"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "Trade Harbor",
+            "name": "OEXN Limited",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0908 785 5856",
-                "website": null
+                "phone": "24 242499",
+                "website": "https://www.oexn.com/"
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "43b, Emina Crescent, Toyin Street, Lagos"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Poullaides Tower, Kalimnou 1-Suite 602, Larnaka"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "Vantage Markets Nigeria",
+            "name": "Instaforex",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0916 670 4000",
-                "website": "http://www.vantagemarkets.com/en-za"
+                "phone": "25 654112",
+                "website": "https://www.instaforex.eu/"
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "Block 1, Plot 8, Memunat Ayodeji Crescent, By Etal Avenue Ikeja, Lagos"
-            },
-            "business_context": null
-        },
-        {
-            "source_platform": "google_places",
-            "name": "ICM Trader",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "020 7442 5610",
-                "website": "http://www.icmtrader.com/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "73, 5th Floor Oluwatobi House, Allen Avenue Ikeja, Lagos"
-            },
-            "business_context": "consultant"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "FXCG",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "020 7097 4323",
-                "website": "https://www.fxcg.com/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "A Obafemi Awolowo Wy, Ikeja"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Spetson 23A, Leda Court, Block B, Office B203, 4000 Mesa, Limassol, Cyprus Limassol"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "Habby Forex Trading Academy",
+            "name": "FxGrow",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0907 309 7779",
-                "website": "http://habbyforex.com/"
+                "phone": "25 211707",
+                "website": "https://fxgrow.com/en"
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "20 Victoria Arobieke St, Lekki"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Arc. Makariou C 59, Steratzias Court Block A, Office 14, Lemesos"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "PIPS ARCADE",
+            "name": "IUX",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0808 394 7636",
-                "website": null
+                "phone": "0482 084 221",
+                "website": "http://www.iux.com/en"
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "73 Allen Ave, Ikeja"
-            },
-            "business_context": "consultant"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Rally Trade",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0901 874 0318",
-                "website": "http://www.rally.trade/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "21 Adeniyi Jones, Ikeja"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Revglobal Forex Institute",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0704 033 5379",
-                "website": "https://www.revglobalforexinstitute.com/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "Ponle Bus Stop, 1 Ponle Street, 2nd Floor, Left Wing wing, Egbeda Idimu, Road"
-            },
-            "business_context": null
-        },
-        {
-            "source_platform": "google_places",
-            "name": "CJC MARKETS LAGOS HQ",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0905 386 6018",
-                "website": null
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "103 Allen Ave, Ikeja"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Foti Kolakidi 16-1st Floor, Office A 3031, Lemesos"
             },
             "business_context": "corporate_office"
         },
         {
             "source_platform": "google_places",
-            "name": "Firepips Forex Academy Ikeja | Best Forex Academy In Lagos, Nigeria",
+            "name": "Trading on the Markets",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0913 630 3131",
-                "website": "https://firepipsfx.com/"
+                "phone": "0330 445 0165",
+                "website": "https://tradingonthemarkets.com/"
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "Suite 17, Motorways Center, Motorways Avenue, SevenUp Bottling Company, Lagos"
-            },
-            "business_context": null
-        },
-        {
-            "source_platform": "google_places",
-            "name": "7B Forex Ltd",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0903 812 9463",
-                "website": "http://7bforex.ng/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "Block A3, Suite 508/509, HFP Eastline Shopping Complex, Lekki - Epe Expy, Abraham Adesanya Roundabout, Lagos"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Leontiou Machaira, 75, Indigo Center, 203, Lemesos"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "RespectedFX Bureau de Change in Lagos",
+            "name": "GWG (Cyprus) Ltd",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0803 784 6535",
-                "website": "https://www.respectedfx.com/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "suite c2, vgc, Ikota Shopping Complex, Niyi Okunubi St, Lagos"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Instaforex Nigeria",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0813 345 0038",
-                "website": "https://instaforex.com.ng/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "First Floor, 31 Wetheral Rd, Owerri"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Forward Marketing Bureau De Change",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0802 300 0030",
+                "phone": "22 008100",
                 "website": null
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "Silverado Mall, 23b Admiralty Wy, Lekki"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Victory Tower, Achillion 3, Kyriakou Matsi 18-office 302, Nicosia"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "GOOD -START TRADE LINKS BUREAU DE CHANGE NIGERIA LTD",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0810 741 4021",
-                "website": null
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "SHOP F17, OZIDE PLAZA, OSOLO WAY ISOLO, Lagos"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "DAN DAHKA AND BROTHERS ENTERPRISE BUREAUX DE CHANGE",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0806 606 9966",
-                "website": null
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "Shop F12, Ozide Plaza, 22 Osolo Wy, Lagos"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Dealmakers Bureau De Change",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0808 181 0550",
-                "website": "http://www.dealmakersbdc.com/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "38b Adebayo Doherty Rd, Lagos"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Bureau - De Change Limited",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0803 388 1119",
-                "website": null
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "Suite No. 4, LSPDC Shopping Arcade, Ogba Suite No. 4 LSPDC Shopping Arcade, Ijaiye Rd, Ikeja"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Everdon Bureau de Change",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0809 898 9896",
-                "website": "http://www.everdonbdc.com/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "Foresight House, 163/165 Broad St, Lagos"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "TenTrade",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0700 000 0010",
-                "website": "http://www.tentrade.com/en/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "45 Opebi Rd, Ikeja"
-            },
-            "business_context": "corporate_office"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "GC Markets",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0809 468 6526",
-                "website": null
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "79 Obafemi Awolowo Wy, Lagos"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "IV Markets Nigeria",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0809 490 1115",
-                "website": null
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "Lagos NG, 79/81 Obafemi Awolowo Wy, Ikeja"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "TeamFx",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0701 917 0067",
-                "website": "https://wa.me/2347019170067"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "TeamFx Academy, Ikeja"
-            },
-            "business_context": "finance"
-        },
-        {
-            "source_platform": "google_places",
-            "name": "MS Africa Academy",
-            "about": null,
-            "contact": {
-                "email": null,
-                "phone": "0808 094 2279",
-                "website": "https://msafricaacademy.com/"
-            },
-            "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "First Floor, Car Park 2, The Citadel Global Community Church Complex, 30 Kudirat Abiola Way, Ikeja"
-            },
-            "business_context": null
-        },
-        {
-            "source_platform": "google_places",
-            "name": "Bureau de Change",
+            "name": "FXGT Limassol",
             "about": null,
             "contact": {
                 "email": null,
                 "phone": null,
-                "website": null
+                "website": "https://fxgtcareers.com/"
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "86 Allen Ave, Ikeja"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Agios Athanasios Industrial Zone, Iapetou 17, Agios Athanasios"
             },
             "business_context": "finance"
         },
         {
             "source_platform": "google_places",
-            "name": "Forex Trading Academy (Blue Zone Capital)",
+            "name": "Just2Trade",
             "about": null,
             "contact": {
                 "email": null,
-                "phone": "0706 511 0752",
+                "phone": "25 344563",
+                "website": "https://j2t.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Magnum Business Center, Spyrou Kyprianou Ave 78-Office 4B, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "EXANTE",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 342627",
+                "website": "https://exante.eu/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "28 October Ave 365, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "GWG (Cyprus) Ltd",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "22 008100",
                 "website": null
             },
             "location": {
-                "country": "Nigeria",
-                "country_acronym": "NG",
-                "address": "Ajangbadi, Bale Rd, Afromedia Rd, Ojo"
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Victory Tower, Achillion 3, Kyriakou Matsi 18-office 302, Nicosia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "IFCM Cyprus Limited",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 760925",
+                "website": "https://www.icmetrica.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "38, Spyrou Kyprianou 102-2nd Floor Office 101, Germasogeia"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "RoboMarkets Ltd",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 123275",
+                "website": "https://www.robomarkets.com.cy/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Arch. Makarios III Avenue 169-171, Lemesos"
+            },
+            "business_context": "finance"
+        },
+        {
+            "source_platform": "google_places",
+            "name": "Tec FX Back Office",
+            "about": null,
+            "contact": {
+                "email": null,
+                "phone": "25 250675",
+                "website": "https://fxbackoffice.com/"
+            },
+            "location": {
+                "country": "Cyprus",
+                "country_acronym": "CY",
+                "address": "Labyrinthou 8, Lemesos"
             },
             "business_context": null
         }
@@ -565,12 +453,12 @@
     "articles": [
         {
             "source_platform": "google_search",
-            "name": "Best Forex Brokers for 2026 (Worldwide)",
-            "about": "For our 2026 Forex Broker Review we assessed, rated, and ranked 32 international forex brokers. Here are our findings.",
+            "name": "7 Best Forex Brokers in Cyprus for 2026",
+            "about": "To find the best forex brokers in Cyprus, we created a list of all CySEC authorised brokers, then ranked brokers by their Overall ranking.",
             "contact": {
                 "email": null,
                 "phone": null,
-                "website": "https://www.forexbrokers.com/guides/forex-trading"
+                "website": "https://www.forexbrokers.com/guides/cyprus"
             },
             "location": {
                 "country": null,
@@ -581,12 +469,12 @@
         },
         {
             "source_platform": "google_search",
-            "name": "HFM Nigeria - World Leader in Online Trading | Forex Broker",
-            "about": "HFM is a multi-asset regulated, licensed global broker, providing trading services & facilities to both retail & institutional clients.",
+            "name": "CySEC (Cyprus) Regulated Forex Brokers",
+            "about": "Find our selection of top forex brokers regulated in the Cyprus by the CySEC (Cyprus Securities and Exchange Commission).",
             "contact": {
                 "email": null,
                 "phone": null,
-                "website": "https://www.hfm.com/int/en-ng/"
+                "website": "https://www.bestbrokers.com/forex-brokers/cysec-regulated-forex-brokers/"
             },
             "location": {
                 "country": null,
@@ -597,12 +485,12 @@
         },
         {
             "source_platform": "google_search",
-            "name": "List of Registered & Regulated Forex Brokers In Nigeria",
-            "about": "With local offices in Abuja and Lagos, FXTM has a great level of customer support, which is available on a 24-hour basis during weekdays. AvaTrade ...",
+            "name": "Cyprus Forex Brokers",
+            "about": "Research, compare, and view the real-time spreads of the top regulated forex brokers available in Cyprus in this detailed, interactive guide.",
             "contact": {
                 "email": null,
                 "phone": null,
-                "website": "https://www.forex4you.com.ng/articles/registered-forex-broker-list/"
+                "website": "https://www.forexfactory.com/brokers/cyprus"
             },
             "location": {
                 "country": null,
@@ -613,12 +501,12 @@
         },
         {
             "source_platform": "google_search",
-            "name": "Respected FX: Best Forex Broker Nigeria",
-            "about": "Exchange your US Dollars, British Pounds, and Euros to Nigerian Naira with ease at RespectedFX, your best Forex broker and bureau de change near you.",
+            "name": "Best CySEC Regulated Forex Brokers in 2026 - TradingPedia",
+            "about": "Below you can find a comparison table of forex brokers that are regulated by the Cyprus Securities and Exchange Commission (CySEC).",
             "contact": {
                 "email": null,
                 "phone": null,
-                "website": "https://www.respectedfx.com/"
+                "website": "https://www.tradingpedia.com/forex-brokers/cysec-regulated-forex-brokers/"
             },
             "location": {
                 "country": null,
@@ -629,12 +517,12 @@
         },
         {
             "source_platform": "google_search",
-            "name": "Forex Brokers Nigeria | Lagos",
-            "about": "Forex Brokers Nigeria, Lagos. 52 likes \u00183 talking about this \u001313 were here. Forex Trading in Nigeria: The #1 Guide for Nigerian Beginner traders....",
+            "name": "High Leverage Forex Brokers operating in Cyprus and other countries",
+            "about": "High leverage forex brokers in Cyprus are regulated by the well-known Cyprus Securities and Exchange Commission, better known as CySEC.",
             "contact": {
                 "email": null,
                 "phone": null,
-                "website": "https://www.facebook.com/forexbrokernigeria/"
+                "website": "https://fx-list.com/high-leverage-brokers-cyprus"
             },
             "location": {
                 "country": null,
@@ -645,12 +533,76 @@
         },
         {
             "source_platform": "google_search",
-            "name": "10 Best Forex Brokers in Nigeria (2026)",
-            "about": "Exness. Exness is a globally recognized forex and CFD broker known for its tight spreads, fast execution, and strong local support in Nigeria.",
+            "name": "Trade with Tickmill | Multi-Asset Class Broker | CFDs on Forex ...",
+            "about": "Access 600+ CFDs, including Forex, Commodities, Indices, Cryptocurrencies and platforms designed for performance.",
             "contact": {
                 "email": null,
                 "phone": null,
-                "website": "https://www.fxleaders.com/forex-brokers/forex-brokers-by-country/forex-brokers-nigeria/"
+                "website": "https://www.tickmill.com/"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "Cyprus Forex Brokers",
+            "about": "Cyprus Forex Brokers is a portal featuring companies that provide financial and investment services. If you are interested in currency ...",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.cyprusforexbrokers.com/"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "What are they doing in those \"forex\" companies? : r/cyprus - Reddit",
+            "about": "The broker will sell/buy from traders with a markup. That means they will sell to you at a higher price than the market and buy from you at a ...",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.reddit.com/r/cyprus/comments/1e57lsy/what_are_they_doing_in_those_forex_companies/"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "Best Forex Brokers in Cyprus in 2026 - BrokerChooser",
+            "about": "We reviewed, vetted and compared more than 100 brokers, and we found Fusion Markets to be the best forex broker in Cyprus in 2026.",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://brokerchooser.com/best-brokers/best-forex-brokers/cyprus"
+            },
+            "location": {
+                "country": null,
+                "country_acronym": null,
+                "address": null
+            },
+            "business_context": null
+        },
+        {
+            "source_platform": "google_search",
+            "name": "FxPro | Trusted Forex Broker | Online Forex Trading Platform",
+            "about": "Trade forex online with FxPro, the trusted forex broker offering CFDs on currency pairs and six other asset classes. Enjoy tight spreads, powerful trading ...",
+            "contact": {
+                "email": null,
+                "phone": null,
+                "website": "https://www.fxpro.com/"
             },
             "location": {
                 "country": null,
