@@ -32,16 +32,24 @@ app.mount(
 )
 
 
+def _spa_response():
+    """Serve index.html with no-cache so browser picks up new builds."""
+    return FileResponse(
+        CLIENT_DIR / "index.html",
+        headers={"Cache-Control": "no-cache, no-store, must-revalidate", "Pragma": "no-cache"},
+    )
+
+
 @app.get("/")
 def homepage():
     """Serve the React app homepage (SPA entry)."""
-    return FileResponse(CLIENT_DIR / "index.html")
+    return _spa_response()
 
 
 @app.get("/{full_path:path}")
 async def serve_react_app(full_path: str):
     """SPA fallback: serve index.html for client-side routes."""
-    return FileResponse(CLIENT_DIR / "index.html")
+    return _spa_response()
 
 
 app.add_middleware(
