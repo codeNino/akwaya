@@ -18,7 +18,7 @@ def trigger_leads_sourcing(query: str, output_path: str):
     batch_size = scrape_params.get("batch_size", 50)
     keywords = generate_keywords(query)
     raw_prospects = asyncio.run(web_searcher.search_for_prospects(keywords, batch_size))
-    processed_leads = asyncio.run(preprocess_leads(raw_prospects, batch_size))
+    processed_leads = asyncio.run(preprocess_leads(raw_prospects))
     export_to_json(processed_leads.model_dump(), output_path)
     
 

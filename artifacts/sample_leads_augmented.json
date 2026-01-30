@@ -1,12 +1,12 @@
 [
     {
         "source_platform": "google_places",
-        "name": "InvestFX",
-        "about": "At InvestFX, our mission, vision, and values guide everything we do. We are committed to providing exceptional trading experiences and helping our clients achieve their financial goals.",
+        "name": "DR FOREX OFFICIAL",
+        "about": "We are a team of traders with more than ten years experience in the financial markets. The difficulties are mainly concerned to make some profit and that\u2019s why we are the professionals who will make things happen. We are always ready to help you at any time with our best forex signals.",
         "contact": {
-            "email": "info@investfx.co",
-            "phone": "+90 555 888 98 50",
-            "website": "http://www.investfx.co/"
+            "email": "support@drforexofficial.com",
+            "phone": "(513) 968-7209",
+            "website": "https://www.drforexofficial.com/"
         },
         "location": {
             "country": "T\u00fcrkiye",
@@ -171,16 +171,37 @@
     },
     {
         "source_platform": "google_places",
-        "name": "Forex Trading Company",
+        "name": "Nigerian Exchange Group",
+        "about": "Nigerian Exchange Group (NGX Group) is a leading financial market infrastructure provider in Africa, connecting Nigeria, Africa and the world.",
         "contact": {
-            "phone": "0805 158 1633",
-            "website": null
+            "email": "contactcenter@ngxgroup.com",
+            "phone": "0700 225 5673",
+            "website": "https://ngxgroup.com/"
         },
         "location": {
-            "address": "11A Allen Ave, Lagos",
+            "country": "Nigeria",
+            "country_acronym": "NG",
+            "address": "2, 4 Custom St, Lagos"
+        },
+        "business_context": "finance"
+    },
+    {
+        "source_platform": "google_places",
+        "name": "Dealmakers Bureau De Change",
+        "contact": {
+            "phone": "0808 181 0550",
+            "website": "http://www.dealmakersbdc.com/",
+            "email": "info@dealmakersbdc.com, sales@dealmakersbdc.com"
+        },
+        "location": {
+            "address": "38b Adebayo Doherty Rd, Lagos",
             "country_code": "NG",
             "country": "Nigeria"
         },
+<<<<<<< HEAD:artifacts/leads_augmented.json
+        "business_context": "finance",
+        "about": "DealMakers BDC is a leading foreign exchange service provider specializing in currency exchange services for individuals and corporate bodies. They focus on customer satisfaction through speed, reliability, and convenience."
+=======
         "business_context": "parking"
     },
     {
@@ -630,5 +651,6 @@
             "country": "Nigeria"
         },
         "business_context": "finance"
+>>>>>>> 5a3edda6c2d4b5ec2e1849d02585ec6ecf84b054:artifacts/sample_leads_augmented.json
     }
 ]

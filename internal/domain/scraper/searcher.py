@@ -33,9 +33,19 @@ class WebSearcher:
         return await asyncio.gather(*tasks, return_exceptions=True)
         
 
-    async def _safe_scrape(self, keyword: str, batch_size: int, func):
+    def _ensure_semaphore_for_loop(self) -> None:
+        """Create or refresh semaphore so it is bound to the current event loop."""
+        loop = asyncio.get_running_loop()
         if self._semaphore is None:
             self._semaphore = asyncio.Semaphore(self._max_concurrent_requests)
+            return
+        # Recreate if bound to a different loop (e.g. after asyncio.run() in another call)
+        old_loop = getattr(self._semaphore, "_loop", None)
+        if old_loop is not loop:
+            self._semaphore = asyncio.Semaphore(self._max_concurrent_requests)
+
+    async def _safe_scrape(self, keyword: str, batch_size: int, func):
+        self._ensure_semaphore_for_loop()
         async with self._semaphore:
             return await func(keyword, batch_size)
 
@@ -65,6 +75,7 @@ class WebSearcher:
             return google_places_results
         except Exception as e:
             logger.error("Failed to scrape Google Places for keywords ::: %s", e)
+            logger.info("Pipeline will continue with other sources (e.g. Serper). Check network/DNS if places.googleapis.com is unreachable.")
             return []
 
 
