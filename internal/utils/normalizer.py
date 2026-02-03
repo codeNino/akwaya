@@ -60,6 +60,8 @@ def normalize_url(
     Returns:
         Normalized URL string
     """
+    if not url or url == "":
+        return ""
     parsed = urlparse(url.strip())
 
     scheme = parsed.scheme.lower()

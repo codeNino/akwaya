@@ -29,7 +29,7 @@ def augment_businesses(businesses: List[Prospect]) -> List[Prospect]:
     high_score = filter_high_score_prospects(businesses)
     if not high_score:
         return []
-
+    
     websites = [
         b["contact"]["website"]
         for b in high_score
@@ -53,6 +53,7 @@ def augment_businesses(businesses: List[Prospect]) -> List[Prospect]:
     ]
     if not enriched:
         return high_score
+ 
 
     return merge_prospects_info(high_score, enriched)
 
@@ -109,6 +110,7 @@ def trigger_leads_information_augmentation(
     augmented.extend(
         augment_from_articles(prospects.get("articles", []))
     )
+
     export_to_json(augmented, output_path)
 
 

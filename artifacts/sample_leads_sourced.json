@@ -127,11 +127,7 @@
                 "country_acronym": "NG",
                 "address": "Pentagon Plaza Wasimi, Lagos"
             },
-<<<<<<< HEAD:artifacts/leads_sourced.json
-            "business_context": "consultant"
-=======
             "business_context": "finance"
->>>>>>> 5a3edda6c2d4b5ec2e1849d02585ec6ecf84b054:artifacts/sample_leads_sourced.json
         },
         {
             "source_platform": "google_places",
