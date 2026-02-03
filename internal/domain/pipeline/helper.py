@@ -17,12 +17,16 @@ def merge_prospects_info(
         if item.get("url")
     }
 
+    print("Number of prospects to merge: ", len(prospects))
+    print("\n")
+    print("Number of augmentation info: ", len(augmentation_info))
+    print("\n")
+
     for item in prospects:
-        url = item.get("contact", {}).get("website")
-        if not url:
-            continue
+        url = item.get("contact", {}).get("website", "")
         url = normalize_url(url)
-        if url not in augmentation_index:
+        if not url or url not in augmentation_index:
+            augmented_prospects.append(item)
             continue
 
         source = augmentation_index[url]
@@ -40,6 +44,11 @@ def merge_prospects_info(
             if key == "phone" and not item.get("contact", {}).get("phone"):
                 item["contact"]["phone"] = value
         augmented_prospects.append(item)
+
+    print("Number of augmented prospects: ", len(augmented_prospects))
+    print("\n")
+    print("Augmented prospects: ", augmented_prospects)
+    print("\n")
 
     return augmented_prospects
 

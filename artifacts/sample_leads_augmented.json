@@ -198,11 +198,8 @@
             "country_code": "NG",
             "country": "Nigeria"
         },
-<<<<<<< HEAD:artifacts/leads_augmented.json
         "business_context": "finance",
         "about": "DealMakers BDC is a leading foreign exchange service provider specializing in currency exchange services for individuals and corporate bodies. They focus on customer satisfaction through speed, reliability, and convenience."
-=======
-        "business_context": "parking"
     },
     {
         "source_platform": "google_places",
@@ -651,6 +648,5 @@
             "country": "Nigeria"
         },
         "business_context": "finance"
->>>>>>> 5a3edda6c2d4b5ec2e1849d02585ec6ecf84b054:artifacts/sample_leads_augmented.json
     }
 ]
